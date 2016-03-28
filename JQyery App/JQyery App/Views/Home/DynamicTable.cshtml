@@ -1,0 +1,162 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    ViewBag.Title = "Dynamic Table";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    $(function () {
+        getData();
+        BindDuplicateGrid();
+        debugger;
+
+    });
+    var flag = false;
+    var totalSalary = 0;
+    function getData() {
+        $.get("GetData", null, function (data) { BindDataGrid(data) });
+    }
+    function submitData() {
+        $.post('Delete', '', function (data) { alert(data); getData(); })
+    }
+    function CheckAll() {
+        $('tr').each(function () {
+            debugger;
+            if ($('input[name="cas"]:checked').val())
+            { $("input[name='case']").prop('checked', true) }
+            else
+            { $("input[name='case']").prop('checked', false) }
+        });
+    }
+    function UnCheckMain() {
+        debugger;
+        if ($(".case").length == $(".case:checked").length) {
+            $(".aa").prop("checked", "checked");
+        } else {
+            $(".aa").removeProp("checked");
+        }
+
+    }
+    function BindDataGrid(data) {
+        debugger;
+        var table = "<table border='1' id='original'>";
+        table += "<tr><td>  <input type='checkbox' class='aa' name='cas' onclick='CheckAll()'/></td>";
+        table += "<td>ID</td>";
+        table += "<td>Name</td>";
+        table += "<td>Age</td>";
+        table += "<td>Salary</td>";
+        table += "<td>Status</td></tr>";
+        for (var index in data) {
+            table += "<tr>";
+            table += "<td>" + "<input type='checkbox' class='case' id='ddd' name='case' value=" + data[index].Id + " onclick='UnCheckMain()'/>" + "</td>";
+            table += "<td>" + data[index].Id + "</td>";
+            table += "<td>" + data[index].Name + "</td>";
+            table += "<td>" + data[index].Age + "</td>";
+            table += "<td class='sal'>" + data[index].Salary + "</td>";
+            table += "<td >" + data[index].Active + "</td>";
+            table += "</tr>";
+        }
+        table += "</table>";
+        $("#data").html(table);
+    }
+    function BindDuplicateGrid() {
+        var table = "<table border='1' id='duplicate'>";
+        table += "<tr><td>  <input type='checkbox' class='dupaa' name='dupcas' /></td>";
+        table += "<td>ID</td>";
+        table += "<td>Name</td>";
+        table += "<td>Age</td>";
+        table += "<td>Salary</td>";
+        table += "<td>Status</td></tr>";
+        table += "</table>";
+        $("#duplicateData").html(table);
+    }
+    function calculateSalary() {
+        debugger;
+        //Both are right
+        //$("tr td:nth-child(5)").each(function (e) {
+        //    debugger;
+        //    if ($(this).text() !== 'Salary') {
+        //        totalSalary += parseInt($(this).text());
+        //    }
+        //});
+        $("#original tr").each(function (e, dat) {
+            debugger;
+            if (e === 0)
+                return;
+            if (e === 1)
+                totalSalary = 0;
+            if ($(this).children("td:nth-child(1)").children("input").prop('checked')) {
+                totalSalary += parseInt($(this).children("td:nth-child(5)").text());
+            }
+        });
+        //$(".sal").each(function (e) {
+        //    debugger;
+        //    if (e === 0)
+        //        totalSalary = 0;
+        //    if ($(this).text()) {
+        //        totalSalary += parseInt($(this).text());
+        //    }
+        //});
+        $("span").empty();
+        $("span").html(totalSalary);
+    }
+    function insertIntoDuplicate() {
+        $("#original tr").each(function (e, dat) {
+            debugger;
+            if (e === 0) {
+                flag = false;
+                return;
+            }
+            if ($(this).children("td:nth-child(1)").children("input").prop("checked")) {
+                flag = true;
+                var tr = $(this).remove().clone();
+                $("#duplicate").append(tr);
+            }
+
+        });
+        if (!flag) {
+            alert("Please select atleast one row to move");
+        }
+    }
+    function insertIntoOriginal() {
+        debugger;
+        $("#duplicate tr").each(function (e, data) {
+            if (e === 0) {
+                flag = false;
+                return;
+            }
+            if ($(this).children("td:nth-child(1)").children("input:checkbox").prop("checked")) {
+                flag = true;
+                var tr = $(this).remove().clone();
+                $("#original tbody").append(tr);
+            }
+        });
+        if (!flag) {
+            alert("Please select atleast one row to move");
+        }
+    }
+</script>
+<body>
+    @using (Html.BeginForm())
+    {
+        <div id="data">
+        </div>
+        <input type="submit" value="Submit" name="Submit" />
+        <input type="button" value="Calculate Salary" onclick="calculateSalary()" />
+        <input type="button" value=">>" onclick="insertIntoDuplicate()" />
+        <input type="button" value="<<" onclick="insertIntoOriginal()" />
+        <span></span>
+        <div id="duplicateData">
+
+        </div>
+    }
+</body>
+</html>

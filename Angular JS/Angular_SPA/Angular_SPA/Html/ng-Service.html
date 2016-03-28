@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="Service App">
+<head>
+    <title>Angular JS Service</title>
+</head>
+<script src="../Scripts/angular.js"></script>
+<script src="../Angular/app.js"></script>
+<script src="../Angular/mycontroller.js"></script>
+<script src="../Angular/Service.js"></script>
+<script type="text/javascript">
+
+</script>
+<body ng-controller="ServiceController">
+    Enter a number:<input type="number" ng-model="number"><br/>
+    <button ng-click="square()" title="Calculate Square">X<sup>2</sup></button><br/>
+Result:{{result}}
+<br/>
+Enter num1:<input type="number" ng-model="number2"><br/>
+Enter num2:<input type="number" ng-model="number3"><br/>
+<button ng-click="addition()">Addition</button>
+    Result:{{result2}}
+</body>
+</html>

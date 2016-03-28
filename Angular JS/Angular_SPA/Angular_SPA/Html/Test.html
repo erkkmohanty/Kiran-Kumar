@@ -1,0 +1,53 @@
+﻿<html ng-app="MyApp">
+<head>
+    <title>AngularJS Tutorial</title>
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Angular/app.js"></script>
+    <script src="../Angular/mycontroller.js"></script>
+</head>
+<body>
+    <div id='content' ng-controller="MyController">
+        <h1>{{article}}!</h1>
+    </div>
+    <div ng-controller="BookStore">
+        <table class="mytable">
+            <tr>
+                <td>
+                    <span>Below output is produced from AngularJS's <strong>{{}}</strong> directive.</span>
+                </td>
+            </tr>
+            <tr ng-repeat="item in items">
+                <td>
+                    <p><b>{{item.Name}}</b> is in our stock.</p>
+                </td>
+            </tr>
+        </table>
+        <table class="mytable">
+            <tr>
+                <td>
+                   <span>Below output is produced from AngularJS's <strong>ng-bind</strong> directive.</span>
+                </td>
+            </tr>
+            <tr ng-repeat="item in items">
+                <td>
+                    <p><b><span ng-bind="item.Name"></b> is in our stock.</p>
+                </td>
+            </tr>
+        </table>
+         <table class="mytable">
+            <tr>
+               <td>
+                  <span>Below output is produced from AngularJS's <strong>ng-non-bindable</strong> directive.</span>
+               </td>
+            </tr>
+            <tr ng-repeat="item in items">
+               <td>
+                  <div ng-non-bindable>
+                     <p> <b>{{item.Name}}</b> is in our stock.</p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+    </div>
+</body>
+</html>

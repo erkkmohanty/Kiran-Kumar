@@ -1,0 +1,86 @@
+﻿<html ng-app="MyApp">
+<head>
+    <title>AngularJS Tutorial</title>
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Angular/app.js"></script>
+    <script src="../Angular/mycontroller.js"></script>
+    <script>
+        function toFixed(value, precision) {
+            var power = Math.pow(10, precision || 0);
+            return String(Math.round(value * power) / power);
+        }
+    </script>
+</head>
+<body>
+    <div ng-controller="BookStoreCRUD">
+
+        <div>
+            <table border="1" class="mytable">
+                <tr>
+                    <td>ISBN</td>
+                    <td><input type="text" ng-model="item.ISBN" /></td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" ng-model="item.Name" /></td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td><input type="number" ng-model="item.Price" /></td>
+                </tr>
+                <tr>
+                    <td>Quantity</td>
+                    <td><input type="number" ng-model="item.Quantity" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button"  ng-click="addItem(item)" value="Add to List"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <div style="padding-top: 15px;">
+            <table border="1" class="mytable">
+                <tr>
+                    <td>ISBN</td>
+                    <td>Name</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Total Price</td>
+                    <td>Action</td>
+                </tr>
+                <tr ng-repeat="item in items">
+                    <td>{{item.ISBN}}</td>
+                    <td>
+                        <span ng-hide="editMode">{{item.Name}}</span>
+                        <input type="text" ng-show="editMode" ng-model="item.Name" />
+                    </td>
+                    <td>
+                        <span ng-hide="editMode">{{item.Price}}</span>
+                        <input type="number" ng-show="editMode" ng-model="item.Price" />
+                    </td>
+                    <td>
+                        <span ng-hide="editMode">{{item.Quantity}}</span>
+                        <input type="number" ng-show="editMode" ng-model="item.Quantity" />
+                    </td>
+                    <td>{{(item.Quantity)*(item.Price)| number : 2}}
+                    </td>
+                    <td>
+                        <span>
+                            <button type="submit" ng-hide="editMode" ng-click="editMode=true;editItem($index)">Edit</button>
+                        </span>
+                        <span>
+                            <button type="submit" ng-show="editMode" ng-click="editMode = false;saveField($index)">Save</button></span>
+                        <span>
+                            <input type="button" value="Delete" ng-click="removeItem($index)" /></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+           <br />
+        <div style="font-weight:bold">Grand Total: {{totalPrice()}}</div>
+            <br />
+    </div>
+</body>
+</html>
