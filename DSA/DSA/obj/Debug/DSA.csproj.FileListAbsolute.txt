@@ -1,0 +1,6 @@
+E:\Kiran Kumar\DSA\DSA\bin\Debug\DSA.exe.config
+E:\Kiran Kumar\DSA\DSA\obj\Debug\DSA.csprojResolveAssemblyReference.cache
+E:\Kiran Kumar\DSA\DSA\bin\Debug\DSA.exe
+E:\Kiran Kumar\DSA\DSA\bin\Debug\DSA.pdb
+E:\Kiran Kumar\DSA\DSA\obj\Debug\DSA.exe
+E:\Kiran Kumar\DSA\DSA\obj\Debug\DSA.pdb

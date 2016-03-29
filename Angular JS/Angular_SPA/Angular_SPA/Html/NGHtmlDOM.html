@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app = "">
+<head>
+    <title>Angular HTML DOM</title>
+     <script src="../Scripts/angular.js"></script>
+</head>
+<body>
+   <h2>AngularJS Sample Application</h2>
+      <div >
+         
+         <table border = "0">
+           <tr>
+               <td>
+                   <input type="checkbox" ng-model="enableDisableButton" />Disable Button
+               </td>
+               <td><button ng-disabled="enableDisableButton">Click Here</button></td>
+           </tr>
+             <tr>
+                 <td>
+                     <input type="checkbox" ng-model="show" />Show Button
+                 </td>
+                 <td>
+                     <button ng-show="show">Click Here</button>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <input type="checkbox" ng-model="hide" />Hide Button
+                 </td>
+                 <td>
+                     <button ng-hide="hide">Click Here</button>
+                 </td>
+             </tr>
+             <tr>
+                 <td>Total Click:{{clickCounter}}</td>
+                 <td><button ng-click="clickCounter=clickCounter+1">Click Here</button></td>
+             </tr>
+         </table>
+         
+      </div>
+</body>
+</html>

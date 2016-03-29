@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryption Web Tool", "Encryption Web Tool\Encryption Web Tool.csproj", "{7C411F36-751A-4EAE-ADE5-F6442406EF73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{D9C73D6F-E2ED-452B-9F35-0BB358757188}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C411F36-751A-4EAE-ADE5-F6442406EF73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C411F36-751A-4EAE-ADE5-F6442406EF73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C411F36-751A-4EAE-ADE5-F6442406EF73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C411F36-751A-4EAE-ADE5-F6442406EF73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9C73D6F-E2ED-452B-9F35-0BB358757188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9C73D6F-E2ED-452B-9F35-0BB358757188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9C73D6F-E2ED-452B-9F35-0BB358757188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9C73D6F-E2ED-452B-9F35-0BB358757188}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

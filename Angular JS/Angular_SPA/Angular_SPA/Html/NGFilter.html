@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="">
+<head>
+    <title>Angular Filter</title>
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Angular/app.js"></script>
+    <script src="../Angular/mycontroller.js"></script>
+    <script type="text/javascript">
+       
+      
+    </script>
+</head>
+<body>
+    <div ng-controller="filterController">
+        Enter First Name:<input type="text" ng-model="student.firstName"><br />
+        Enter Last Name:<input type="text" ng-model="student.lastName"><br />
+        You have entered:{{student.fullName()|uppercase|lowercase}}<br />
+        Your fee:<span ng-bind="student.fees|currency"></span>
+        <table border="1">
+            <tr>
+                <td>Subject</td>
+                <td>Mark</td>
+            </tr>
+            <tr ng-repeat="subj in student.subjects | filter: subjectName|orderBy:'mark'">
+                <td>{{subj.name}}</td>
+                <td>{{subj.mark}}</td>
+            </tr>
+        </table>
+       Search: <input type="text" ng-model="subjectName" />
+    </div>
+</body>
+</html>

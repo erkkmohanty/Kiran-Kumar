@@ -1,0 +1,82 @@
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\Custom Membership.Tests.dll.config
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\Custom Membership.Tests.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\Custom Membership.Tests.pdb
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\Custom Membership.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\Microsoft.Data.Edm.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\Microsoft.Data.OData.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Net.Http.Formatting.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Spatial.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Web.Helpers.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Web.Http.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Web.Http.OData.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Web.Http.WebHost.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Web.Mvc.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Web.Razor.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Web.WebPages.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\EntityFramework.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Web.Optimization.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\DotNetOpenAuth.AspNet.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\DotNetOpenAuth.Core.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\DotNetOpenAuth.OAuth.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\DotNetOpenAuth.OpenId.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\Custom Membership.pdb
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Net.Http.Formatting.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Web.Helpers.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Web.Http.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Web.Http.WebHost.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Web.Mvc.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Web.Razor.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Web.WebPages.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Web.Http.OData.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\Microsoft.Data.Edm.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\Microsoft.Data.OData.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\System.Spatial.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\EntityFramework.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\DotNetOpenAuth.AspNet.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\DotNetOpenAuth.Core.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\DotNetOpenAuth.OAuth.Consumer.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\DotNetOpenAuth.OAuth.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\DotNetOpenAuth.OpenId.xml
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\de\Microsoft.Data.OData.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\es\Microsoft.Data.OData.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\it\Microsoft.Data.OData.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\de\System.Spatial.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\es\System.Spatial.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\fr\System.Spatial.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\it\System.Spatial.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\ja\System.Spatial.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\ko\System.Spatial.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\ru\System.Spatial.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\zh-Hans\System.Spatial.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\bin\Debug\zh-Hant\System.Spatial.resources.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\obj\Debug\Custom Membership.Tests.csprojResolveAssemblyReference.cache
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\obj\Debug\Custom Membership.Tests.dll
+E:\Kiran Kumar\Custom Membership\Custom Membership.Tests\obj\Debug\Custom Membership.Tests.pdb

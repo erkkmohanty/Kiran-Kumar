@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="View Module">
+<head>
+    <title></title>
+</head>
+<script src="../Scripts/angular.js"></script>
+<script src="../Scripts/angular-route.js"></script>
+<script src="../Angular/app.js"></script>
+<script src="../Angular/mycontroller.js"></script>
+<script type="text/javascript">
+    var app = angular.module("View Module", ["MyApp", "MyFilter", "ngRoute"]);
+    app.controller("ViewController", function ($scope) {
+        $scope.message = "Welcome To SPA";
+    });
+    app.config(["$routeProvider", function ($routeProvider) {
+        debugger;
+        $routeProvider.
+            when("/view", {
+                templateUrl: "Test.html",
+                controller: "BookStore"
+            }).
+            when("/add", {
+                templateUrl: "Test2.html",
+                controller: "BookStoreCRUD"
+            }).
+            when("/filter", {
+                templateUrl: "NGFilter.html",
+                controller: "filterController"
+            }).when("/welcome", {
+                templateUrl: "welcome",
+                controller: "ViewController"
+            }).
+        otherwise({
+            redirectTo: "/welcome"
+        });
+    }]);
+</script>
+<style>
+    table, th, td {
+        border: 1px solid grey;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+
+        table tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+</style>
+<body ng-controller="ViewController">
+    <script type="text/ng-template" id="addStudent.htm">
+        <h2>Add Student</h2>
+    </script>
+    <h2>AngularJS Sample SPA</h2>
+    <div ng-app="mainApp">
+        <table>
+            <tr>
+                <td>
+                    <p><a href="#welcome">Home</a></p>
+                </td>
+                <td>
+                    <p><a href="#add">Add Book</a></p>
+                </td>
+                <td>
+                    <p><a href="#view">View Book</a></p>
+                </td>
+                <td>
+                    <p><a href="#filter">View Filter</a></p>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <div ng-view></div>
+        <script type="text/ng-template" id="Script1">
+ <h2> Add Student </h2>
+ {{message}}
+        </script>
+        <!-- <script type="text/ng-template" id="Test.html">
+ <h2> View Students </h2>
+        </script>-->
+        <script type="text/ng-template" id="welcome">
+ <h2> Home Page </h2>
+             {{message}}
+        </script>
+    </div>
+</body>
+</html>

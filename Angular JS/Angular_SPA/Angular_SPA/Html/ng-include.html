@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="Include Model">
+<head>
+    <title>Angular JS Includes</title>
+</head>
+<style>
+    table, th, td {
+        border: 1px solid grey;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+
+        table tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+</style>
+<script src="../Scripts/angular.js"></script>
+<script src="../Angular/app.js"></script>
+<script src="../Angular/mycontroller.js"></script>
+<script>
+    var app = angular.module("Include Model", ["MyApp"]);
+    app.controller("IncludeController", function ($scope) {
+
+    });
+</script>
+<body ng-controller="IncludeController">
+    <h2>AngularJS Sample Application</h2>
+    <div ng-include="'Test.html'"></div>
+    <div ng-include="'Test2.html'"></div>
+</body>
+</html>
