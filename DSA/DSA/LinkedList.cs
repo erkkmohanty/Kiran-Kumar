@@ -143,6 +143,10 @@ namespace DSA
                 counter++;
             }
         }
+        public void Reverse()
+        {
+
+        }
         /// <summary>
         /// Search by iteration
         /// </summary>
@@ -181,18 +185,44 @@ namespace DSA
             return SearchByRecursion(head, data);
         }
 
-        public string SwapNodes(T data1, T data2)
+        /// <summary>
+        /// Swap Two Nodes
+        /// </summary>
+        /// <param name="dataX"></param>
+        /// <param name="dataY"></param>
+        public void Swap(T dataX, T dataY)
         {
-            if (!SearchByIteration(data1) || !SearchByIteration(data2))
-                return "Data not present in LinkedList";
-            var pn1 = GetPrevAndNextNodes(data1);
-            var pn2 = GetPrevAndNextNodes(data2);
-            Node<T> prevNode1 = pn1.Previous, prevNode2 = pn2.Previous;
-            Node<T> nextNode1 = pn1.Next, nextNode2 = pn2.Next;
-            Node<T> tempPrev = null, tempNext = null;
-            if (prevNode1 == null || nextNode2 == null)
-                return "Failure";
-            return "Failure";
+            Node<T> prevNodeX = null, prevNodeY = null, currNodeX = null, currNodeY = null;
+            if (dataX == null || dataY == null)
+                return;
+            if (dataX.Equals(dataY))
+                return;
+            currNodeX = currNodeY = head;
+            while (currNodeX != null && !currNodeX.data.Equals(dataX))
+            {
+                prevNodeX = currNodeX;
+                currNodeX = currNodeX.next;
+            }
+            while (currNodeY != null && !currNodeY.data.Equals(dataY))
+            {
+                prevNodeY = currNodeY;
+                currNodeY = currNodeY.next;
+            }
+
+            if (currNodeX == null || currNodeY == null)
+                return;
+            if (prevNodeX != null)
+                prevNodeX.next = currNodeY;
+            else
+                head = currNodeY;
+            if (prevNodeY != null)
+                prevNodeY.next = currNodeX;
+            else
+                head = currNodeX;
+            Node<T> temp = currNodeX.next;
+            currNodeX.next = currNodeY.next;
+            currNodeY.next = temp;
+            temp = null;
 
         }
         /// <summary>
@@ -202,11 +232,11 @@ namespace DSA
         /// <returns></returns>
         public dynamic GetPrevAndNextNodes(T data)
         {
-            Node<T> prevNode=null;
+            Node<T> prevNode = null;
             Node<T> nextNode = null;
             if (head == null)
                 return new { Previous = prevNode, Next = nextNode };
-            if(head.data.Equals(data))
+            if (head.data.Equals(data))
             {
                 nextNode = head.next;
                 return new { Previous = prevNode, Next = nextNode };
@@ -215,7 +245,7 @@ namespace DSA
             Node<T> currentNode = head.next;
             while (currentNode != null)
             {
-                if(currentNode.data.Equals(data))
+                if (currentNode.data.Equals(data))
                 {
                     nextNode = currentNode.next;
                     break;
