@@ -1,6 +1,0 @@
-E:\Kiran Kumar\Reference_Test\Reference_Test\bin\Debug\Reference_Test.exe.config
-E:\Kiran Kumar\Reference_Test\Reference_Test\bin\Debug\Reference_Test.exe
-E:\Kiran Kumar\Reference_Test\Reference_Test\bin\Debug\Reference_Test.pdb
-E:\Kiran Kumar\Reference_Test\Reference_Test\obj\Debug\Reference_Test.csprojResolveAssemblyReference.cache
-E:\Kiran Kumar\Reference_Test\Reference_Test\obj\Debug\Reference_Test.exe
-E:\Kiran Kumar\Reference_Test\Reference_Test\obj\Debug\Reference_Test.pdb
