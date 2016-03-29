@@ -41,9 +41,9 @@ namespace DSA
              linkedList.GetPrevAndNextNodes(0);
              linkedList.GetPrevAndNextNodes(7);
              linkedList.GetPrevAndNextNodes(39999);
-             linkedList.SwapNodes(1, 3);
+             linkedList.Swap(1, 3);
              DisplayLinkedList(linkedList);
-             linkedList.SwapNodes(5,7);
+             linkedList.Swap(5,7);
              DisplayLinkedList(linkedList);
             
         }
