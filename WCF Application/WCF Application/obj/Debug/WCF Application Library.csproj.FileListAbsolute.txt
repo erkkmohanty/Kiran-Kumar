@@ -1,0 +1,6 @@
+E:\Kiran Kumar\WCF Application\WCF Application\bin\Debug\WCF Application.dll.config
+E:\Kiran Kumar\WCF Application\WCF Application\bin\Debug\WCF Application.dll
+E:\Kiran Kumar\WCF Application\WCF Application\bin\Debug\WCF Application.pdb
+E:\Kiran Kumar\WCF Application\WCF Application\obj\Debug\WCF Application Library.csprojResolveAssemblyReference.cache
+E:\Kiran Kumar\WCF Application\WCF Application\obj\Debug\WCF Application.dll
+E:\Kiran Kumar\WCF Application\WCF Application\obj\Debug\WCF Application.pdb

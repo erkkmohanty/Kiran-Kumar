@@ -11,7 +11,7 @@ namespace Reference_Test
         static void Main(string[] args)
         {
             Wrapper<MyClass> cl1 = new Wrapper<MyClass>();
-            cl1.Value = new MyClass();
+            cl1.Value = new MyClass { name="Hello"};
             Wrapper<MyClass> cl2 = cl1;
             cl1.Value = null;
             Console.ReadLine();
