@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,8 +22,14 @@ namespace DSA
             Node<int> node8 = new Node<int>(7);
             linkedList.head = node1;
             node1.next = node2;
+            linkedList.GetMiddleNode();
+            linkedList.GetMiddleNodeEfficientApproach();
             node2.next = node3;
+            linkedList.GetMiddleNode();
+            linkedList.GetMiddleNodeEfficientApproach();
             node3.next = node4;
+            linkedList.GetMiddleNode();
+            linkedList.GetMiddleNodeEfficientApproach();
             node4.next = node5;
             node5.next = node6;
             node6.next = node7;
@@ -45,6 +52,9 @@ namespace DSA
              DisplayLinkedList(linkedList);
              linkedList.Swap(5,7);
              DisplayLinkedList(linkedList);
+             Node<int> node=linkedList.GetNthNodebyIndex(10);
+             Node<int> midNode = linkedList.GetMiddleNode();
+             Debug.Assert(node != null);
             
         }
         public static void DisplayLinkedList<T>(LinkedList<T> linkedList)

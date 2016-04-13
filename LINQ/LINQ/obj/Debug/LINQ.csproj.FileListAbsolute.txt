@@ -1,0 +1,6 @@
+E:\Kiran Kumar\LINQ\LINQ\bin\Debug\LINQ.exe.config
+E:\Kiran Kumar\LINQ\LINQ\bin\Debug\LINQ.exe
+E:\Kiran Kumar\LINQ\LINQ\bin\Debug\LINQ.pdb
+E:\Kiran Kumar\LINQ\LINQ\obj\Debug\LINQ.csprojResolveAssemblyReference.cache
+E:\Kiran Kumar\LINQ\LINQ\obj\Debug\LINQ.exe
+E:\Kiran Kumar\LINQ\LINQ\obj\Debug\LINQ.pdb

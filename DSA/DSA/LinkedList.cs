@@ -12,6 +12,9 @@ namespace DSA
     /// <typeparam name="T"></typeparam>
     public class LinkedList<T>
     {
+        /// <summary>
+        /// Represents head of a linked list
+        /// </summary>
         public Node<T> head { get; set; }
         /// <summary>
         /// Length by normal iteration
@@ -254,6 +257,62 @@ namespace DSA
                 currentNode = currentNode.next;
             }
             return new { Previous = prevNode, Next = nextNode };
+        }
+        /// <summary>
+        /// Get Nth node by index .Index starts from 0.
+        /// Here Time complexity is O(n)
+        /// </summary>
+        /// <param name="index"></param>
+        /// <returns>Node of Type T</returns>
+        public Node<T> GetNthNodebyIndex(int index)
+        {
+            if (index < 0)
+                return null;
+            Node<T> currentNode = null;
+            int counter = 0;
+            currentNode = head;
+            while (currentNode != null)
+            {
+                if (counter == index)
+                    break;
+                currentNode = currentNode.next;
+                counter++;
+            }
+            return currentNode;
+        }
+        /// <summary>
+        /// Get Middle node of a linkedlist
+        /// </summary>
+        /// <returns>Node of Type T</returns>
+        public Node<T> GetMiddleNode()
+        {
+            if (head != null && head.next == null)
+                return head;
+            Node<T> currentNode = head;
+            int index = 0;
+            int midLength = (Length / 2);
+            while (currentNode != null)
+            {
+                if (index == midLength)
+                    break;
+                currentNode = currentNode.next;
+                index++;
+            }
+            return currentNode;
+        }
+        /// <summary>
+        /// Get middle node of a linkedlist by an efficient approach
+        /// </summary>
+        /// <returns>Node of type T</returns>
+        public Node<T> GetMiddleNodeEfficientApproach()
+        {
+            Node<T> fastPointer = head, slowPointer = head;
+            while (fastPointer != null && fastPointer.next != null)
+            {
+                fastPointer = fastPointer.next.next;
+                slowPointer = slowPointer.next;
+            }
+            return slowPointer;
         }
     }
     /// <summary>
