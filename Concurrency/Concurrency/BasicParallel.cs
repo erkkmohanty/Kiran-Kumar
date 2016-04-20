@@ -51,5 +51,17 @@ namespace Concurrency
             Action[] actions = Enumerable.Repeat(action, 20).ToArray();
             Parallel.Invoke(actions);
         }
+
+        static void DoAction20Times(Action action, CancellationToken cancelToken)
+        {
+            Action[] actions = Enumerable.Repeat(action, 20).ToArray();
+            Parallel.Invoke(new ParallelOptions { CancellationToken = cancelToken }, action);
+        }
+
+
+        internal static IEnumerable<int> MultiplyBy2(IEnumerable<int> values)
+        {
+            return values.AsParallel().AsOrdered().Select(item => item * 2);
+        }
     }
 }

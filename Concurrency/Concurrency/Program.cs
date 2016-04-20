@@ -12,7 +12,8 @@ namespace Concurrency
         static void Main(string[] args)
         {
             //BasicAsyncP();
-            BasicParallelP();
+            //BasicParallelP();
+            BasicDataFlowP();
         }
 
         private static void BasicAsyncP()
@@ -33,9 +34,15 @@ namespace Concurrency
 
         private static void BasicParallelP()
         {
+            var data=BasicParallel.MultiplyBy2(new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }).ToList();
             BasicParallel.ParallelSum(new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
             BasicParallel.ParallelSumLinq(new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
             BasicParallel.ProcessArray(new double[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
+        }
+
+        private static void BasicDataFlowP()
+        {
+            BasicDataFlow.CreateMesh();
         }
 
         static async Task CallMyMethodAsync()
