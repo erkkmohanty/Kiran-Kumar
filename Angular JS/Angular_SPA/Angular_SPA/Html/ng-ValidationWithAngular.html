@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html ng-app="ValidationModule">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<script src="../Scripts/angular.js"></script>
+<script type="text/javascript">
+    var app = angular.module("ValidationModule", []);
+
+    function validationController($scope) {
+        $scope.userfullName;
+        $scope.useremail;
+        $scope.userpassword;
+        $scope.AddUser = function () {
+            if ($scope.adduser.$valid) {
+                alert('all inputs are valid ');
+            }
+            else {
+                alert('all inputs are not valid ');
+            }
+            console.log("Add user fired");
+            console.log('user name : ' + $scope.userfullName);
+            console.log('user email : ' + $scope.useremail);
+            console.log('user password :' + $scope.userpassword);
+        }
+    }
+
+    app.controller("validationCtrl", validationController);
+</script>
+<body ng-controller="validationCtrl">
+    <form name="adduser" novalidate>
+        <!-- NAME -->
+        <div id="name-group" class="form-group-lg" ng-class="{ 'has-error' : adduser.name.$invalid && !adduser.name.$pristine }">
+            <input type="text"
+                   ng-required="true"
+                   name="name"
+                   ng-model="userfullName"
+                   class="form-control"
+                   placeholder="Full Name">
+            <span class="help-block"
+                  ng-show="adduser.name.$invalid && !adduser.name.$pristine">
+                You name is required.
+            </span>
+        </div>
+        <div id="name-group" class="form-group-lg">
+            <input type="email"
+                   ng-required="true"
+                   name="email"
+                   ng-model="useremail"
+                   class="form-control"
+                   placeholder="Email">
+        </div>
+        <div id="name-group" class="form-group-lg">
+            <input type="password"
+                   ng-required="true"
+                   ng-model="userpassword"
+                   name="password"
+                   ng-minlength="5"
+                   class="form-control "
+                   placeholder="Password atleast 6 character">
+        </div>
+        <div id="name-group" class="form-group-lg">
+            <button type="submit" ng-click="AddUser()" class="form-control btn btn-info" >
+                Register
+            </button>
+        </div>
+    </form>
+</body>
+</html>

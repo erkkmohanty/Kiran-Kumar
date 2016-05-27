@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html ng-app="CustomFilter">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<script src="../Scripts/angular.js"></script>
+<script src="../Angular/app.js"></script>
+<script src="../Angular/Filter/filter.js"></script>
+<script>
+    var fliterApp = angular.module("CustomFilter", []);
+    fliterApp.controller("filterCtrl", ["$scope", function ($scope) {
+        var nn = ["kiran kumar mohanty", "chanchal sharma"];
+        $scope.names = nn;
+    }]);
+    fliterApp.filter("camelCase", function () {
+        debugger;
+        return function (word) {
+            var cc = word.split(' ');
+            for (var c in cc) {
+                cc[c] = capitalizeFirstLetter(cc[c]);
+            } 
+            return cc.join(' ');
+        }
+    });
+
+    function capitalizeFirstLetter(string) {
+        debugger;
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
+   
+</script>
+<body ng-controller="filterCtrl">
+    <div ng-repeat="n in names">
+        {{n|camelCase}}
+    </div>
+</body>
+</html>

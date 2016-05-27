@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <span><b>$scope</b> example</span><br />
+    <div ng-controller="parentCtrl">
+        <span>Parent Properties</span><br />
+        Name:{{name}}<br />
+        Age:{{age}}<br />
+        City:{{city}}<br/>
+        Add:{{add()}}<br/>
+        Result:{{result()}}
+        <div ng-controller="childCtrl">
+            <span>Child Properties</span><br />
+            Type:{{type}}<br />
+            Name:{{name}}<br />
+            Age:{{age}}<br />
+            Parent Name:{{$parent.name}}<br />
+            Parent City:{{$parent.city}}<br />
+            Add:{{$parent.add()}}<br/>
+            Result:{{$parent.result()}}
+        </div>
+    </div>
+    <br /><span><b>controllerAs</b> example</span><br />
+    <div ng-controller="parentCtrl2 as parent">
+        <span>Parent Properties</span><br />
+        Name:{{parent.name}}<br />
+        Age:{{parent.age}}<br />
+        City:{{parent.city}}<br/>
+        Add:{{parent.add()}}<br/>
+        Result:{{parent.result()}}
+        <div ng-controller="childCtrl2 as child">
+            <span>Child Properties</span><br />
+            Type:{{type}}<br />
+            Name:{{child.name}}<br />
+            Age:{{child.age}}<br />
+            Parent Name:{{parent.name}}<br />
+            Parent City:{{parent.city}}<br />
+            Add:{{parent.add()}}<br/>
+            Result:{{parent.result()}}
+        </div>
+    </div>
+</body>
+<script src="../Scripts/angular.js"></script>
+<script>
+    angular.module("ControllerAsModule", []);//This is the setter method for creating angular
+    var appModule = angular.module("ControllerAsModule");//This is the getter method for getting the existing module
+    appModule.controller("parentCtrl", function ($scope) {
+        $scope.name = "Kiran Kumar Mohanty";
+        $scope.age = 22;
+        $scope.city = "Delhi";
+        $scope.add = function () {
+            return 2 + 2;
+        };
+        $scope.result = function() {
+            console.log("Parent Controller Start--------------------");
+            console.log(this, $scope);
+            console.log("Parent Controller End--------------------");
+        };
+    });
+    appModule.controller("childCtrl", function ($scope) {
+        $scope.name = "Aditya";
+        $scope.age = 23;
+        $scope.type = "child";
+    });
+
+    appModule.controller("parentCtrl2", function ($scope) {
+        var parObj = this;
+        parObj.name = "Kiran Kumar Mohanty";
+        parObj.age = 22;
+        parObj.city = "Delhi";
+        parObj.add = function () {
+            return 2 + 2;
+        }
+        parObj.result = function () {
+            //console.log("Parent Controller Start--------------------");
+            //console.log(this, $scope);
+            //console.log("Parent Controller End--------------------");
+        };
+    });
+    appModule.controller("childCtrl2", function ($scope) {
+        var chObj = this;
+        chObj.name = "Aditya";
+        chObj.age = 23;
+        $scope.type = "child";
+       
+    });
+
+    angular.bootstrap(document, ["ControllerAsModule"]);
+</script>
+</html>

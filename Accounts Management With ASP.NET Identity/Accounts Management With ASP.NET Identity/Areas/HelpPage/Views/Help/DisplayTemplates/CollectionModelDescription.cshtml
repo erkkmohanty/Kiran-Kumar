@@ -1,0 +1,6 @@
+@using Accounts_Management_With_ASP.NET_Identity.Areas.HelpPage.ModelDescriptions
+@model CollectionModelDescription
+@if (Model.ElementDescription is ComplexTypeModelDescription)
+{
+    @Html.DisplayFor(m => m.ElementDescription)
+}

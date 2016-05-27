@@ -101,3 +101,31 @@ customDirApp.controller("StudentCtrl", ["$scope", function ($scope) {
     $scope.Piyush.name = "Piyush Parashar";
     $scope.Piyush.rollno = 2;
 }]);
+
+myApp.controller('VideoController', function ($scope) {
+    $scope.video = 'zRtPUIumXcY';
+});
+
+
+appRoute.controller("addCtrl", function ($scope) {
+    $scope.Message = "Add Control Message";
+});
+
+appRoute.controller("updateCtrl", function ($scope) {
+    $scope.Message = "Update Control Message";
+});
+
+appRoute.controller("deleteCtrl", function ($scope) {
+    $scope.Message = "Delete Control Message";
+});
+
+appRoute.controller("showCtrl", function($scope,$routeParams) {
+    $scope.Message = "Show Control Message";
+    $scope.ProductId = $routeParams.id;
+});
+
+appRoute.controller("searchCtrl", function($scope, $routeParams, $location) {
+    $scope.changeView = function() {
+        $location.path("/Update");
+    };
+});

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html ng-app="BootStrapModule">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<script src="../Scripts/angular.js"></script>
+<script src="../Scripts/angular-ui/ui-bootstrap.js"></script>
+<link href="../Content/bootstrap.css" rel="stylesheet" />
+
+<script type="text/javascript">
+    var app = angular.module("BootStrapModule", ['ui.bootstrap']);
+    function bootStrapController($scope) {
+        $scope.subjects = ["AngularJS", "NodeJS", "Mongo DB", "Express JS", "ASP.Net MVC", "Big Data", "Knockout JS"];
+        $scope.selecteditem;
+        $scope.dropdownboxitemSelected = function (item) {
+            $scope.selecteditem = item;
+            alert($scope.selecteditem + "Item Clicked");
+        };
+    }
+
+    app.controller("BootStrapCtrl", bootStrapController);
+</script>
+<body ng-controller="BootStrapCtrl">
+    <form class="form" name="form" novalidate>
+        <div class="btn-group" dropdown>
+            <button type="button"
+                    class="btn btn-primary dropdown-toggle"
+                    dropdown-toggle>
+                Button dropdown <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+               
+                <li>
+                    <a href="#">Action</a>
+                </li>
+                <li>
+                    <a href="#">Another action</a>
+                </li>
+                <li>
+                    <a href="#">Something else here</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#">Separated link</a>
+                </li>
+            </ul>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html ng-app="ProviderModule">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<script src="../Scripts/angular.js"></script>
+<script type="text/javascript">
+    var app = angular.module("ProviderModule", []);
+    app.config(function ($provide) {
+        $provide.provider("globalSetting", function () {
+            this.$get = function () {
+                var appName = "Provider Application-Angular";
+                return {
+                    name: appName
+                };
+            }
+        });
+    });
+
+    function ProviderController($scope, globalSetting) {
+        $scope.appName = globalSetting.name;
+    }
+
+    ProviderController.$inject = ["$scope", "globalSetting"];
+    app.controller("providerCtrl", ProviderController);
+
+    //provider using module
+
+    app.provider("appSetting", function () {
+        this.$get = function () {
+            return {
+                appName: "Provider using Angular Module"
+            }
+        };
+    });
+
+    app.config(function (appSettingProvider) {
+
+    });
+
+    app.controller("MyCtrl", [
+        "$scope", "appSetting", function ($scope, appSetting) {
+            $scope.name = appSetting.appName;
+        }
+    ]);
+
+    //provider with setter
+
+    app.provider("globalApp", function () {
+        var appName = "Angular Provider with Setter";
+        this.setAppName = function (value) {
+            appName = value;
+        };
+        this.$get = function () {
+            return {
+                globalName: appName
+            }
+        };
+    });
+
+    app.config(function (globalAppProvider) {
+        globalAppProvider.setAppName("Provider with setter");
+    });
+
+    app.controller("globalCtrl", function($scope, globalApp) {
+        $scope.AplicationName = globalApp.globalName;
+    });
+
+    //Refactoring factory () to use $provide service
+
+    app.config(function($provide) {
+        $provide.factory("calcFactory", function() {
+            return {
+                add:function(a,b) {
+                    return a + b;
+                }
+            }
+        });
+    });
+
+    app.controller("calcfactController", function($scope, calcFactory) {
+        $scope.result = calcFactory.add(101, 2);
+    });
+</script>
+<body ng-controller="providerCtrl">
+    {{appName}}
+<div ng-controller="MyCtrl">
+    {{name}}
+</div>
+<div ng-controller="globalCtrl">
+    {{AplicationName}}
+</div>
+<div ng-controller="calcfactController">
+    {{result}}
+</div>
+</body>
+</html>

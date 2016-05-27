@@ -1,5 +1,6 @@
 ﻿using Accounts_Management_With_ASP.NET_Identity.Infrastructure;
 using Accounts_Management_With_ASP.NET_Identity.Migrations;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace Accounts_Management_With_ASP.NET_Identity.Models
     {
         private UrlHelper _urlHelper;
         private ApplicationUserManager _applicationUsermanager;
-        public ModelFactory(HttpRequestMessage requestMessage,ApplicationUserManager appUserManager)
+        public ModelFactory(HttpRequestMessage requestMessage, ApplicationUserManager appUserManager)
         {
             _urlHelper = new UrlHelper(requestMessage);
             _applicationUsermanager = appUserManager;
@@ -35,6 +36,16 @@ namespace Accounts_Management_With_ASP.NET_Identity.Models
                 Claims = _applicationUsermanager.GetClaimsAsync(appUser.Id).Result
             };
         }
+        public RoleReturnModel Create(IdentityRole appRole)
+        {
+
+            return new RoleReturnModel
+            {
+                Url = _urlHelper.Link("GetRoleById", new { id = appRole.Id }),
+                Id = appRole.Id,
+                Name = appRole.Name
+            };
+        }
     }
     public class UserReturnModel
     {
@@ -48,5 +59,11 @@ namespace Accounts_Management_With_ASP.NET_Identity.Models
         public DateTime JoinDate { get; set; }
         public IList<string> Roles { get; set; }
         public IList<System.Security.Claims.Claim> Claims { get; set; }
+    }
+    public class RoleReturnModel
+    {
+        public string Url { get; set; }
+        public string Id { get; set; }
+        public string Name { get; set; }
     }
 }

@@ -73,5 +73,10 @@ namespace DSA
             Console.WriteLine("The Length of the linkedlist is::" + linkedList.Length);
             Console.WriteLine("The Length of the linkedlist is::" + linkedList.GetLength());
         }
+
+        public static void Count()
+        {
+            Miscellaneous.CountMinimalWay(new int[] { 123, 234, 345, 456, 567, 789 });
+        }
     }
 }

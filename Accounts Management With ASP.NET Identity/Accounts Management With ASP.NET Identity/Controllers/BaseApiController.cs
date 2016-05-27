@@ -1,4 +1,5 @@
-﻿using Accounts_Management_With_ASP.NET_Identity.Migrations;
+﻿using Accounts_Management_With_ASP.NET_Identity.Infrastructure;
+using Accounts_Management_With_ASP.NET_Identity.Migrations;
 using Accounts_Management_With_ASP.NET_Identity.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
@@ -15,7 +16,7 @@ namespace Accounts_Management_With_ASP.NET_Identity.Controllers
     {
         private ModelFactory _modelFactory;
         private ApplicationUserManager _AppUserManager = null;
-
+        private ApplicationRoleManager _AppRoleManager = null;
         protected ApplicationUserManager AppUserManager
         {
             get
@@ -36,6 +37,13 @@ namespace Accounts_Management_With_ASP.NET_Identity.Controllers
                     _modelFactory = new ModelFactory(this.Request, this.AppUserManager);
                 }
                 return _modelFactory;
+            }
+        }
+        protected ApplicationRoleManager AppRoleManager
+        {
+            get
+            {
+                return _AppRoleManager ?? Request.GetOwinContext().GetUserManager<ApplicationRoleManager>();
             }
         }
 

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html ng-app="ValidationModule">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<script src="../Scripts/angular.js"></script>
+<script type="text/javascript">
+    var app = angular.module("ValidationModule", []);
+
+    function validationController($scope) {
+        alert("hi");
+        $scope.userfullName ;
+        $scope.useremail ;
+        $scope.userpassword ;
+        $scope.AddUser=function() {
+            console.log("Add user fired");
+            console.log('user name : ' + $scope.userfullName);
+            console.log('user email : ' + $scope.useremail);
+            console.log('user password :' + $scope.userpassword);
+        }
+    }
+
+    app.controller("validationCtrl", validationController);
+</script>
+<body ng-controller="validationCtrl" >
+    <div class="row">
+        <form name="adduser" ng-submit="AddUser(adduser.$valid)">
+            <div id="name-group" class="form-group-lg">
+                <input type="text"
+                       required
+                       name="name"
+                       ng-model="userfullName"
+                       class="form-control"
+                       placeholder="Full Name">
+            </div>
+            <div id="name-group" class="form-group-lg">
+                <input type="email"
+                       required
+                       name="email"
+                       ng-model="useremail"
+                       class="form-control"
+                       placeholder="Email">
+            </div>
+            <div id="name-group" class="form-group-lg">
+                <input type="password"
+                       required
+                       ng-model="userpassword"
+                       name="password"
+                       class="form-control "
+                       placeholder="Password atleast 6 character">
+            </div>
+            <div id="name-group" class="form-group-lg">
+                <button type="submit"  class="form-control btn btn-info" value="submit" ></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+</head>
+
+<script src="../Scripts/angular.js"></script>
+
+<body >
+<div ng-controller="ProductttController">
+    Named function:<br/>
+    {{greet}}
+</div>
+<div ng-controller="InlineController">
+    Inline function:<br/>
+    {{data}}
+</div>
+    <div ng-controller="InjectController">
+        Inject function:<br />
+        {{indata}}
+    </div>
+</body>
+<script type="text/javascript">
+    var app = angular.module('app', []);
+
+    function ProductController($scope) {
+        $scope.greet = "Infragistics";
+    };
+    app.controller('ProductttController', ['$scope', ProductController]);
+
+    app.controller("InlineController", [
+        "$scope", function(sc) {
+            sc.data = "My Data";
+        }
+    ]);
+
+    function injectController($scope) {
+        $scope.indata = "Injected Data";
+    }
+
+    injectController.$inject = ["$scope"];
+    app.controller("InjectController", injectController);
+</script>
+</html>

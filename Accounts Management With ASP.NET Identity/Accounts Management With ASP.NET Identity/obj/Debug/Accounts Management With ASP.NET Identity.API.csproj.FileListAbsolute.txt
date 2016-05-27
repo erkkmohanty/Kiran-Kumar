@@ -67,3 +67,26 @@ E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management Wit
 E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\obj\Debug\Accounts_Management_With_ASP.NET_Identity.Migrations.InitialCreate.resources
 E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\obj\Debug\Accounts Management With ASP.NET Identity.API.csproj.GenerateResource.Cache
 E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\obj\Debug\Accounts Management With ASP.NET Identity.API.csprojResolveAssemblyReference.cache
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\Microsoft.Web.Infrastructure.dll
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\System.Web.Helpers.dll
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\System.Web.Mvc.dll
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\System.Web.Razor.dll
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\System.Web.WebPages.Deployment.dll
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\System.Web.WebPages.dll
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\System.Web.WebPages.Razor.dll
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\System.Web.Helpers.xml
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\System.Web.Mvc.xml
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\System.Web.Razor.xml
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\System.Web.WebPages.xml
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\System.Web.WebPages.Deployment.xml
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\System.Web.WebPages.Razor.xml
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\SendGrid.dll
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\SendGrid.SmtpApi.dll
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\SendGridMail.dll
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\Thinktecture.IdentityModel.Core.dll
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\System.IdentityModel.Tokens.Jwt.pdb
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\Thinktecture.IdentityModel.Core.pdb
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\Microsoft.Owin.Security.Jwt.dll
+E:\Kiran Kumar\Accounts Management With ASP.NET Identity\Accounts Management With ASP.NET Identity\bin\Microsoft.Owin.Security.Jwt.xml

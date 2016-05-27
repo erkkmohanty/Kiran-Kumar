@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html ng-app="CustomDirectiveApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<script src="../Scripts/angular.js"></script>
+<link href="../Content/bootstrap.css" rel="stylesheet" />
+<script type="text/javascript">
+    var app = angular.module("CustomDirectiveApp", []);
+    app.controller("MyCtrl", function ($scope) {
+        console.log($scope);
+        $scope.studentsList = [
+            { "Name": "Kiran Kumar", "Age": "25", "Pos": "Software Engineer" },
+            { "Name": "ABCD", "Age": "23", "Pos": "S" }
+        ];
+        $scope.student = { Name: "Mohanty Kiran Kumar", Age: 23, subject: ["MEAN", ".NET"] };
+        $scope.ShowData = function () {
+            alert("Display Data");
+        }
+    });
+
+    app.controller("customCtrl", function ($scope) {
+        $scope.Product1 = { Name: "Product 1", Price: 23.45, Quantity: 100, Stock: true };
+        $scope.Product2 = { Name: "Product 2", Price: 29.78, Quantity: 250, Stock: false };
+        $scope.Product3 = { Name: "Product 3", Price: 31.45, Quantity: 350, Stock: false };
+        $scope.ShowData = function () {
+            alert("Display Data");
+        }
+    });
+
+    app.controller("directiveCtrl", function ($scope) {
+        $scope.student = { name: "Kiran Kumar Mohanty", age: 23, subject: ["MEAN STACK", "ASP.Net MVC"] };
+        $scope.setGrade = function(student) {
+            student.grade = "O";
+        };
+    });
+    app.controller("HelloCtrl", function ($scope) {
+        $scope.student = { name: "Kiran Kumar Mohanty", age: 23, subject: ["MEAN STACK", "ASP.Net MVC"] };
+        $scope.setGrade = function (student) {
+            student.grade = "O";
+        };
+    });
+    app.directive("myName", function () {
+        return {
+            template: "Kiran Kumar Mohanty"
+        }
+    });
+    app.directive("myTitle", function () {
+        return {
+            template: "Custom Directive"
+        }
+    });
+    //Directive with inherited scope
+    app.directive("studentDirective", function () {
+        return {
+            template: "<span>{{stud.Name}} is {{stud.Age}} years old<input type='button' value='click' ng-click='ShowData()'></span>",
+            replace: true,
+            restrice: "E",
+            scope: true,
+            controller: function ($scope) {
+                console.log($scope);
+            }
+        }
+    });
+
+    //Directive with shared scope
+    //shared scope means scope is set to false or not present in the custom directive
+    app.directive("studDirective", function () {
+        return {
+            template: "<span>{{student.Name}} is {{student.Age}} years old<span><input type='button' value='click' ng-click='ShowData()'>",
+            replace: true,
+            restrict: "E",
+            controller: function ($scope) {
+                console.log($scope);
+            }
+        }
+    });
+
+    //Direcctive Using Isolated Scope(String as parameter using @)
+    app.directive("inventoryDirective", function () {
+        return {
+            restrict: "E",
+            scope: { name: "@", price: "@" },
+            template: "<span>{{name}} costs {{price}}</span>"
+        };
+    });
+    //Directive Using Isolated Scope(Object as parameter using =)
+    app.directive("inventoryObject", function () {
+        return {
+            restrict: "E",
+            scope: {
+                data: "="
+            },
+            template: "<span>{{data.Name}} costs {{data.Price}}</span>"
+        };
+    });
+
+    //Directive using Isolated Scope(Calling an external function)
+    app.directive('inventoryProduct', function () {
+        return {
+            restrict: 'E',
+            scope: {
+                data: '&',
+            },
+            template: "{{data.name}} costs {{data.price}}<input type='button' value='click' ng-click='ShowData()'>"
+        };
+    });
+
+    app.directive("myFirstDirective", function() {
+        return {
+            template: "<span>My first custom directive</span>",
+            restrict: "E",
+            replace:true
+        }
+    });
+
+    app.directive("studentDetail", function() {
+        return {
+            templateUrl: "abcd.html",
+            restrict: "E",
+            replace: true,
+            controller:function($scope) {
+                $scope.setGrade = function(stud) {
+                    stud.grade = "Excelent";
+                };
+            }
+        }
+    });
+
+    app.directive("customDirective", function() {
+        return {
+            templateUrl: "abcd.html",
+            restrict: "E",
+            replace: true,
+            scope:{},
+            controller: function ($scope) {
+                $scope.setGrade = function (stud) {
+                    stud.grade = "Excelent";
+                };
+            }
+        }
+    });
+
+
+</script>
+<body>
+    <div ng-controller="MyCtrl">
+        <my-Name></my-Name>
+        <my-Title></my-Title>
+        <div ng-repeat="stud in studentsList">
+            <student-Directive></student-Directive>
+        </div>
+        <stud-Directive></stud-Directive>
+    </div>
+<div ng-controller="customCtrl">
+    <inventory-Directive Name="{{Product1.Name}}" price="{{Product1.Price}}"></inventory-Directive>
+    <hr/>
+    <inventory-Object data="Product2"></inventory-Object>
+    <hr/>
+    <inventory-Product data="ShowData()"></inventory-Product>
+</div>
+    <hr />
+<div ng-controller="directiveCtrl">
+    <my-First:Directive></my-First:Directive><br/>
+    <my_First-Directive></my_First-Directive><br/>
+    <my:First:Directive></my:First:Directive><br/>
+    <my_First_Directive></my_First_Directive><br/>
+    <my_First:Directive></my_First:Directive><br/>
+    <student-Detail></student-Detail>
+    <br/>
+
+   
+</div>
+<div ng-controller="HelloCtrl">
+    <custom-Directive></custom-Directive>
+    <custom-Directive></custom-Directive>
+    <custom-Directive></custom-Directive>
+</div>
+</body>
+</html>

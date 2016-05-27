@@ -17,3 +17,23 @@ customDirApp.directive("mydir", function () {
     }
     return directive;
 });
+
+
+
+
+myApp.directive("angularYoutube", function ($sce) {
+    return {
+        restrict: "E",
+        scope: { source: "=" },
+        replace: true,
+        template: '<div style="height:500px;width:500px"><iframe style="overflow:hidden;height:50%;width:50%" width="50%" height="50%" src="{{url}}" frameborder="2" allowfullscreen></iframe></div>',
+        link: function (scope) {
+            scope.$watch("source", function (newVal) {
+                if (newVal) {
+                    scope.url = $sce.trustAsResourceUrl("http://www.youtube.com/embed/" + newVal);
+                }
+            });
+        }
+
+    }
+});

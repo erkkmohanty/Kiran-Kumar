@@ -1,0 +1,46 @@
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\ApplicationInsights.config
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\roslyn\csc.exe
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\roslyn\System.Collections.Immutable.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\roslyn\System.Reflection.Metadata.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\roslyn\vbc.exe
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\roslyn\VBCSCompiler.exe
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\roslyn\VBCSCompiler.exe.config
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\MVC with AngularJS.dll.config
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\MVC with AngularJS.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\MVC with AngularJS.pdb
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\Microsoft.AI.DependencyCollector.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\Microsoft.AI.Web.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\Microsoft.AI.WindowsServer.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\Microsoft.ApplicationInsights.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\Microsoft.Web.Infrastructure.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\System.Web.Helpers.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\System.Web.Mvc.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\System.Web.Razor.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\System.Web.Webpages.Deployment.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\System.Web.Webpages.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\System.Web.Webpages.Razor.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\Microsoft.AI.DependencyCollector.xml
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\Microsoft.AI.Web.xml
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\Microsoft.AI.WindowsServer.xml
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\Microsoft.ApplicationInsights.xml
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\System.Web.Razor.xml
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\System.Web.Webpages.xml
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\System.Web.Webpages.Deployment.xml
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\System.Web.Webpages.Razor.xml
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\System.Web.Helpers.xml
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\bin\System.Web.Mvc.xml
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\obj\Debug\MVC with AngularJS.csprojResolveAssemblyReference.cache
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\obj\Debug\MVC with AngularJS.dll
+E:\Kiran Kumar\MVC with AngularJS\MVC with AngularJS\obj\Debug\MVC with AngularJS.pdb

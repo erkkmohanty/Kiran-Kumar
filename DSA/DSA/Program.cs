@@ -10,7 +10,8 @@ namespace DSA
     {
         static void Main(string[] args)
         {
-            UtilityManager.CreateLinkedList();
+            //UtilityManager.CreateLinkedList();
+            UtilityManager.Count();
         }
     }
 }

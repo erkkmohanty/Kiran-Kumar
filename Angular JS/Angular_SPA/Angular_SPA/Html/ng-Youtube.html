@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html ng-app="YoutubeApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<script src="../Scripts/angular.js"></script>
+<script src="../Angular/app.js"></script>
+<script src="../Angular/mycontroller.js"></script>
+<script src="../Angular/Directive.js"></script>
+<body ng-controller="VideoController">
+    <input type="text" ng-model="video" placeholder="enter video code here to play" />
+    <hr />
+    <angular-youtube source="video"></angular-youtube>
+</body>
+</html>
