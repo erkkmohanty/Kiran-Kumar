@@ -31,3 +31,11 @@ E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\bin\
 E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\obj\Debug\AngularJSAuthentication.Web.csprojResolveAssemblyReference.cache
 E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\obj\Debug\AngularJSAuthentication.Web.dll
 E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\obj\Debug\AngularJSAuthentication.Web.pdb
+E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\bin\EntityFramework.dll
+E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\bin\EntityFramework.SqlServer.dll
+E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\bin\EntityFramework.xml
+E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\bin\EntityFramework.SqlServer.xml
+E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml

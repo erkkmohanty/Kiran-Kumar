@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html ng-app="My App">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<script src="../Scripts/angular.js"></script>
+<script>
+    var app = angular.module("My App", []);
+    app.controller("jQCtrl", ["$scope", function ($scope) {
+        $scope.clickme = function () {
+            var element = angular.element(document.querySelector("#txtName"));
+            console.log(element.val());
+            $scope.val = element.val();
+        };
+    }]);
+</script>
+<body ng-controller="jQCtrl">
+    <input type="text" id="txtName" ng-model="val" />
+    <button type="button" ng-click="clickme()">Click me</button>
+    <input type="text" id="txtVal" ng-model="val" />
+</body>
+</html>

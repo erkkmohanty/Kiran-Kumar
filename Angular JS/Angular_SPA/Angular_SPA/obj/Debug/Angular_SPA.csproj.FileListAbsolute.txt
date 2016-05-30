@@ -17,3 +17,22 @@ E:\Kiran Kumar\Angular JS\Angular_SPA\Angular_SPA\obj\Debug\Angular_SPA.csprojRe
 E:\Kiran Kumar\Angular JS\Angular_SPA\Angular_SPA\obj\Debug\Angular_SPA.dll
 E:\Kiran Kumar\Angular JS\Angular_SPA\Angular_SPA\obj\Debug\Angular_SPA.pdb
 E:\Kiran Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\Angular_SPA.dll.config
+E:\Practice\Kiran-Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\Angular_SPA.dll.config
+E:\Practice\Kiran-Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\Angular_SPA.dll
+E:\Practice\Kiran-Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\Angular_SPA.pdb
+E:\Practice\Kiran-Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\Microsoft.Web.Infrastructure.dll
+E:\Practice\Kiran-Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\System.Web.Helpers.dll
+E:\Practice\Kiran-Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\System.Web.Mvc.dll
+E:\Practice\Kiran-Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\System.Web.Razor.dll
+E:\Practice\Kiran-Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\System.Web.Webpages.Deployment.dll
+E:\Practice\Kiran-Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\System.Web.Webpages.dll
+E:\Practice\Kiran-Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\System.Web.Webpages.Razor.dll
+E:\Practice\Kiran-Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\System.Web.Razor.xml
+E:\Practice\Kiran-Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\System.Web.Webpages.xml
+E:\Practice\Kiran-Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\System.Web.Webpages.Deployment.xml
+E:\Practice\Kiran-Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\System.Web.Webpages.Razor.xml
+E:\Practice\Kiran-Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\System.Web.Helpers.xml
+E:\Practice\Kiran-Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\System.Web.Mvc.xml
+E:\Practice\Kiran-Kumar\Angular JS\Angular_SPA\Angular_SPA\obj\Debug\Angular_SPA.csprojResolveAssemblyReference.cache
+E:\Practice\Kiran-Kumar\Angular JS\Angular_SPA\Angular_SPA\obj\Debug\Angular_SPA.dll
+E:\Practice\Kiran-Kumar\Angular JS\Angular_SPA\Angular_SPA\obj\Debug\Angular_SPA.pdb

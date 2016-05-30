@@ -1,4 +1,5 @@
 ﻿using AngularJSAuthentication.API.Data_Model;
+using AngularJSAuthentication.API.Entities;
 using AngularJSAuthentication.API.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
@@ -38,6 +39,53 @@ namespace AngularJSAuthentication.API.Repository
             return user;
         }
 
+        public Client FindClient(string clientId)
+        {
+            var client = _ctx.Clients.Find(clientId);
+            return client;
+        }
+
+
+        public async Task<bool> AddRefreshToken(RefreshToken token)
+        {
+            var existingToken = _ctx.RefreshTokens.Where(r => r.Subject == token.Subject
+                                                          && r.ClientId == token.ClientId).FirstOrDefault();
+
+            if (existingToken != null)
+            {
+                var result = await RemoveRefreshToken(existingToken);
+            }
+            _ctx.RefreshTokens.Add(token);
+            return await _ctx.SaveChangesAsync() > 0;
+        }
+
+        public async Task<bool> RemoveRefreshToken(string refreshTokenId)
+        {
+            var refreshToken = await _ctx.RefreshTokens.FindAsync(refreshTokenId);
+            if (refreshToken != null)
+            {
+                _ctx.RefreshTokens.Remove(refreshToken);
+                return await _ctx.SaveChangesAsync() > 0;
+            }
+            return false;
+        }
+
+
+        public async Task<bool> RemoveRefreshToken(RefreshToken refreshToken)
+        {
+            _ctx.RefreshTokens.Remove(refreshToken);
+            return await _ctx.SaveChangesAsync() > 0;
+        }
+
+        public async Task<RefreshToken> FindRefreshToken(string refreshTokenId)
+        {
+            return await _ctx.RefreshTokens.FindAsync(refreshTokenId);
+        }
+
+        public List<RefreshToken> GetAllRefreshTokens()
+        {
+            return _ctx.RefreshTokens.ToList();
+        }
         public void Dispose()
         {
             if (_ctx != null)

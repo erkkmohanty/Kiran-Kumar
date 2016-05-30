@@ -6,6 +6,8 @@ using System.Web.Http;
 using Microsoft.Owin.Security.OAuth;
 using AngularJSAuthentication.API.Providers;
 using Microsoft.Owin.Cors;
+using System.Data.Entity;
+using AngularJSAuthentication.API.Data_Model;
 
 [assembly: OwinStartup(typeof(AngularJSAuthentication.API.Startup))]
 
@@ -20,6 +22,7 @@ namespace AngularJSAuthentication.API
             ConfigureOAuth(app);
 
             WebApiConfig.Register(config);
+            //Database.SetInitializer<AuthContext>(new RecreateDatabaseIfModelChanges<AuthContext>());
             app.UseCors(CorsOptions.AllowAll);
             app.UseWebApi(config);
         }
@@ -28,10 +31,12 @@ namespace AngularJSAuthentication.API
         {
             OAuthAuthorizationServerOptions OAuthServerOptions = new OAuthAuthorizationServerOptions()
             {
+
                 AllowInsecureHttp = true,
                 TokenEndpointPath = new PathString("/token"),
-                AccessTokenExpireTimeSpan = TimeSpan.FromDays(1),
-                Provider = new SimpleAuthorizationServerProvider()
+                AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(30),
+                Provider = new SimpleAuthorizationServerProvider(),
+                RefreshTokenProvider = new SimpleRefreshTokenProvider()
             };
             // Token Generation
             app.UseOAuthAuthorizationServer(OAuthServerOptions);

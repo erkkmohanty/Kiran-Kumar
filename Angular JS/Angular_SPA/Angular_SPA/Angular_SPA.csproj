@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -92,8 +93,10 @@
     <Content Include="Html\Forms\Events\ng-click.html" />
     <Content Include="Html\Forms\Events\Validation1.html" />
     <Content Include="Html\Forms\Internationalization\Internationalization.html" />
+    <Content Include="Html\jQLite.html" />
     <Content Include="Html\ng-htm-SPA.html" />
     <Content Include="Html\ng-include.html" />
+    <Content Include="Html\ng-ManualBootStrap.html" />
     <Content Include="Html\ng-scope.html" />
     <Content Include="Html\ng-DependencyInjection.html" />
     <Content Include="Html\ng-Service.html" />
