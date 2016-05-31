@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html ng-app="docsTimeDirective">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<script src="../Scripts/angular.js"></script>
+<script type="text/javascript">
+    angular.module('docsTimeDirective', [])
+.controller('Controller', ['$scope', function ($scope) {
+    $scope.format = 'M/d/yy h:mm:ss a';
+}])
+.directive('myCurrentTime', ['$interval', 'dateFilter', function ($interval, dateFilter) {
+
+    function link(scope, element, attrs) {
+        debugger;
+        var format,
+            timeoutId;
+
+        function updateTime() {
+            element.text(dateFilter(new Date(), format));
+        }
+
+        scope.$watch(attrs.myCurrentTime, function (value) {
+            format = value;
+            updateTime();
+        });
+
+        element.on('$destroy', function () {
+            $interval.cancel(timeoutId);
+        });
+
+        // start the UI update process; save the timeoutId for canceling
+        timeoutId = $interval(function () {
+            updateTime(); // update DOM
+        }, 1000);
+    }
+
+    return {
+        link: link
+    };
+}]);
+</script>
+<body>
+    <div ng-controller="Controller">
+        Date format: <input ng-model="format"> <hr />
+        Current time is: <span my-current-time="format"></span>
+        <my-current-time format="format"></my-current-time>
+    </div>
+</body>
+</html>

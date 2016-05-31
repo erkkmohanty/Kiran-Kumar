@@ -31,7 +31,7 @@
 
     app.controller("directiveCtrl", function ($scope) {
         $scope.student = { name: "Kiran Kumar Mohanty", age: 23, subject: ["MEAN STACK", "ASP.Net MVC"] };
-        $scope.setGrade = function(student) {
+        $scope.setGrade = function (student) {
             student.grade = "O";
         };
     });
@@ -107,33 +107,19 @@
         };
     });
 
-    app.directive("myFirstDirective", function() {
+    app.directive("myFirstDirective", function () {
         return {
             template: "<span>My first custom directive</span>",
             restrict: "E",
-            replace:true
+            replace: true
         }
     });
 
-    app.directive("studentDetail", function() {
+    app.directive("studentDetail", function () {
         return {
             templateUrl: "abcd.html",
             restrict: "E",
             replace: true,
-            controller:function($scope) {
-                $scope.setGrade = function(stud) {
-                    stud.grade = "Excelent";
-                };
-            }
-        }
-    });
-
-    app.directive("customDirective", function() {
-        return {
-            templateUrl: "abcd.html",
-            restrict: "E",
-            replace: true,
-            scope:{},
             controller: function ($scope) {
                 $scope.setGrade = function (stud) {
                     stud.grade = "Excelent";
@@ -141,6 +127,91 @@
             }
         }
     });
+
+    app.directive("customDirective", function () {
+        return {
+            templateUrl: "abcd.html",
+            restrict: "E",
+            replace: true,
+            scope: { student: "=" },
+            controller: function ($scope) {
+                $scope.setGrade = function (stud) {
+                    stud.grade = "Excelent";
+                };
+            }
+        }
+    });
+    app.controller('studentscontroller', ['$scope', function ($scope) {
+        $scope.student1 = {
+            name: "dj",
+            age: 32,
+            guardian: {
+                mother: "abc",
+                father: "xyz"
+            },
+            subject: [
+                "math",
+                "geography"
+            ]
+        }
+        $scope.student2 = {
+            name: "foo",
+            age: 14,
+            guardian: {
+                mother: "pqw",
+                father: "rty"
+            },
+            subject: [
+                "physics",
+                "geography"
+            ]
+        }
+        $scope.student3 = {
+            name: "loo",
+            age: 21,
+            guardian: {
+                mother: "mnq",
+                father: "wsy"
+            },
+            subject: [
+                "math",
+                "bilogy"
+            ]
+        }
+    }
+    ]);
+
+    app.directive("newStudentDirective", function () {
+        return {
+            restrict: "E",
+            replace: true,
+            scope: {student:"="},
+            controller: function ($scope) {
+                $scope.setGrade = function(student) {
+                    student.grade = "B+";
+                };
+            },
+            templateUrl: "student.html"
+        };
+    });
+
+    app.directive("myAddThings", function () {
+        return {
+            restrict: "E",
+            template: "{{result}}",
+            scope: {
+                localFn: "&fn"
+            },
+            link: function (scope) {
+                scope.result = scope.localFn({
+                    x: 1,
+                    y: 2
+                });
+            }
+        };
+    });
+
+
 
 
 </script>
@@ -153,29 +224,34 @@
         </div>
         <stud-Directive></stud-Directive>
     </div>
-<div ng-controller="customCtrl">
-    <inventory-Directive Name="{{Product1.Name}}" price="{{Product1.Price}}"></inventory-Directive>
-    <hr/>
-    <inventory-Object data="Product2"></inventory-Object>
-    <hr/>
-    <inventory-Product data="ShowData()"></inventory-Product>
-</div>
+    <div ng-controller="customCtrl">
+        <inventory-Directive Name="{{Product1.Name}}" price="{{Product1.Price}}"></inventory-Directive>
+        <hr />
+        <inventory-Object data="Product2"></inventory-Object>
+        <hr />
+        <inventory-Product data="ShowData()"></inventory-Product>
+    </div>
     <hr />
-<div ng-controller="directiveCtrl">
-    <my-First:Directive></my-First:Directive><br/>
-    <my_First-Directive></my_First-Directive><br/>
-    <my:First:Directive></my:First:Directive><br/>
-    <my_First_Directive></my_First_Directive><br/>
-    <my_First:Directive></my_First:Directive><br/>
-    <student-Detail></student-Detail>
-    <br/>
+    <div ng-controller="directiveCtrl">
+        <my-First:Directive></my-First:Directive><br />
+        <my_First-Directive></my_First-Directive><br />
+        <my:First:Directive></my:First:Directive><br />
+        <my_First_Directive></my_First_Directive><br />
+        <my_First:Directive></my_First:Directive><br />
+        <student-Detail></student-Detail>
+        <br />
 
-   
-</div>
-<div ng-controller="HelloCtrl">
-    <custom-Directive></custom-Directive>
-    <custom-Directive></custom-Directive>
-    <custom-Directive></custom-Directive>
-</div>
+
+    </div>
+    <div ng-controller="HelloCtrl">
+        <custom-Directive student="student"></custom-Directive>
+        <custom-Directive student="student"></custom-Directive>
+        <custom-Directive student="student"></custom-Directive>
+    </div>
+    <div ng-controller="studentscontroller">
+       
+        <hr/><p>Isolated function</p>
+        <my-add-things fn="add(3, 3)"></my-add-things>  
+    </div>
 </body>
 </html>

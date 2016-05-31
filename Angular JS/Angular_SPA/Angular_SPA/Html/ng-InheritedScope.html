@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html ng-app="InheritedScope">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<link href="../Content/bootstrap.css" rel="stylesheet" />
+<script src="../Scripts/angular.js"></script>
+<script type="text/javascript">
+    var app = angular.module("InheritedScope", []);
+    app.controller("InheritedController", function ($scope) {
+        $scope.student1 = {
+            name: "dj",
+            age: 32,
+            guardian: {
+                mother: "abc",
+                father: "xyz"
+            },
+            subject: [
+                "math",
+                "geography"
+            ]
+        }
+        $scope.student2 = {
+            name: "foo",
+            age: 14,
+            guardian: {
+                mother: "pqw",
+                father: "rty"
+            },
+            subject: [
+                "physics",
+                "geography"
+            ]
+        }
+        $scope.student3 = {
+            name: "loo",
+            age: 21,
+            guardian: {
+                mother: "mnq",
+                father: "wsy"
+            },
+            subject: [
+                "math",
+                "bilogy"
+            ]
+        }
+    });
+    app.directive("studentDtlDirective", function () {
+        return {
+            templateUrl: "studentdetail.html",
+            restrict: "E",
+            replace: true,
+            scope: { student: "=" },
+            controller: function ($scope) {
+                $scope.isHidden = false;
+                $scope.setGrade = function (student) {
+                    student.grade = "B+";
+                };
+                $scope.hide = function () {
+                    $scope.isHidden = !$scope.isHidden;
+                }
+            }
+        };
+    });
+    app.directive("studentGuardianDirective", function() {
+        return {
+            templateUrl: "studentGuardian.html",
+            restrict: "E",
+            scope: true,
+            controller:function($scope) {
+                $scope.isHidden = false;
+                $scope.showGuardian = function() {
+                    $scope.isHidden = false;
+                    console.log("S " + $scope.isHidden);
+                };
+                $scope.hideGuardian=function() {
+                    $scope.isHidden = true;
+                    console.log("H " + $scope.isHidden);
+                }
+            }
+        };
+    });
+</script>
+<body ng-controller="InheritedController">
+    <student:Dtl_Directive student="student1"></student:Dtl_Directive><br />
+    <student:Dtl_Directive student="student2"></student:Dtl_Directive><br />
+    <student:Dtl_Directive student="student3"></student:Dtl_Directive><br />
+</body>
+</html>

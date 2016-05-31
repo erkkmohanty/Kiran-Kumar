@@ -1,0 +1,24 @@
+﻿<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2>{{student.name}} {{student.age}}</h2>
+    </div>
+    <div class="panel-body">
+        <div ng-show='!!student.subject'>
+            Subjects:
+            <ul ng-repeat="s in student.subject">
+                <li>{{s}}</li>
+            </ul>
+        </div>
+        <div class="well">
+            Guardians:<br />
+            Father : {{student.guardian.father}}<br />
+            Mother : {{student.guardian.mother}}<br />
+        </div>
+        <div ng-show='!!student.grade'>
+            {{student.grade}}
+        </div>
+        <div ng-show='!student.grade'>
+            <button class="btn btn-success" ng-click="setGrade(student)">set grade</button>
+        </div>
+    </div>
+</div>

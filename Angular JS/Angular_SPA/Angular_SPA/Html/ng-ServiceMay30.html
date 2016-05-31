@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html ng-app="CalculatorApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<script src="../Scripts/angular.js"></script>
+<script src="../Angular/app.js"></script>
+<script src="../Angular/Service.js"></script>
+<script type="text/javascript">
+    var app = angular.module("CalculatorApp", ["Service App"]);
+    app.controller("CalcCtrl", function($scope, SquareService) {
+        $scope.result = SquareService.square($scope.input1, $scope.input2);
+        $scope.$watch("input1", function (newVal, oldVal) {
+            debugger;
+            $scope.result = SquareService.Multiply(newVal, $scope.input2);
+        });
+        $scope.$watch("input2", function (newVal, oldVal) {
+            debugger;
+            $scope.result = SquareService.Multiply($scope.input1, newVal);
+        });
+    });
+   
+</script>
+<body ng-controller="CalcCtrl">
+<input type="number" ng-model="input1"/><br/>
+<input type="number" ng-model="input2"/><br/>
+    Result:{{result}}
+</body>
+</html>

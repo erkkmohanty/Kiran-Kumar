@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>POJCF</title>
+    <meta charset="utf-8"/>
+</head>
+<script type="text/javascript">
+    function Root() {
+        debugger;
+        Root.prototype.add = function (x, y) {
+            return x + y;
+        };
+        console.log("Root called");
+        console.dir(Root.prototype);
+    }
+
+    
+    var dat = new Root();
+    var sum = dat.add(2, 2);
+    var _void = console.log(sum);
+    
+</script>
+<body>
+
+</body>
+</html>

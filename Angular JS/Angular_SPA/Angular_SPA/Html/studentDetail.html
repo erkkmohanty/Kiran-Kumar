@@ -1,0 +1,21 @@
+﻿<div class="panel panel-primary">
+    <div class="panel-heading" ng-click="hide()">
+
+        <h2>{{student.name}} {{student.age}}</h2>
+    </div>
+    <div class="panel-body" ng-hide="isHidden">
+        <div ng-show='!!student.subject'>
+            Subjects:
+            <ul ng-repeat="s in student.subject">
+                <li>{{s}}</li>
+            </ul>
+        </div>
+        <student_Guardian_Directive></student_Guardian_Directive>
+        <div ng-show='!!student.grade'>
+            {{student.grade}}
+        </div>
+        <div ng-show='!student.grade'>
+            <button class="btn btn-success" ng-click="setGrade(student)">set grade</button>
+        </div>
+    </div>
+</div>

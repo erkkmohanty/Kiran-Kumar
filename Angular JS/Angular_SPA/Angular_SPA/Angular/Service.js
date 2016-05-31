@@ -26,3 +26,9 @@ dependencyApp.config(["$provide", function ($provide) {
         }
     });
 }]);
+
+
+serviceApp.service("SquareService", function () {
+    this.square = function (a) { return a * a; };
+    this.Multiply = function(num1, num2) { return num1 * num2; };
+});
