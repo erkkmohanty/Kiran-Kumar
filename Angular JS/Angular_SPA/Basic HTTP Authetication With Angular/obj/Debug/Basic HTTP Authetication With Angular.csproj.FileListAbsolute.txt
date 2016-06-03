@@ -1,0 +1,31 @@
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\roslyn\csc.exe
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\roslyn\System.Collections.Immutable.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\roslyn\System.Reflection.Metadata.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\roslyn\vbc.exe
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\roslyn\VBCSCompiler.exe
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\roslyn\VBCSCompiler.exe.config
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\Basic HTTP Authetication With Angular.dll.config
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\Basic HTTP Authetication With Angular.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\Basic HTTP Authetication With Angular.pdb
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\Microsoft.AI.DependencyCollector.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\Microsoft.AI.Web.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\Microsoft.AI.WindowsServer.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\Microsoft.ApplicationInsights.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\Microsoft.AI.DependencyCollector.xml
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\Microsoft.AI.Web.xml
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\Microsoft.AI.WindowsServer.xml
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\Microsoft.ApplicationInsights.xml
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\obj\Debug\Basic HTTP Authetication With Angular.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\obj\Debug\Basic HTTP Authetication With Angular.pdb

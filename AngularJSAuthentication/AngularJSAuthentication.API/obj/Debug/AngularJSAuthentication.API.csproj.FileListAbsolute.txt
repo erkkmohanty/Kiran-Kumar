@@ -132,3 +132,5 @@ E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\
 E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.csprojResolveAssemblyReference.cache
 E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.dll
 E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.pdb
+E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.Migrations.InitialCreate.resources
+E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.csproj.GenerateResource.Cache

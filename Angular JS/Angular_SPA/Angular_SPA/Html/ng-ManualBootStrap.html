@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head >
+    <title></title>
+    <meta charset="utf-8"/>
+</head>
+<script src="../Scripts/angular.js"></script>
+<script>
+    var app = angular.module("ManualBootstrap", []);
+    app.controller("manualCtrl", function($scope) {
+        $scope.message = "Manual bootstrap happened";
+    });
+    angular.element(document).ready(function() {
+        angular.bootstrap(document, ["ManualBootstrap"]);
+    });
+</script>
+<body ng-controller="manualCtrl">
+{{message}}
+</body>
+</html>
