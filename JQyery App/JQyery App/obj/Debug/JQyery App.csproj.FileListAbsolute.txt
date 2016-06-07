@@ -25,3 +25,30 @@ E:\Kiran Kumar\JQyery App\JQyery App\bin\System.Net.Http.Formatting.xml
 E:\Kiran Kumar\JQyery App\JQyery App\bin\System.Web.Http.xml
 E:\Kiran Kumar\JQyery App\JQyery App\bin\System.Web.Http.WebHost.xml
 E:\Kiran Kumar\JQyery App\JQyery App\obj\Debug\JQyery App.csprojResolveAssemblyReference.cache
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\JQyery App.dll.config
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\JQyery App.dll
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\JQyery App.pdb
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\Microsoft.Web.Infrastructure.dll
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\Newtonsoft.Json.dll
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\System.Net.Http.Formatting.dll
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\System.Web.Helpers.dll
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\System.Web.Http.dll
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\System.Web.Http.WebHost.dll
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\System.Web.Mvc.dll
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\System.Web.Razor.dll
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\System.Web.Webpages.Deployment.dll
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\System.Web.Webpages.dll
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\System.Web.Webpages.Razor.dll
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\Newtonsoft.Json.xml
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\System.Net.Http.Formatting.xml
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\System.Web.Http.xml
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\System.Web.Http.WebHost.xml
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\System.Web.Razor.xml
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\System.Web.Webpages.xml
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\System.Web.Webpages.Deployment.xml
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\System.Web.Webpages.Razor.xml
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\System.Web.Helpers.xml
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\bin\System.Web.Mvc.xml
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\obj\Debug\JQyery App.csprojResolveAssemblyReference.cache
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\obj\Debug\JQyery App.dll
+E:\Practice\Kiran-Kumar\JQyery App\JQyery App\obj\Debug\JQyery App.pdb
