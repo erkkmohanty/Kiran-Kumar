@@ -5,6 +5,7 @@
     AuthenticationService.$inject = ["$http", "$cookieStore", "$rootScope", "$timeout", "UserService"];
 
     function AuthenticationService($http, $cookieStore, $rootScope, $timeout, UserService) {
+        debugger;
         var service = {};
         service.Login = Login;
         service.SetCredentials = SetCredentials;
@@ -16,7 +17,7 @@
               ----------------------------------------------*/
             $timeout(function() {
                 var response;
-                UserService.GetByUserName(username)
+                UserService.GetByUsername(username)
                     .then(function(user) {
                         if (user != null && user.password === password) {
                             response = { success: true };
@@ -36,15 +37,19 @@
         }
 
         function SetCredentials(username, password) {
+            debugger;
             var authdata = Base64.encode(username + ":" + password);
             $rootScope.globals = { currentUser: { username: username, password: password } };
-            $http.defaults.header.common["Authorization"] = "Basic " + authdata;
+            debugger;
+            $http.defaults.headers.common["Authorization"] = "Basic " + authdata;
             $cookieStore.put("globals", $rootScope.globals);
         }
 
         function ClearCredentials() {
+            debugger;
             $rootScope.globals = {};
-            $http.defaults.header.common.Authorization = "Basic";
+            debugger;
+            $http.defaults.headers.common.Authorization = "Basic";
             $cookieStore.remove("globals");
         }
     }

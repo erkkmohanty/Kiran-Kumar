@@ -1,9 +1,10 @@
 ﻿(function() {
     angular.module("app")
-        .factory("RegisterController", RegisterController);
+        .controller("RegisterController", RegisterController);
     RegisterController.$inject = ["UserService", "$location", "$rootScope", "FlashService"];
 
     function RegisterController(UserService, $location, $rootScope, FlashService) {
+        debugger;
         var vm = this;
         vm.register = register;
 

@@ -7,6 +7,7 @@
     UserService.$inject = ["$http"];
 
     function UserService($http) {
+        debugger;
         var service = {};
 
         service.GetAll = GetAll;

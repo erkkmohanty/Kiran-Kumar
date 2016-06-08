@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<script type="text/javascript">
+    ////Object creation using object literal
+    //var student = {
+    //    Name: "Kiran Kumar", Age: 24, Sex: "Male", Father: { Name: "Akshaya Kumar", Occupation: "Businessman" }, Subjects: [{ Name: ".Net", Grade: "O" }, { Name: "MEAN STACK", Grade: "O" }]
+    //};
+
+    //console.log("Father's Name::" + student.Father.Name);
+    //console.log("Father's Occupation::" + student.Father.Occupation);
+    //for (var subj in student.Subjects) {
+    //    console.log("Subject Name::" + student.Subjects[subj].Name);
+    //    console.log("Grade::" + student.Subjects[subj].Grade);
+    //}
+
+    //student.Speak=function(message) {
+    //    var finalMessage = this.Name + " has said " + message;
+    //    console.log("Final Message::" + finalMessage);
+    //}
+
+    //var parent = { Name: "Akshaya Kumar" };
+
+    //student.Speak("I am the best");
+    //student.Speak.apply(parent, ["I am the best"]);
+    //setTimeout(function () {
+    //    alert("Are u ready???");
+    //    student.Speak.call(parent, ["I am the best"]);
+
+    //}, 20000);
+
+    ///////Calling the function as Method on an object is called Method invocation pattern
+
+    //Using function constructor
+    ////When we call  function using new kayword that is call as function constructor
+
+    function Person(name, age) {
+        //var prvvar = "I am private";//private properties
+        this.name = name;
+        this.age = age;
+    }
+
+    Person.prototype.message = function () {
+        console.log(this);
+        console.log(this.name + " is " + this.age + " years old.");
+    };
+
+
+    var person1 = new Person("Kiran Kumar", 24);
+    var person2 = new Person("Akshaya Kumar", 52);
+    person1.message();
+    person2.message();
+
+    //Accessing rivate properties
+    var a = person1.prvvar;
+    console.log(a);
+
+    //declaring private properties using revealing pattern
+    function Person1(name, age) {
+        this.name = name;
+        this.age = age;
+        return {
+            pubvar: this.name + " is " + this.age + " years old"
+        }
+    }
+    var ps1 = new Person1("KK", 23);
+    console.log(ps1.pubvar);
+    console.log("AGE IS" + ps1.age);
+    console.log("Name is" + ps1.name);
+
+    //Inheritance in JS
+    function foo(name) {
+        this.name = name;
+        this.age = 0;
+        console.log(this.name + " is " + this.age);
+    };
+
+    foo.prototype.age = 24;
+
+    var fooPro = foo.prototype;
+    console.log(fooPro);
+
+    var fooObj1 = new foo("KK");
+    var fooObj2 = new foo("RS");
+
+    console.log(fooObj1.__proto__);
+    console.log(fooObj2.__proto__);
+
+    if (fooObj1.__proto__ === foo.prototype) {
+        console.log(true);
+    }
+
+    var foo = {};
+    console.log(foo.prototype);
+    console.log(foo.__proto__);
+
+
+    //prototype inheritance
+
+    var animal = {
+        eats: true,
+        canRun: function () {
+            console.log("Yes I can run");
+        }
+    };
+
+    var dog = {
+        canBark: function () {
+            console.log("Yes I can Bark");
+        }
+    };
+
+    dog.__proto__ = animal;
+    console.log("Prototype inheritance starts");
+    dog.canBark();
+    dog.canRun();
+    console.log(dog.eats);
+
+
+
+    //Inheritance using object.create()
+
+    var foo = Object.create(Object.prototype,{Sex:Male});
+    foo.name = "KK";
+    foo.age = 24;
+    console.log(foo.name);
+    console.log(foo.Sex);
+
+</script>
+<body>
+
+</body>
+</html>

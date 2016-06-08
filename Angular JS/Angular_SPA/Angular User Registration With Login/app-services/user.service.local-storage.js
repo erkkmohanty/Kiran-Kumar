@@ -6,6 +6,7 @@
     UserService.$inject = ["$timeout", "$filter", "$q"];
 
     function UserService($timeout, $filter, $q) {
+        debugger;
         var service = {};
         service.GetAll = GetAll;
         service.GetById = GetById;
@@ -17,12 +18,14 @@
         return service;
 
         function GetAll() {
+            debugger;
             var deferred = $q.defer();
             deferred.resolve(getUsers());
             return deferred.promise;
         }
 
         function GetById(id) {
+            debugger;
             var deferrred = $q.defer();
             var filtered = $filter("filter")(getUsers(), { id: id });
             var user = filtered.length ? filtered[0] : null;
@@ -31,6 +34,7 @@
         }
 
         function GetByUsername(username) {
+            debugger;
             var deferred = $q.defer();
             var filtered = $filter("filter")(getUsers(), { username: username });
             var user = filtered.length ? filtered[0] : null;
@@ -39,6 +43,7 @@
         }
 
         function Create(user) {
+            debugger;
             var deferred = $q.defer();
             // simulate api call with $timeout
             $timeout(function() {
@@ -63,6 +68,7 @@
         }
 
         function Update(user) {
+            debugger;
             var deferred = $q.defer();
             var users = getUsers();
             for (var index = 0; index < users.length; index++) {
@@ -77,6 +83,7 @@
         }
 
         function Delete(id) {
+            debugger;
             var deferred = $q.defer();
             var users = getUsers();
             for (var index = 0; index < users.length; index++) {
@@ -92,13 +99,15 @@
 
         //private functions
         function getUsers() {
+            debugger;
             if (!localStorage.users) {
                 localStorage.users = JSON.stringify([]);
             }
             return JSON.parse(localStorage.users);
         }
 
-        function setUsers() {
+        function setUsers(users) {
+            debugger;
             localStorage.users = JSON.stringify(users);
         }
     }
