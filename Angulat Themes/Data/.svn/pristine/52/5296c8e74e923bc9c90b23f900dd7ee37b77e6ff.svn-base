@@ -1,0 +1,8 @@
+<div class="row clearfix" ng-controller="iconsPageCtrl">
+  <div class="kameleon-row" ng-repeat="icon in icons.kameleonIcons">
+    <div class="kameleon-icon"><img ng-src="img/{{icon.img}}"><span>{{icon.name}}</span></div>
+  </div>
+</div>
+
+<a href="http://www.kameleon.pics/" target="_blank" class="see-all-icons">See all Kamaleon icons</a>
+

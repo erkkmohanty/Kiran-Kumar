@@ -1,0 +1,20 @@
+﻿<div class="container">
+    <h2>Speaker Details</h2>
+
+    <div class="row">
+        <table class="table table-condensed table-hover">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Talks Delivered</th>
+                <th>Expertise</th>
+            </tr>
+            <tr ng-repeat="speaker in speakers">
+                <td>{{speaker.id}}</td>
+                <td>{{speaker.name}}</td>
+                <td>{{speaker.talksDelivered}}</td>
+                <td>{{speaker.expertise}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

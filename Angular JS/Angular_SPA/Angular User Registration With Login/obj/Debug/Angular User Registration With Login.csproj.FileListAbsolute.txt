@@ -36,6 +36,6 @@ E:\Kiran Kumar\Angular JS\Angular_SPA\Angular User Registration With Login\bin\N
 E:\Kiran Kumar\Angular JS\Angular_SPA\Angular User Registration With Login\bin\System.Net.Http.Formatting.xml
 E:\Kiran Kumar\Angular JS\Angular_SPA\Angular User Registration With Login\bin\System.Web.Http.xml
 E:\Kiran Kumar\Angular JS\Angular_SPA\Angular User Registration With Login\bin\System.Web.Http.WebHost.xml
+E:\Kiran Kumar\Angular JS\Angular_SPA\Angular User Registration With Login\obj\Debug\Angular User Registration With Login.csprojResolveAssemblyReference.cache
 E:\Kiran Kumar\Angular JS\Angular_SPA\Angular User Registration With Login\obj\Debug\Angular User Registration With Login.dll
 E:\Kiran Kumar\Angular JS\Angular_SPA\Angular User Registration With Login\obj\Debug\Angular User Registration With Login.pdb
-E:\Kiran Kumar\Angular JS\Angular_SPA\Angular User Registration With Login\obj\Debug\Angular User Registration With Login.csprojResolveAssemblyReference.cache

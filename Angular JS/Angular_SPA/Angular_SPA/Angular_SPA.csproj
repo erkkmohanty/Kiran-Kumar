@@ -103,6 +103,7 @@
     <Content Include="Html\Forms\Events\ng-click.html" />
     <Content Include="Html\Forms\Events\Validation1.html" />
     <Content Include="Html\Forms\Internationalization\Internationalization.html" />
+    <Content Include="Html\jQLite.html" />
     <Content Include="Html\ng-BootStrap.html" />
     <Content Include="Html\ng-CustomDirective.html" />
     <Content Include="Html\ng-CustomDirectiveDOMManipulation.html" />
@@ -113,6 +114,7 @@
     <Content Include="Html\ng-InheritedScope.html" />
     <Content Include="Html\ng-Init.html" />
     <Content Include="Html\ng-InjectService.html" />
+    <Content Include="Html\ng-ManualBootStrap.html" />
     <Content Include="Html\ng-POJCF.html" />
     <Content Include="Html\ng-Provider.html" />
     <Content Include="Html\ng-rootScope-Scope.html" />

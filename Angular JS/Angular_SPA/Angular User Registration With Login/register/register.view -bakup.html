@@ -1,0 +1,45 @@
+﻿<div class="col-md-6 col-md-offset-3">
+    <h2>Register</h2>
+    <form name="registerform" ng-submit="vm.register()" role="form" novalidate>
+        <div class="form-group" ng-class="{'has-error':registerform.firstname.$dirty && registerform.firstname.$error.required}">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" ng-model="vm.user.firstName" ng-minlength="3" ng-maxlength="20" ng-required="true"/>
+            <span ng-show="(registerform.firstname.$dirty&& registerform.firstname.$error.required)" class="help-block">First Name is required</span>
+        </div>
+        <div class="form-group" ng-class="{'has-error':registerform.lastname.$dirty && registerform.lastname.$error.required}">
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" ng-model="vm.user.lastName" ng-minlength="3" ng-maxlength="30" ng-required="true"/>
+            <span ng-show="registerform.lastname.$dirty&& registerform.lastname.$error.required" class="help-block">Last Name is required</span>
+        </div>
+        <div class="form-group" ng-class="{'has-error':registerform.username.$dirty && registerform.username.$error.required
+             ||registerform.username.$error.minlength||registerform.username.$error.maxlength}">
+            <label for="username">User Name</label>
+            <input type="text" name="username" id="username" ng-model="vm.user.username" ng-minlength="6" ng-maxlength="15"  ng-required="true"/>
+            <span ng-show="registerform.username.$dirty&& registerform.username.$error.required" class="help-block">Username is required</span>
+            <span ng-show="registerform.username.$error.minlength" class="help-block">Username must be atleast 6 characters</span>
+            <span ng-show="registerform.username.$error.maxlength" class="help-block">Username can be maximum 15 characters</span>
+        </div>
+        <div class="form-group" ng-class="{'has-error':registerform.password.$dirty && registerform.password.$error.required
+             ||registerform.password.$error.minlength||registerform.password.$error.maxlength||registerform.password.$invalid}">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" ng-model="vm.user.password" ng-minlength="8" ng-maxlength="15" ng-required="true"/>
+            <span ng-show="registerform.password.$dirty&& registerform.password.$error.required" class="help-block">Password is required</span>
+            <span ng-show="registerform.password.$error.minlength" class="help-block">Password must be minimum 8 characters</span>
+            <span ng-show="registerform.password.$error.maxlength" class="help-block">Password can be maximum of 15 characters</span>
+        </div>
+        <div class="form-group" ng-class="{'has-error':registerform.confirmpassword.$dirty && registerform.confirmpassword.$error.required
+             || registerform.confirmpassword.$error.compareTo}">
+            <label for="confirmpassword">Confirm Password</label>
+            <input type="password" name="confirmpassword" id="confirmpassword" ng-model="vm.user.confirmpassword" compare-to="vm.user.password"
+                   ng-minlength="8" ng-maxlength="15" ng-required="true"/>
+            <span ng-show="registerform.confirmpassword.$dirty&& registerform.confirmpassword.$error.required" class="help-block">Confirm Password is required</span>
+            <span ng-show="registerform.confirmpassword.$error.compareTo" class="help-block">Confirm Password must be same as password</span>
+        </div>
+       
+        <div class="form-actions">
+            <button type="submit" ng-disabled="registerform.$invalid || vm.dataLoading" class="btn btn-primary">Register</button>
+            <img ng-if="vm.dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="/>
+            <a href="#/login" class="btn btn-link">Cancel</a>
+        </div>
+    </form>
+</div>

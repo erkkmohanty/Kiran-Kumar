@@ -1,0 +1,19 @@
+@media screen and (min-width: 1200px) {
+  .row.shift-up {
+    > div {
+      margin-top: -573px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+ .panel.feed-panel {
+   height: 824px;
+ }
+}
+
+.user-stats-panel {
+  .panel-title {
+    padding: 0 0 15px;
+  }
+}

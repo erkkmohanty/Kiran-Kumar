@@ -1,0 +1,178 @@
+$hover: 24;
+.btn:focus, .btn:active:focus, .btn.active:focus,
+.btn.focus, .btn:active.focus, .btn.active.focus {
+  outline: none;
+}
+
+.btn {
+  border-radius: 0;
+  transition: all 0.1s ease;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+@mixin styleButton($color) {
+  background: $color;
+  border-color: $color;
+}
+
+@mixin buttonColor($color) {
+  @include styleButton($color);
+
+  &.disabled, &[disabled], fieldset[disabled] &, &.disabled:hover, &[disabled]:hover,
+  fieldset[disabled] &:hover, &.disabled:focus, &[disabled]:focus, fieldset[disabled] &:focus,
+  &.disabled.focus, &[disabled].focus, fieldset[disabled] &.focus, &.disabled:active,
+  &[disabled]:active, fieldset[disabled] &:active, &.disabled.active, &[disabled].active,
+  fieldset[disabled] &.active {
+    @include styleButton($color + $hover/2);
+  }
+
+  &:hover, &:focus, &.focus, &:active, &.active {
+    @include styleButton($color - $hover);
+  }
+}
+
+.open > .dropdown-toggle {
+  &.btn-primary {
+    @include styleButton($primary - $hover);
+  }
+  &.btn-default {
+    @include styleButton($default - $hover);
+  }
+  &.btn-success {
+    @include styleButton($success - $hover);
+  }
+  &.btn-info {
+    @include styleButton($info - $hover);
+  }
+  &.btn-warning {
+    @include styleButton($warning - $hover);
+  }
+  &.btn-danger {
+    @include styleButton($danger - $hover);
+  }
+}
+
+.bootstrap-select .dropdown-toggle:focus {
+  outline: none !important;
+}
+
+.btn-primary {
+  @include buttonColor($primary);
+}
+
+.btn-default {
+  @include buttonColor($default);
+}
+
+.btn-success {
+  @include buttonColor($success);
+}
+
+.btn-info {
+  @include buttonColor($info);
+}
+
+.btn-warning {
+  @include buttonColor($warning);
+}
+
+.btn-danger {
+  @include buttonColor($danger);
+}
+
+.btn-with-icon {
+  i {
+    margin-right: 10px;
+  }
+}
+
+.btn-group, .btn-toolbar {
+  :hover {
+    transform: none;
+  }
+}
+
+.btn-group {
+  .dropdown-menu {
+    margin-top: 0px;
+  }
+}
+
+.btn-toolbar {
+  display: inline-block;
+}
+
+.btn .caret {
+  margin-left: 2px;
+}
+
+@mixin progressButtonColor($btnColor) {
+  .content {
+    &:after, &:before {
+      color: darken($btnColor, 40);
+    }
+  }
+
+  &.progress-button-style-move-up, &.progress-button-style-slide-down {
+    .content {
+      background-color: darken($btnColor, 10);
+    }
+  }
+
+  &.progress-button-style-lateral-lines .progress-inner {
+    border-color: darken($btnColor, 10);
+    background: 0 0;
+  }
+
+  .progress {
+    background-color: darken($btnColor, 10);
+    box-shadow: 0 1px 0 darken($btnColor, 10);
+  }
+
+  .progress-inner {
+    background-color: darken($btnColor, 20);
+  }
+  &.progress-button-perspective  {
+    background: none;
+    .content {
+      background-color: $btnColor;
+    }
+  }
+}
+
+.progress-button {
+  .progress {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  &:hover {
+    transform: none;
+  }
+
+  &.btn-primary {
+    @include progressButtonColor($primary);
+  }
+
+  &.btn-default {
+    @include progressButtonColor($default);
+  }
+
+  &.btn-success {
+    @include progressButtonColor($success);
+  }
+
+  &.btn-info {
+    @include progressButtonColor($info);
+  }
+
+  &.btn-warning {
+    @include progressButtonColor($warning);
+  }
+
+  &.btn-danger {
+    @include progressButtonColor($danger);
+  }
+}

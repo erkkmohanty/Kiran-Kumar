@@ -1,0 +1,40 @@
+.popular-app {
+  .panel-content {
+    padding: 0;
+  }
+
+  .popular-app-img {
+    position: relative;
+    background: #2d2d2d;
+    padding: 30px 0;
+    height: 260px;
+
+    img {
+      max-width: 60%;
+      max-height: 70%;
+      position: absolute;
+      transform: translateY(-50%) translate(-50%);
+      top: 50%;
+      left: 50%;
+    }
+  }
+  .popular-app-cost {
+    font-size: 20px;
+    padding: 20px 22px;
+    border-bottom: 1px solid $border;
+  }
+  .popular-app-info {
+    padding: 20px 22px;
+    font-size: 20px;
+    text-align: center;
+    .info-label {
+      font-size: 12px;
+    }
+  }
+  .row {
+    margin: 0;
+    > div {
+      padding: 0;
+    }
+  }
+}

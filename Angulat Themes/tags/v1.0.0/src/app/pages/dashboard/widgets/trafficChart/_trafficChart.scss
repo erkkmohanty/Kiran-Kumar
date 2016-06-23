@@ -1,0 +1,128 @@
+.channels-block {
+  width: 100%;
+  position: relative;
+}
+
+.channels-info {
+  display: inline-block;
+  width: calc(100% - 500px);
+}
+.small-container {
+  .channels-info {
+    display: none;
+  }
+}
+
+.channels-info-item {
+  margin-bottom: 19px;
+  p {
+    margin-bottom: 9px;
+  }
+}
+
+.traffic-chart {
+  width: 500px;
+  position: relative;
+  min-height: 300px;
+  float: left;
+}
+
+.traffic-legend {
+  display: inline-block;
+  padding: 70px 0 0 10px;
+  width: 160px;
+}
+
+ul.doughnut-legend {
+  li {
+    list-style: none;
+    font-size: 12px;
+    margin-bottom: 12px;
+    line-height: 16px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 120px;
+    span {
+      float: left;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.canvas-holder {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  float: left;
+}
+
+.traffic-text {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -24px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 18px;
+  //color: $danger;
+  span {
+    display: block;
+    font-size: 12px;
+    color: $default-text;
+  }
+}
+
+.channel-change {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.channel-progress {
+  height: 16px;
+  border-radius: 0;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+@mixin doughnut-size($size) {
+  .traffic-chart .canvas-holder {
+    width: $size;
+    height: $size;
+    canvas {
+      width: $size;
+      height: $size;
+    }
+  }
+}
+
+@media (max-width: $resS) {
+  @include doughnut-size(250px);
+  .canvas-holder {
+    float: none;
+  }
+  .traffic-legend {
+    display: block;
+    padding: 10px 0 0;
+    width: 300px;
+  }
+  ul.doughnut-legend {
+    padding-left: 20px;
+    li {
+      &:nth-child(2n-1) {
+        float: left;
+      }
+    }
+  }
+}
+
+@media (max-width: $resMin) {
+  @include doughnut-size(200px);
+}

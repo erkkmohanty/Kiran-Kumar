@@ -121,12 +121,15 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Help.html" />
     <Content Include="home\home.controller.js" />
     <Content Include="home\home.view.html" />
     <Content Include="index.html" />
     <Content Include="login\login.controller.js" />
     <Content Include="login\login.view.html" />
+    <Content Include="messages.html" />
     <Content Include="register\register.controller.js" />
+    <Content Include="register\register.view -bakup.html" />
     <Content Include="register\register.view.html" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />

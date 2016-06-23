@@ -54,6 +54,6 @@ E:\Kiran Kumar\Angular JS\Angular_SPA\BasicAuthHttpModule\bin\Newtonsoft.Json.xm
 E:\Kiran Kumar\Angular JS\Angular_SPA\BasicAuthHttpModule\bin\System.Net.Http.Formatting.xml
 E:\Kiran Kumar\Angular JS\Angular_SPA\BasicAuthHttpModule\bin\System.Web.Http.xml
 E:\Kiran Kumar\Angular JS\Angular_SPA\BasicAuthHttpModule\bin\System.Web.Http.WebHost.xml
+E:\Kiran Kumar\Angular JS\Angular_SPA\BasicAuthHttpModule\obj\Debug\BasicAuthHttpModule.csprojResolveAssemblyReference.cache
 E:\Kiran Kumar\Angular JS\Angular_SPA\BasicAuthHttpModule\obj\Debug\BasicAuthHttpModule.dll
 E:\Kiran Kumar\Angular JS\Angular_SPA\BasicAuthHttpModule\obj\Debug\BasicAuthHttpModule.pdb
-E:\Kiran Kumar\Angular JS\Angular_SPA\BasicAuthHttpModule\obj\Debug\BasicAuthHttpModule.csprojResolveAssemblyReference.cache

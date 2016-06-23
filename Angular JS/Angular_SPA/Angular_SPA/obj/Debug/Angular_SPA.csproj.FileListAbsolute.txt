@@ -1,3 +1,4 @@
+E:\Kiran Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\Angular_SPA.dll.config
 E:\Kiran Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\Angular_SPA.dll
 E:\Kiran Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\Angular_SPA.pdb
 E:\Kiran Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\Microsoft.Web.Infrastructure.dll
@@ -16,4 +17,3 @@ E:\Kiran Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\System.Web.Mvc.xml
 E:\Kiran Kumar\Angular JS\Angular_SPA\Angular_SPA\obj\Debug\Angular_SPA.csprojResolveAssemblyReference.cache
 E:\Kiran Kumar\Angular JS\Angular_SPA\Angular_SPA\obj\Debug\Angular_SPA.dll
 E:\Kiran Kumar\Angular JS\Angular_SPA\Angular_SPA\obj\Debug\Angular_SPA.pdb
-E:\Kiran Kumar\Angular JS\Angular_SPA\Angular_SPA\bin\Angular_SPA.dll.config

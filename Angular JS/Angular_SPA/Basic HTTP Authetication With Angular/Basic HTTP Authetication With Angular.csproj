@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Help.html" />
     <Content Include="packages.config" />
     <Content Include="scripts\version.json" />
     <Content Include="scripts\errors.json" />

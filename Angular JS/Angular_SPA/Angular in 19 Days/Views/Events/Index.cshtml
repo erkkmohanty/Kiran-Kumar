@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/scripts/Events/CustomDirective.js"></script>
+<script src="~/scripts/Events/eventModule.js"></script>
+<script src="~/scripts/Events/eventController.js"></script>
+<script src="~/scripts/Events/speakerController.js"></script>
+<script src="~/scripts/Events/eventService.js"></script>
+<script src="~/scripts/Events/talkController.js"></script>
+<script src="~/scripts/Events/CustomDirectiveController.js"></script>
+<div class="container">
+    <div class="navbar navbar-default">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav">
+                <li class="navbar-brand">
+                    <a href="#Talks">Talks</a>
+                </li>
+                <li class="navbar-brand">
+                    <a href="#Speakers">Speakers</a>
+                </li>
+                <li class="navbar-brand"><a href="#AddTalk">Add Talk</a></li>
+                <li class="navbar-brand"><a href="#CustomDirective">Custom Directive</a></li>
+            </ul>
+        </div>
+    </div>
+    <div ng-view>
+    </div>
+</div>

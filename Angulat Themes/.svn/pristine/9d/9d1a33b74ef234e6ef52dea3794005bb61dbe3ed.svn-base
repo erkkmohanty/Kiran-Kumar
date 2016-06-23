@@ -1,0 +1,31 @@
+<aside class="al-sidebar" ng-swipe-right="menuExpand()" ng-swipe-left="menuCollapse()"
+       ng-mouseleave="hoverElemTop=selectElemTop">
+  <ul class="al-sidebar-list" slimscroll="{height: '100%'}">
+    <li ng-repeat="item in menuItems" class="al-sidebar-list-item"
+        ng-class="{'selected': item.selected, 'with-sub-menu': item.subMenu}"
+        ng-mouseenter="hoverItem($event, item)">
+
+      <a href="{{ item.root }}" ng-if="!item.subMenu" class="al-sidebar-list-link"
+         ng-click="collapseSidebarIfSmallRes()">
+        <i class="{{ item.icon }}"></i><span>{{ item.title }}</span>
+      </a>
+
+      <a ng-if="item.subMenu" href ng-click="toggleSubMenu($event, item); item.expanded = !item.expanded"
+         class="al-sidebar-list-link">
+        <i class="{{ item.icon }}"></i><span>{{ item.title }}</span>
+        <b class="fa" ng-class="{'fa-angle-up': item.expanded, 'fa-angle-down': !item.expanded}"
+           ng-if="item.subMenu"></b>
+      </a>
+
+      <ul ng-if="item.subMenu" class="al-sidebar-sublist"
+          ng-class="{expanded: item.selected, 'slide-right': item.slideRight}">
+        <li ng-repeat="subitem in item.subMenu" ng-class="{selected: subitem.selected}">
+          <a href="{{ subitem.root }}" ng-click="collapseSidebarIfSmallRes()">{{ subitem.title }}</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <div class="sidebar-select-elem" ng-style="{top: selectElemTop + 'px'}"></div>
+  <div class="sidebar-hover-elem" ng-style="{top: hoverElemTop + 'px'}"
+       ng-class="{'show-hover-elem': showHoverElem }"></div>
+</aside>

@@ -1,0 +1,34 @@
+﻿<form name="addtalkform" ng-submit="add(talk)" novalidate>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>
+                <input type="number" ng-model="talk.id" class="form-control" ng-required="true"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>
+                <input type="text" ng-model="talk.name" class="form-control" ng-required="true"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Speaker</td>
+            <td><input type="text" ng-model="talk.speaker" class="form-control" ng-required="true"/></td>
+        </tr>
+        <tr>
+            <td>Venue</td>
+            <td>
+                <input type="text" ng-model="talk.venue" class="form-control" ng-required="true"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Duration</td>
+            <td><input type="text" ng-model="talk.duration" class="form-control" ng-required="true"/></td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2"> <input type="submit" value="Add New Talk" ng-disabled="addtalkform.$invalid" class="btn btn-primary"/></td>
+        </tr>
+    </table>
+</form>
+
