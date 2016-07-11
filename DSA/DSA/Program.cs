@@ -11,7 +11,9 @@ namespace DSA
         static void Main(string[] args)
         {
             //UtilityManager.CreateLinkedList();
-            UtilityManager.Count();
+            //UtilityManager.Count();
+
+            WordCounter.CountWord("Kiran Kumar Kira Mohanty Kiran K iran KKiran","Kiran");
         }
     }
 }

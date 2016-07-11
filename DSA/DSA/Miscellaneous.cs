@@ -38,13 +38,24 @@ namespace DSA
         }
         public static bool IsAllEven(int[] array)
         {
-            int evenCount = 0;
-            foreach (int element in array)
-            {
-                if (element % 2 == 0)
-                    evenCount++;
-            }
+            int evenCount = array.Count(element => element%2 == 0);
             return evenCount == array.Length;
+        }
+
+        public static void DoWrk( int input,out int output)
+        {
+            int local;
+ 
+            Action doCalc = () =>
+            {
+                local = input * 2;   // this will work fine
+                //valOut = valIn * i;  // this will be a compile time error
+            };
+ 
+            // you can use the out parameter to assign result of lambda 
+            Func<int> doCalc2 = () => input * 2;
+            output = doCalc2();   
+
         }
     }
 }
