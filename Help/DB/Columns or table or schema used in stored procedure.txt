@@ -1,0 +1,3 @@
+select referenced_schema_name, referenced_entity_name, referenced_minor_name
+from 
+ sys.dm_sql_referenced_entities('[EDC].[spTIDParamsReport]','object')

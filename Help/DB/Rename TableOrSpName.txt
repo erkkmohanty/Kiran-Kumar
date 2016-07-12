@@ -1,0 +1,6 @@
+The script for renaming any object (table, sp etc) :
+sp_RENAME '[OldTableName]' , '[NewTableName]'
+
+EX:sp_Rename 'dbo.Temporary' ,'Tempodata'
+
+It will rename the table under the same schema

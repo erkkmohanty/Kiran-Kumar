@@ -1,0 +1,27 @@
+To determine whether an index has it's stats updated we can run the following command:
+ 
+DBCC SHOW_STATISTICS (table_name , index_name)
+ 
+To Update the Stats on a table the following command can be run :
+ 
+UPDATE STATISTICS <table name> WITH FULLSCAN
+ 
+The above command will scan all the rows of the table to get the updated statistics.
+   
+UPDATE STATISTICS <table name> WITH SAMPLE 50 PERCENT
+  
+The above script can be run for very large tables in case we want to specify a percentage of the total no of rows.
+ 
+ 
+We should also update statistics for all tables in a database when we are upgrading from any version to a higher SQL Server version. 
+
+
+
+EX:
+-------------------------
+sp_help 'Emp'
+
+DBCC SHOW_STATISTICS (Emp , NC_NU_Emp_MgrID)
+UPDATE STATISTICS Emp WITH SAMPLE 50 PERCENT
+
+UPDATE STATISTICS Emp WITH FULLSCAN

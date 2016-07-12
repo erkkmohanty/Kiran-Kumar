@@ -1,0 +1,24 @@
+﻿<div class="container" ng-init="data=['abc$%^gdgd','g#$oo*dB$$oy','kiran%%%%kuma$$%%r','H###i Hellooo$$$','D$D$D%D^']">
+    <h4>Custom Filter Type 1</h4>
+    Normal Number: {{number}}<br/>
+
+    Formated Phone Number: {{number|ConvertPhone}}
+    <h4>Custom Filter Type 2</h4>
+    <div class="row">
+        <table class="table table-condensed table-hover table-responsive">
+            <tr ng-repeat="item in data | RemoveSpecialCharacters">
+                <td>{{item}}</td>
+            </tr>
+        </table>
+    </div>
+    <h4>Filter in Controller(built in)</h4>
+    <span>
+        Name-{{filteredvalueuppercase}} {{filteredvaluelowercase}}<br />
+        Prize Money::{{filteredvaluecurrency}}<br />
+        Phone::{{filteredvaluephone}}
+        
+    </span>
+    <ul>
+        <li ng-repeat="item in filteredvaluetext">{{item}}</li>
+    </ul>
+</div>

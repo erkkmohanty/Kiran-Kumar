@@ -1,0 +1,31 @@
+60 00 12 00 00 
+08 10 
+20 20 01 00 02 80 00 10 
+92 00 01 
+00 04 63 
+00 12 
+30 30 
+36 32 30 30 30 30 30 32 
+01 14 --Here 114 is the toatl lentgth below(in byte)
+00 00 00 --means 3 Card Range Table
+
+02 --Table card range
+00 34 --length of the below data(count 34 bytes)
+01 34 00 00 00 00 34 99 
+99 99 99 01 01 15 00 00 
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 
+
+02 --Table card range
+00 34 --length of the below data(count 34 bytes)
+03 35 28 00 00 00 35 89 
+99 99 99 02 01 16 20 00 
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 
+
+02 --Table card range
+00 34 --length of the below data(count 34 bytes)
+02 37 00 00 00 00 37 99 
+99 99 99 01 01 15 00 00 
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00

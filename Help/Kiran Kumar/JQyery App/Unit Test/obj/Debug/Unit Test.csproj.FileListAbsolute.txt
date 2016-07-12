@@ -1,0 +1,28 @@
+E:\Kiran Kumar\JQyery App\Unit Test\obj\Debug\Unit Test.csprojResolveAssemblyReference.cache
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\Unit Test.dll
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\Unit Test.pdb
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\JQyery App.dll
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\System.Web.Helpers.dll
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\System.Web.Mvc.dll
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\System.Web.Razor.dll
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\System.Web.WebPages.dll
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\System.Web.Http.dll
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\System.Web.Http.WebHost.dll
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\System.Net.Http.Formatting.dll
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\Newtonsoft.Json.dll
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\JQyery App.pdb
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\System.Web.Helpers.xml
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\System.Web.Mvc.xml
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\System.Web.Razor.xml
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\System.Web.WebPages.xml
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\System.Web.Http.xml
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\System.Web.Http.WebHost.xml
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\System.Net.Http.Formatting.xml
+E:\Kiran Kumar\JQyery App\Unit Test\bin\Debug\Newtonsoft.Json.xml
+E:\Kiran Kumar\JQyery App\Unit Test\obj\Debug\Unit Test.dll
+E:\Kiran Kumar\JQyery App\Unit Test\obj\Debug\Unit Test.pdb

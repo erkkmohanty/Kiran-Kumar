@@ -1,0 +1,16 @@
+IF NOT EXISTS
+      (SELECT * FROM sysobjects WHERE id = OBJECT_ID(N'[Audit].[Audit]') 
+               AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+       CREATE TABLE [Audit].[Audit](
+	[Type] [char](1) NULL,
+	[TableName] [varchar](128) NULL,
+	[SchemaName] [varchar](128) NULL,
+	[PK] [varchar](1000) NULL,
+	[PKValue] [varchar](200) NULL,
+	[FieldName] [varchar](128) NULL,
+	[OldValue] [varchar](1000) NULL,
+	[NewValue] [varchar](1000) NULL,
+	[UpdateDate] [datetime] NULL,
+	[UserName] [varchar](128) NULL
+) 
+GO

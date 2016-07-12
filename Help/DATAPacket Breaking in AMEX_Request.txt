@@ -1,0 +1,9 @@
+00 00 -Length(no length while sending response)
+60 00 12 00 00--TPDU
+08 00 --MTI //(08 10) for response
+20 20 01 00 00 80 00 08--BITMAP
+92 00 01 --Proc Code field-3
+00 10 87 --STAN
+00 12-NII
+36 32 30 30 30 30 30 32 --TID
+00 11 41 50 49 56 35 32 30 2E 35 30 31

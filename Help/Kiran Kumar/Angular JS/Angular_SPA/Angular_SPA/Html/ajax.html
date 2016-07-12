@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="My Module">
+<head>
+    <title>Angular JS Service</title>
+</head>
+<style>
+    table, th, td {
+        border: 1px solid grey;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+
+        table tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+</style>
+<script src="../Scripts/angular.js"></script>
+<script>
+    var app = angular.module("My Module", []);
+    app.controller("MyController", function ($scope, $http) {
+        var url = "../data.txt";
+        $http.get(url).success(function (response) {
+            debugger;
+            $scope.studentsList = response;
+        });
+    });
+</script>
+<body ng-controller="MyController">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Roll No</td>
+            <td>Percentage</td>
+        </tr>
+        <tr ng-repeat="student in studentsList">
+            <td>{{student.Name}}</td>
+            <td>{{student.RollNo}}</td>
+            <td>{{student.Percentage}}</td>
+        </tr>
+    </table>
+</body>
+</html>

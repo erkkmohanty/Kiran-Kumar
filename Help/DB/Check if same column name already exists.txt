@@ -1,0 +1,5 @@
+IF NOT EXISTS(SELECT 1 FROM sys.columns 
+            WHERE Name = N'InActiveStatusDate' AND Object_ID = Object_ID(N'EDC.TIDConfiguration'))
+BEGIN
+ ALTER TABLE EDC.TIDConfiguration ADD InActiveStatusDate DATETIME 
+END

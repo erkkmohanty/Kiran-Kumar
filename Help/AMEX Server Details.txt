@@ -1,0 +1,14 @@
+Production server details:
+VC 192.168.1.43
+TMS/AMEX Web APP 192.168.1.44
+TMS Web Service : 192.168.1.44  Port :8091
+Database : 192.138.1.41
+Amex Init HOst: 192.168.1.46 port :4020
+
+UAT Server Details:
+VC 192.168.1.47
+TMS/AMEX Web APP 192.168.1.47
+TMS Web Service : 192.168.1.47  Port :8091
+Database(TMS/VC) : 192.138.1.47
+Database(AMEX) : 192.138.1.45
+Amex Init HOst: 192.168.1.47 port :4020

@@ -171,6 +171,10 @@
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\Events\CustomDirective.js" />
     <Content Include="scripts\Events\CustomDirectiveController.js" />
+    <Content Include="scripts\Events\CustomFilter.js" />
+    <Content Include="scripts\Events\CustomFilterController.js" />
+    <Content Include="scripts\Events\DIController.js" />
+    <Content Include="scripts\Events\DIModule.js" />
     <Content Include="scripts\Events\eventController.js" />
     <Content Include="scripts\Events\eventModule.js" />
     <Content Include="scripts\Events\eventService.js" />
@@ -938,6 +942,8 @@
     <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="Templates\AddTalk.html" />
     <Content Include="Templates\CustomDirective.html" />
+    <Content Include="Templates\CustomFilter.html" />
+    <Content Include="Templates\DI.html" />
     <Content Include="Templates\Speaker.html" />
     <Content Include="Templates\Talk.html" />
     <Content Include="Web.config" />

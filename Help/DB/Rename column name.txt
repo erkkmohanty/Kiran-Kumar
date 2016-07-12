@@ -1,0 +1,5 @@
+The script for renaming any column :
+sp_RENAME 'TableName.[OldColumnName]' , '[NewColumnName]', 'COLUMN'
+
+
+Ex:sp_RENAME 'EDC.TIDConfiguration.StatusModifiedDate', 'ActiveStatusDate' , 'COLUMN'

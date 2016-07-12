@@ -1,0 +1,44 @@
+
+
+— STEP 1. Creating DB
+SET NOCOUNT ON
+CREATE DATABASE TEST
+GO
+ALTER DATABASE TEST SET RECOVERY FULL
+USE TEST
+GO
+
+— STEP 2. Creating table with some data (100 rows)
+CREATE TABLE data (f1 INT IDENTITY)
+GO
+INSERT data DEFAULT VALUES
+GO 100
+
+— STEP 3. Performing full backup
+BACKUP DATABASE TEST TO DISK=’c:\test_full.bak’ WITH INIT
+GO
+
+— STEP 4. Performing log backup
+DECLARE @date DATETIME
+
+— variant1: Date mark just before truncation
+SET @date = DATEADD(s, 0, GETDATE())
+
+— variant2: Date mark after truncation
+— SET @date = DATEADD(s, 1, GETDATE())
+
+TRUNCATE TABLE data
+WAITFOR DELAY ’00:00:03'
+BACKUP LOG TEST TO DISK=’c:\test_log.bak’ WITH INIT
+
+— STEP 5. Restoring Test DB.
+USE MASTER
+RESTORE DATABASE TEST FROM DISK=’c:\test_full.bak’ WITH NORECOVERY, REPLACE
+RESTORE LOG TEST FROM DISK=’c:\test_log.bak’ WITH RECOVERY, STOPAT=@date
+GO
+USE TEST
+GO
+select COUNT(*) AS CNT FROM data
+go
+USE MASTER
+DROP DATABASE TEST

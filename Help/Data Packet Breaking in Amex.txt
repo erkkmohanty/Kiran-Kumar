@@ -1,0 +1,29 @@
+60 00 12 00 00   				TPDU
+08 10            				MTI
+20 20 01 00 02 80 00 10         BITMAP
+92 00 00     					Proc Code field-3 
+00 00 15     					STAn  field-11
+00 12        					NII   field-24 
+30 30        Response Code 		field-39
+36 32 30 30 30 30 30 32  		TID    field-41 
+
+
+--Reserver filed 61
+00 78 
+0D    Chip Data Table
+00 75 
+02  Table Number
+14 A0 00 00 00 65 10 10   AID
+FF FF FF FF FF FF FF FF FF 
+02   Option 3 
+60 34 Floor Limit
+00 02 ICC Application version number
+00 02 ICC Application version number
+00 02 ICC Application version number
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  
+9F 37 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+59 31 Y1
+5A 31 Z1
+59 33 Y3
+5A 33 Z3
+

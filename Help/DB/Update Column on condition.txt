@@ -1,0 +1,20 @@
+      
+update table set
+    columnx = (case when condition then 25 else columnx end),
+    columny = (case when condition then columny else 25 end) 
+
+EX:
+
+ Update [EDC].[TIDConfiguration]   Set     
+				Active = @Active,
+				ModifiedBy =  @ModifiedBy,
+				ModifiedDate = getdate(),
+				ActiveStatusDate=( CASE WHEN @Active=1
+												 THEN GETDATE()
+											  ELSE ActiveStatusDate
+										  END) ,
+				InActiveStatusDate=(CASE WHEN @Active=0
+											  THEN GETDATE()
+										  ELSE InActiveStatusDate
+										END)     
+				WHERE TID = @TID     

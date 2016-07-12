@@ -1,0 +1,28 @@
+
+Note:Open the cmd promt as an administrator
+Steps to encrypt a connection string
+--------------------------------------------------
+1) Go to Start >> All Programs >> Microsoft visual studio 2008 >> Visual Studio Tools >> Visual Studio 2008 Command Prompt (Note: if you’re using windows 7 right click on command prompt and select Run as administrator.
+ 2) After open command prompt type the following command aspnet_regiis.exe -pef "connectionStrings" "C:\VisualStudio2008\Authorization"
+Here –pef indicates that the application is built as File System website. Second argument connectionStrings indicates that name of the configuration section needs to be encrypted. The Third argument is the physical path of the folder where the web.config file is located.
+ 3) After enter the command click enter if everything goes well we will get success message like “Encrypting configuration section… Succeeded!”
+Here we don’t want to write any code to decrypt the encrypted connectionString in our application because .NET automatically decrypts it. If we want to use the connection string just call it like normal way
+
+string strconnection = ConfigurationManager.AppSettings["dbconnection"].ToString();
+Now if we want to decrypt connectionStrings section in web.config use the following command aspnet_regiis.exe -pdf "connectionStrings" "C:\VisualStudio2008\Authorization"
+
+After command execute we will get message like “Decrypting configuration section… Succeeded!”
+
+Problem:
+------------------------------
+Description: An error occurred during the processing of a configuration file required to service this request. Please review the specific error details below and modify your configuration file appropriately.
+
+Parser Error Message: Failed to decrypt using provider 'RsaProtectedConfigurationProvider'. Error message from the provider: The RSA key container could not be opened.
+
+
+Solution:
+-------------------------
+aspnet_regiis -pc "NetFrameworkConfigurationKey" -exp
+aspnet_regiis -pa "NetFrameworkConfigurationKey" "ASPNET"
+aspnet_regiis -pa "NetFrameworkConfigurationKey" "NETWORK SERVICE"
+aspnet_regiis -pa "NetFrameworkConfigurationKey" "NT AUTHORITY\NETWORK SERVICE"

@@ -1,0 +1,3 @@
+select * from sys.tables table 
+join sys.schemas schema on (table .schema_id = schema.schema_id) 
+where schema.name = 'AUDIT' and table .name = 'TIDConfiguration'

@@ -1,3 +1,22 @@
 ﻿<h4>@ OR @attr</h4>
 <attr_Custom:Directive talk="{{tname}}"></attr_Custom:Directive><br/>
-{{tname}}
+From Controller:{{tname}}
+<hr/>
+<h4>= OR =attr</h4>
+<equal:Custom-Directive data="talkobj"></equal:Custom-Directive><br />
+From Controller:{{talkobj.talkname}} {{talkobj.speaker}}
+<hr/>
+<h4>& or &attr</h4>
+<ampersand:Custom_Directive expr="UpdateData()" txt="{{speaker}}"></ampersand:Custom_Directive><br/>
+From Controller:{{speaker}}
+<h4>& or &attr with parameters type 1</h4>
+<ampersand:Param_Directive method="UpdateParamData(updatedData)" data="{{olddata}}"></ampersand:Param_Directive><br/>
+From Controller:{{olddata}}
+
+<h4>& or &attr with paramaters using link-1</h4>
+<ampersand:Param:Link_Directive mthd="UpdateParamData2(updatedName)" talkname="{{olddata2}}"></ampersand:Param:Link_Directive><br/>
+From Controller:{{olddata2}}
+
+<h4>& or &attr with parameters using link-2</h4>
+<ampersand:Param:Link:Directive2 mthd="UpdateParamData3(updatedName)" talkname="{{olddata3}}" talknm="Updating talk name via attribute"></ampersand:Param:Link:Directive2><br />
+From Controller:{{olddata3}}
