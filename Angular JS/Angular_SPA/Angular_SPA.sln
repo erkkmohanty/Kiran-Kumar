@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicAuthHttpModule", "Basi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular in 19 Days", "Angular in 19 Days\Angular in 19 Days.csproj", "{63F9C0C5-FD03-4BC1-99AA-F2D20ED50001}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.Net With Angular Unit Test", "ASP.Net With Angular Unit Test\ASP.Net With Angular Unit Test.csproj", "{0092A6B9-68A5-4031-AEDE-3755A6EC4EB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.Net With Angular Unit Test.Tests", "ASP.Net With Angular Unit Test.Tests\ASP.Net With Angular Unit Test.Tests.csproj", "{2D230C57-6016-4276-876E-4D7A1FAE0159}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{63F9C0C5-FD03-4BC1-99AA-F2D20ED50001}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63F9C0C5-FD03-4BC1-99AA-F2D20ED50001}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63F9C0C5-FD03-4BC1-99AA-F2D20ED50001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0092A6B9-68A5-4031-AEDE-3755A6EC4EB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0092A6B9-68A5-4031-AEDE-3755A6EC4EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0092A6B9-68A5-4031-AEDE-3755A6EC4EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0092A6B9-68A5-4031-AEDE-3755A6EC4EB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D230C57-6016-4276-876E-4D7A1FAE0159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D230C57-6016-4276-876E-4D7A1FAE0159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D230C57-6016-4276-876E-4D7A1FAE0159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D230C57-6016-4276-876E-4D7A1FAE0159}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
