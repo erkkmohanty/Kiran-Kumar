@@ -1,0 +1,12 @@
+E:\Kiran Kumar\chsakell-SPA\HomeCinema.Services\obj\Debug\HomeCinema.Services.csprojResolveAssemblyReference.cache
+E:\Kiran Kumar\chsakell-SPA\HomeCinema.Services\bin\Debug\HomeCinema.Services.dll
+E:\Kiran Kumar\chsakell-SPA\HomeCinema.Services\bin\Debug\HomeCinema.Services.pdb
+E:\Kiran Kumar\chsakell-SPA\HomeCinema.Services\bin\Debug\HomeCinema.DataRepositories.dll
+E:\Kiran Kumar\chsakell-SPA\HomeCinema.Services\bin\Debug\HomeCinema.Entities.dll
+E:\Kiran Kumar\chsakell-SPA\HomeCinema.Services\bin\Debug\EntityFramework.dll
+E:\Kiran Kumar\chsakell-SPA\HomeCinema.Services\bin\Debug\MockData.dll
+E:\Kiran Kumar\chsakell-SPA\HomeCinema.Services\bin\Debug\HomeCinema.DataRepositories.pdb
+E:\Kiran Kumar\chsakell-SPA\HomeCinema.Services\bin\Debug\HomeCinema.Entities.pdb
+E:\Kiran Kumar\chsakell-SPA\HomeCinema.Services\bin\Debug\EntityFramework.xml
+E:\Kiran Kumar\chsakell-SPA\HomeCinema.Services\obj\Debug\HomeCinema.Services.dll
+E:\Kiran Kumar\chsakell-SPA\HomeCinema.Services\obj\Debug\HomeCinema.Services.pdb

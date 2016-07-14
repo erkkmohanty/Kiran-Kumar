@@ -1,0 +1,47 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionDefault/AutoScrollOutput/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=11F44C100E614F6F8493A252AAA50944/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=11F44C100E614F6F8493A252AAA50944/AutoScrollOutput/@EntryValue">True</s:Boolean>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=11F44C100E614F6F8493A252AAA50944/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=11F44C100E614F6F8493A252AAA50944/Name/@EntryValue">ASP.Net With Angular Unit Test.Tests</s:String>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=11F44C100E614F6F8493A252AAA50944/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;e Id="Jasmine My First Test -&amp;gt; " Project="2D230C57-6016-4276-876E-4D7A1FAE0159" Provider="Jasmine" /&gt;&lt;e Id="Jasmine My First Test -&amp;gt;  Add with two positive num Positive Scenario 2" Project="2D230C57-6016-4276-876E-4D7A1FAE0159" Provider="Jasmine" /&gt;&lt;e Id="Jasmine My First Test -&amp;gt;  Add with two positive num Positive Scenario 1" Project="2D230C57-6016-4276-876E-4D7A1FAE0159" Provider="Jasmine" /&gt;&lt;e Id="Jasmine Event Controller Tests=&amp;gt;" Project="2D230C57-6016-4276-876E-4D7A1FAE0159" Provider="Jasmine" /&gt;&lt;e Id="Jasmine Event Controller Tests=&amp;gt; It Should have four talks" Project="2D230C57-6016-4276-876E-4D7A1FAE0159" Provider="Jasmine" /&gt;&lt;e Id="Jasmine Directive Test=&amp;gt;" Project="2D230C57-6016-4276-876E-4D7A1FAE0159" Provider="Jasmine" /&gt;&lt;e Id="Jasmine Directive Test=&amp;gt; Attr Custom Directive defined" Project="2D230C57-6016-4276-876E-4D7A1FAE0159" Provider="Jasmine" /&gt;&lt;e Id="Jasmine Directive Test=&amp;gt; Attr Custom renders proper html" Project="2D230C57-6016-4276-876E-4D7A1FAE0159" Provider="Jasmine" /&gt;&lt;/Session&gt;</s:String>
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=23593B9E1E3F407382905E17A300CC95/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=23593B9E1E3F407382905E17A300CC95/AutoScrollOutput/@EntryValue">True</s:Boolean>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=23593B9E1E3F407382905E17A300CC95/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=23593B9E1E3F407382905E17A300CC95/Name/@EntryValue">My First Test -&gt;  #3</s:String>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=23593B9E1E3F407382905E17A300CC95/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;e Id="Jasmine My First Test -&amp;gt; " Project="2D230C57-6016-4276-876E-4D7A1FAE0159" Provider="Jasmine" /&gt;&lt;e Id="Jasmine My First Test -&amp;gt;  Add with two positive num Positive Scenario 1" Project="2D230C57-6016-4276-876E-4D7A1FAE0159" Provider="Jasmine" /&gt;&lt;e Id="Jasmine My First Test -&amp;gt;  Add with two positive num Positive Scenario 2" Project="2D230C57-6016-4276-876E-4D7A1FAE0159" Provider="Jasmine" /&gt;&lt;/Session&gt;</s:String>
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=2765CD64EEEA49F78C276A26BB8C6EE5/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=2765CD64EEEA49F78C276A26BB8C6EE5/AutoScrollOutput/@EntryValue">True</s:Boolean>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=2765CD64EEEA49F78C276A26BB8C6EE5/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=2765CD64EEEA49F78C276A26BB8C6EE5/Name/@EntryValue">Event Controller Tests=&gt;</s:String>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=2765CD64EEEA49F78C276A26BB8C6EE5/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;e Id="Jasmine Event Controller Tests=&amp;gt;" Project="2D230C57-6016-4276-876E-4D7A1FAE0159" Provider="Jasmine" /&gt;&lt;e Id="Jasmine Event Controller Tests=&amp;gt; It Should have four talks" Project="2D230C57-6016-4276-876E-4D7A1FAE0159" Provider="Jasmine" /&gt;&lt;/Session&gt;</s:String>
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=2B4BF57299E440A7B3B3D4D525AC71C3/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=2B4BF57299E440A7B3B3D4D525AC71C3/AutoScrollOutput/@EntryValue">True</s:Boolean>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=2B4BF57299E440A7B3B3D4D525AC71C3/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=2B4BF57299E440A7B3B3D4D525AC71C3/Name/@EntryValue">My First Test -&gt; </s:String>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=2B4BF57299E440A7B3B3D4D525AC71C3/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;e Id="Jasmine My First Test -&amp;gt; " Project="2D230C57-6016-4276-876E-4D7A1FAE0159" Provider="Jasmine" /&gt;&lt;e Id="Jasmine My First Test -&amp;gt;  Add with two positive num Positive Scenario 1" Project="2D230C57-6016-4276-876E-4D7A1FAE0159" Provider="Jasmine" /&gt;&lt;e Id="Jasmine My First Test -&amp;gt;  Add with two positive num Positive Scenario 2" Project="2D230C57-6016-4276-876E-4D7A1FAE0159" Provider="Jasmine" /&gt;&lt;/Session&gt;</s:String>
+	
+	
+	
+	
+	
+	
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=9010EDC64CD84EC7BA8881BB42ADCB3E/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=9010EDC64CD84EC7BA8881BB42ADCB3E/AutoScrollOutput/@EntryValue">True</s:Boolean>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=9010EDC64CD84EC7BA8881BB42ADCB3E/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=9010EDC64CD84EC7BA8881BB42ADCB3E/Name/@EntryValue">My First Test -&gt;  #2</s:String>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=9010EDC64CD84EC7BA8881BB42ADCB3E/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;e Id="Jasmine My First Test -&amp;gt; " Project="2D230C57-6016-4276-876E-4D7A1FAE0159" Provider="Jasmine" /&gt;&lt;e Id="Jasmine My First Test -&amp;gt;  Add with two positive num Positive Scenario 2" Project="2D230C57-6016-4276-876E-4D7A1FAE0159" Provider="Jasmine" /&gt;&lt;e Id="Jasmine My First Test -&amp;gt;  Add with two positive num Positive Scenario 1" Project="2D230C57-6016-4276-876E-4D7A1FAE0159" Provider="Jasmine" /&gt;&lt;/Session&gt;</s:String>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</wpf:ResourceDictionary>

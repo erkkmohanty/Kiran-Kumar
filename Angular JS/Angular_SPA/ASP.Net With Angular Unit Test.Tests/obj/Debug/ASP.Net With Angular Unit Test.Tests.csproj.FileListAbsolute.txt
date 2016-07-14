@@ -1,0 +1,22 @@
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\bin\Debug\ApplicationInsights.config
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\bin\Debug\roslyn\csc.exe
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\bin\Debug\roslyn\System.Collections.Immutable.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\bin\Debug\roslyn\System.Reflection.Metadata.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\bin\Debug\roslyn\vbc.exe
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\bin\Debug\roslyn\VBCSCompiler.exe
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\bin\Debug\roslyn\VBCSCompiler.exe.config
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\bin\Debug\ASP.Net With Angular Unit Test.Tests.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\bin\Debug\ASP.Net With Angular Unit Test.Tests.pdb
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\bin\Debug\ASP.Net With Angular Unit Test.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\bin\Debug\ASP.Net With Angular Unit Test.pdb
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\obj\Debug\ASP.Net With Angular Unit Test.Tests.csprojResolveAssemblyReference.cache
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\obj\Debug\ASP.Net With Angular Unit Test.Tests.dll
+E:\Kiran Kumar\Angular JS\Angular_SPA\ASP.Net With Angular Unit Test.Tests\obj\Debug\ASP.Net With Angular Unit Test.Tests.pdb

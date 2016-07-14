@@ -4,11 +4,12 @@ var directoryModule = angular.module("directoryModule",[]);
 //@ or @attr
 directoryModule.directive("attrCustomDirective", function () {
 
-   
+
     var directive = {
-        restrict:"E",
+        restrict: "E",
         scope: { talkname: "@talk" },
         template: "<div>The talk name is {{talkname}}</div>",
+        replace: true,
         controller:function($scope) {
             setTimeout(function () {
                 debugger;
