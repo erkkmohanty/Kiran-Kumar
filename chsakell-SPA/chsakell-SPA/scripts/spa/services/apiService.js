@@ -1,10 +1,8 @@
 ﻿(function (app) {
-    'use strict';
-
+    "use strict";
     app.factory('apiService', apiService);
 
-    apiService.$inject = ['$http', '$location', 'notificationService','$rootScope'];
-
+    apiService.$inject = ['$http', '$location', 'notificationService', '$rootScope'];
     function apiService($http, $location, notificationService, $rootScope) {
         var service = {
             get: get,

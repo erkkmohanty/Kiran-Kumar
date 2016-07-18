@@ -1,10 +1,8 @@
-﻿(function (app) {
-    'use strict';
-
-    app.factory('notificationService', notificationService);
+﻿(function(app) {
+    "use strict";
+    app.factory("notificationService", notificationService);
 
     function notificationService() {
-
         toastr.options = {
             "debug": false,
             "positionClass": "toast-top-right",
@@ -14,16 +12,13 @@
             "timeOut": 3000,
             "extendedTimeOut": 1000
         };
-
-        var service = {
+        var service= {
             displaySuccess: displaySuccess,
             displayError: displayError,
             displayWarning: displayWarning,
             displayInfo: displayInfo
         };
-
         return service;
-
         function displaySuccess(message) {
             toastr.success(message);
         }
@@ -45,7 +40,5 @@
         function displayInfo(message) {
             toastr.info(message);
         }
-
     }
-
 })(angular.module('common.core'));

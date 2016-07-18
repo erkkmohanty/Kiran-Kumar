@@ -1,33 +1,20 @@
 ﻿(function (app) {
-    'use strict';
+"use strict";
+    app.controller("rootCtrl", rootCtrl);
+    rootCtrl.$inject = ["$scope"];
+   function rootCtrl($scope) {
+       $scope.userData = {};
 
-    app.controller('rootCtrl', rootCtrl);
-
-    rootCtrl.$inject = ['$scope','$location', 'membershipService','$rootScope'];
-    function rootCtrl($scope, $location, membershipService, $rootScope) {
-
-        $scope.userData = {};
-        
-        $scope.userData.displayUserInfo = displayUserInfo;
-        $scope.logout = logout;
+       $scope.userData.displayUserInfo = displayUserInfo;
+       $scope.logout = logout;
 
 
-        function displayUserInfo() {
-            $scope.userData.isUserLoggedIn = membershipService.isUserLoggedIn();
+       function displayUserInfo() {
 
-            if($scope.userData.isUserLoggedIn)
-            {
-                $scope.username = $rootScope.repository.loggedUser.username;
-            }
-        }
+       }
 
-        function logout() {
-            membershipService.removeCredentials();
-            $location.path('#/');
-            $scope.userData.displayUserInfo();
-        }
+       function logout() {
 
-        $scope.userData.displayUserInfo();
-    }
-
+       }
+   }
 })(angular.module('homeCinema'));

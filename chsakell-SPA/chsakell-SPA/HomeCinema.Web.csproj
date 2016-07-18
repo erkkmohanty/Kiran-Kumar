@@ -167,6 +167,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\blank.gif" />
     <Content Include="Content\css\bootstrap-theme.css" />
     <Content Include="Content\css\bootstrap.css" />
@@ -209,48 +211,26 @@
     <Content Include="Content\images\raty\star-off.png" />
     <Content Include="Content\images\raty\star-on-big.png" />
     <Content Include="Content\images\raty\star-on.png" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Help.html" />
-    <Content Include="scripts\spa\account\login.html" />
-    <Content Include="scripts\spa\account\loginCtrl.js" />
-    <Content Include="scripts\spa\account\register.html" />
-    <Content Include="scripts\spa\account\registerCtrl.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <None Include="scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\jquery-1.10.2.js" />
+    <Content Include="scripts\jquery-1.10.2.min.js" />
+    <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="scripts\spa\app.js" />
-    <Content Include="scripts\spa\customers\customerEditCtrl.js" />
-    <Content Include="scripts\spa\customers\customers.html" />
-    <Content Include="scripts\spa\customers\customersCtrl.js" />
-    <Content Include="scripts\spa\customers\customersRegCtrl.js" />
-    <Content Include="scripts\spa\customers\editCustomerModal.html" />
-    <Content Include="scripts\spa\customers\register.html" />
-    <Content Include="scripts\spa\directives\availableMovie.directive.js" />
-    <Content Include="scripts\spa\directives\availableMovie.html" />
-    <Content Include="scripts\spa\directives\rating.directive.js" />
     <Content Include="scripts\spa\home\index.html" />
-    <Content Include="scripts\spa\home\indexCtrl.js" />
     <Content Include="scripts\spa\home\rootCtrl.js" />
-    <Content Include="scripts\spa\layout\customPager.directive.js" />
-    <Content Include="scripts\spa\layout\pager.html" />
     <Content Include="scripts\spa\layout\sideBar.directive.js" />
-    <Content Include="scripts\spa\layout\sideBar.html" />
+    <Content Include="scripts\spa\layout\sidebar.html" />
     <Content Include="scripts\spa\layout\topBar.directive.js" />
     <Content Include="scripts\spa\layout\topBar.html" />
     <Content Include="scripts\spa\modules\common.core.js" />
     <Content Include="scripts\spa\modules\common.ui.js" />
-    <Content Include="scripts\spa\movies\add.html" />
-    <Content Include="scripts\spa\movies\details.html" />
-    <Content Include="scripts\spa\movies\edit.html" />
-    <Content Include="scripts\spa\movies\movieAddCtrl.js" />
-    <Content Include="scripts\spa\movies\movieDetailsCtrl.js" />
-    <Content Include="scripts\spa\movies\movieEditCtrl.js" />
-    <Content Include="scripts\spa\movies\movies.html" />
-    <Content Include="scripts\spa\movies\moviesCtrl.js" />
-    <Content Include="scripts\spa\rental\rental.html" />
-    <Content Include="scripts\spa\rental\rentMovieCtrl.js" />
-    <Content Include="scripts\spa\rental\rentMovieModal.html" />
-    <Content Include="scripts\spa\rental\rentStatsCtrl.js" />
     <Content Include="scripts\spa\services\apiService.js" />
-    <Content Include="scripts\spa\services\fileUploadService.js" />
-    <Content Include="scripts\spa\services\membershipService.js" />
     <Content Include="scripts\spa\services\notificationService.js" />
     <Content Include="scripts\vendors\angucomplete-alt.min.js" />
     <Content Include="scripts\vendors\angular-base64.js" />
@@ -272,6 +252,10 @@
     <Content Include="scripts\vendors\toastr.js" />
     <Content Include="scripts\vendors\ui-bootstrap-tpls-0.13.1.js" />
     <Content Include="scripts\vendors\underscore.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="scripts\jquery-1.10.2.min.map" />
     <None Include="scripts\_references.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -281,11 +265,20 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\GenresController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\core\ApiControllerBase.cs" />
     <Compile Include="Infrastructure\Extensions\RequestMessageExtensions.cs" />
+    <Compile Include="Infrastructure\Mappings\AutoMapperConfiguration.cs" />
+    <Compile Include="Infrastructure\Mappings\DomainToViewModelMappingProfile.cs" />
     <Compile Include="Infrastructure\MessageHandlers\HomeCinemaAuthHandler.cs" />
+    <Compile Include="Infrastructure\Validators\MovieViewModelValidator.cs" />
+    <Compile Include="Models\GenreViewModel.cs" />
+    <Compile Include="Models\MovieViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -303,6 +296,9 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -312,8 +308,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HomeCinema.DataRepositories\HomeCinema.DataRepositories.csproj">

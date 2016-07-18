@@ -1,14 +1,12 @@
 ﻿(function(app) {
-    'use strict';
-
-    app.directive('sideBar', sideBar);
+    "use strict";
+    app.directive("sideBar", sideBar);
 
     function sideBar() {
-        return {
-            restrict: 'E',
-            replace: true,
-            templateUrl: '/scripts/spa/layout/sideBar.html'
-        }
+        var sidebarDirective = {};
+        sidebarDirective.restrict = "E";
+        sidebarDirective.replace = true;
+        sidebarDirective.templateUrl = "/scripts/spa/layout/sideBar.html";
+        return sidebarDirective;
     }
-
-})(angular.module('common.ui'));
+})(angular.module("common.ui"));

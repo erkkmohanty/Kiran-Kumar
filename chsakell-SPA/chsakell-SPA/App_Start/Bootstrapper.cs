@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using chsakell_SPA.Infrastructure.Mappings;
 
 namespace chsakell_SPA.App_Start
 {
@@ -13,7 +14,7 @@ namespace chsakell_SPA.App_Start
             // Configure Autofac
             AutofacWebapiConfig.Initialize(GlobalConfiguration.Configuration);
             //Configure AutoMapper
-            //AutoMapperConfiguration.Configure();
+            AutoMapperConfiguration.Configure();
         }
     }
 }

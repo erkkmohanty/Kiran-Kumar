@@ -4,12 +4,12 @@ E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\bin\Debug\HomeCinema.Dat
 E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\bin\Debug\EntityFramework.dll
 E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\bin\Debug\EntityFramework.SqlServer.dll
 E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\bin\Debug\HomeCinema.Entities.dll
+E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\bin\Debug\MockData.dll
 E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\bin\Debug\HomeCinema.Entities.pdb
 E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\bin\Debug\EntityFramework.xml
 E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\bin\Debug\EntityFramework.SqlServer.xml
 E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\obj\Debug\HomeCinema.DataRepositories.csprojResolveAssemblyReference.cache
-E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\obj\Debug\HomeCinema.DataRepositories.dll
-E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\obj\Debug\HomeCinema.DataRepositories.pdb
-E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\bin\Debug\MockData.dll
 E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\obj\Debug\HomeCinema.DataRepositories.Migrations.initial_migration.resources
 E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\obj\Debug\HomeCinema.DataRepositories.csproj.GenerateResource.Cache
+E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\obj\Debug\HomeCinema.DataRepositories.dll
+E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\obj\Debug\HomeCinema.DataRepositories.pdb

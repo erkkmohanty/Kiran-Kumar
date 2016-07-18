@@ -1,8 +1,6 @@
-﻿(function(app) {
-    'use strict';
+﻿(function (app) {
 
-    app.directive('topBar', topBar);
-
+    app.directive("topBar", topBar);
     function topBar() {
         return {
             restrict: 'E',
@@ -10,5 +8,4 @@
             templateUrl: '/scripts/spa/layout/topBar.html'
         }
     }
-
 })(angular.module('common.ui'));
