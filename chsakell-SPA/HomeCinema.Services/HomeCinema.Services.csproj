@@ -43,6 +43,7 @@
     <Compile Include="Abstract\IEncryptionService.cs" />
     <Compile Include="Abstract\IMembershipService.cs" />
     <Compile Include="EncryptionService.cs" />
+    <Compile Include="MembershipContext.cs" />
     <Compile Include="MembershipService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

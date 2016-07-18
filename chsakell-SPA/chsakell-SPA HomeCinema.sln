@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "chsakell-SPA\API.csproj", "{DFB2228E-1ABF-46A7-9E5E-7D3443C91477}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeCinema.Web", "chsakell-SPA\HomeCinema.Web.csproj", "{DFB2228E-1ABF-46A7-9E5E-7D3443C91477}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chsakell-SPA.Tests", "chsakell-SPA.Tests\chsakell-SPA.Tests.csproj", "{3362EC18-F397-42A6-A0BC-732774A24CE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeCinema.Tests", "chsakell-SPA.Tests\HomeCinema.Tests.csproj", "{3362EC18-F397-42A6-A0BC-732774A24CE4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeCinema.Entities", "HomeCinema.Entities\HomeCinema.Entities.csproj", "{5CA0C53F-EFF6-481B-8DF7-66D3AFBD4648}"
 EndProject
