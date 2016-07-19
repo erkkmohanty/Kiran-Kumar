@@ -215,6 +215,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Help.html" />
+    <Content Include="scripts\account\login.html" />
+    <Content Include="scripts\account\loginCtrl.js" />
+    <Content Include="scripts\account\register.html" />
+    <Content Include="scripts\account\registerCtrl.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
@@ -222,8 +226,20 @@
     <Content Include="scripts\jquery-1.10.2.min.js" />
     <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="scripts\spa\app.js" />
+    <Content Include="scripts\spa\customers\customerEditCtrl.js" />
+    <Content Include="scripts\spa\customers\customers.html" />
+    <Content Include="scripts\spa\customers\customersCtrl.js" />
+    <Content Include="scripts\spa\customers\customersRegCtrl.js" />
+    <Content Include="scripts\spa\customers\editCustomerModal.html" />
+    <Content Include="scripts\spa\customers\register.html" />
+    <Content Include="scripts\spa\directives\availableMovie.directive.js" />
+    <Content Include="scripts\spa\directives\availableMovie.html" />
+    <Content Include="scripts\spa\directives\componentRating.directive.js" />
     <Content Include="scripts\spa\home\index.html" />
+    <Content Include="scripts\spa\home\indexCtrl.js" />
     <Content Include="scripts\spa\home\rootCtrl.js" />
+    <Content Include="scripts\spa\layout\customPager.directive.js" />
+    <Content Include="scripts\spa\layout\pager.html" />
     <Content Include="scripts\spa\layout\sideBar.directive.js" />
     <Content Include="scripts\spa\layout\sidebar.html" />
     <Content Include="scripts\spa\layout\topBar.directive.js" />
@@ -231,6 +247,7 @@
     <Content Include="scripts\spa\modules\common.core.js" />
     <Content Include="scripts\spa\modules\common.ui.js" />
     <Content Include="scripts\spa\services\apiService.js" />
+    <Content Include="scripts\spa\services\membershipService.js" />
     <Content Include="scripts\spa\services\notificationService.js" />
     <Content Include="scripts\vendors\angucomplete-alt.min.js" />
     <Content Include="scripts\vendors\angular-base64.js" />
@@ -265,6 +282,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\GenresController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
@@ -272,13 +291,20 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\core\ApiControllerBase.cs" />
+    <Compile Include="Infrastructure\core\PaginationSet.cs" />
+    <Compile Include="Infrastructure\Extensions\EntitiesExtensions.cs" />
     <Compile Include="Infrastructure\Extensions\RequestMessageExtensions.cs" />
     <Compile Include="Infrastructure\Mappings\AutoMapperConfiguration.cs" />
     <Compile Include="Infrastructure\Mappings\DomainToViewModelMappingProfile.cs" />
     <Compile Include="Infrastructure\MessageHandlers\HomeCinemaAuthHandler.cs" />
+    <Compile Include="Infrastructure\Validators\AccountViewModelValidators.cs" />
+    <Compile Include="Infrastructure\Validators\CustomerViewModelValidator.cs" />
     <Compile Include="Infrastructure\Validators\MovieViewModelValidator.cs" />
+    <Compile Include="Models\CustomerViewModel.cs" />
     <Compile Include="Models\GenreViewModel.cs" />
+    <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\MovieViewModel.cs" />
+    <Compile Include="Models\RegistrationViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
