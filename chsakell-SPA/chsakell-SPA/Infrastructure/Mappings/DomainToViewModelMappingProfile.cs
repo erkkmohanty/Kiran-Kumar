@@ -54,6 +54,24 @@ namespace chsakell_SPA.Infrastructure.Mappings
             var customerDest = customerMapper.Map<Customer, CustomerViewModel>(customerSource);
 
 
+            var stockConfig = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<Stock, StockViewModel>();
+            });
+
+            IMapper stockMapper = stockConfig.CreateMapper();
+            var stockSource = new Stock();
+            var stockDest = stockMapper.Map<Stock, StockViewModel>(stockSource);
+
+
+            var rentConfig = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<Rental, RentalViewModel>();
+            });
+
+            IMapper rentMapper = rentConfig.CreateMapper();
+            var rentSource = new Rental();
+            var rentDest = rentMapper.Map<Rental, RentalViewModel>(rentSource);
 
         }
 

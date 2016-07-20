@@ -246,7 +246,20 @@
     <Content Include="scripts\spa\layout\topBar.html" />
     <Content Include="scripts\spa\modules\common.core.js" />
     <Content Include="scripts\spa\modules\common.ui.js" />
+    <Content Include="scripts\spa\movies\add.html" />
+    <Content Include="scripts\spa\movies\details.html" />
+    <Content Include="scripts\spa\movies\edit.html" />
+    <Content Include="scripts\spa\movies\movieAddCtrl.js" />
+    <Content Include="scripts\spa\movies\movieDetailsCtrl.js" />
+    <Content Include="scripts\spa\movies\movieEditCtrl.js" />
+    <Content Include="scripts\spa\movies\movies.html" />
+    <Content Include="scripts\spa\movies\moviesCtrl.js" />
+    <Content Include="scripts\spa\movies\rentMovieCtrl.js" />
+    <Content Include="scripts\spa\movies\rentMovieModal.html" />
+    <Content Include="scripts\spa\rental\rental.html" />
+    <Content Include="scripts\spa\rental\rentalStatsCtrl.js" />
     <Content Include="scripts\spa\services\apiService.js" />
+    <Content Include="scripts\spa\services\fileUploadService.js" />
     <Content Include="scripts\spa\services\membershipService.js" />
     <Content Include="scripts\spa\services\notificationService.js" />
     <Content Include="scripts\vendors\angucomplete-alt.min.js" />
@@ -287,11 +300,16 @@
     <Compile Include="Controllers\GenresController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
+    <Compile Include="Controllers\RentalsController.cs" />
+    <Compile Include="Controllers\StocksController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\core\ApiControllerBase.cs" />
+    <Compile Include="Infrastructure\core\FileUploadResult.cs" />
+    <Compile Include="Infrastructure\core\MimeMultipart.cs" />
     <Compile Include="Infrastructure\core\PaginationSet.cs" />
+    <Compile Include="Infrastructure\core\UploadMultipartFormProvider.cs" />
     <Compile Include="Infrastructure\Extensions\EntitiesExtensions.cs" />
     <Compile Include="Infrastructure\Extensions\RequestMessageExtensions.cs" />
     <Compile Include="Infrastructure\Mappings\AutoMapperConfiguration.cs" />
@@ -300,11 +318,16 @@
     <Compile Include="Infrastructure\Validators\AccountViewModelValidators.cs" />
     <Compile Include="Infrastructure\Validators\CustomerViewModelValidator.cs" />
     <Compile Include="Infrastructure\Validators\MovieViewModelValidator.cs" />
+    <Compile Include="Infrastructure\Validators\StockViewModelValidator.cs" />
     <Compile Include="Models\CustomerViewModel.cs" />
     <Compile Include="Models\GenreViewModel.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\MovieViewModel.cs" />
     <Compile Include="Models\RegistrationViewModel.cs" />
+    <Compile Include="Models\RentalHistoryViewModel.cs" />
+    <Compile Include="Models\RentalViewModel.cs" />
+    <Compile Include="Models\StockViewModel.cs" />
+    <Compile Include="Models\TotalRentalHistoryViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

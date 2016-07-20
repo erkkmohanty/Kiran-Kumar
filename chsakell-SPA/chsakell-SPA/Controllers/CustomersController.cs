@@ -11,6 +11,7 @@ using HomeCinema.DataRepositories.Infrastructure;
 using HomeCinema.DataRepositories.Repositories;
 using HomeCinema.Entities.Entities;
 using chsakell_SPA.Infrastructure.Extensions;
+using HomeCinema.DataRepositories.Extensions;
 
 namespace chsakell_SPA.Controllers
 {
@@ -118,25 +119,25 @@ namespace chsakell_SPA.Controllers
                 }
                 else
                 {
-                    //if (_customersRepository.UserExists(customer.Email, customer.IdentityCard))
-                    //{
-                    //    ModelState.AddModelError("Invalid user", "Email or Identity Card number already exists");
-                    //    response = request.CreateResponse(HttpStatusCode.BadRequest,
-                    //    ModelState.Keys.SelectMany(k => ModelState[k].Errors)
-                    //          .Select(m => m.ErrorMessage).ToArray());
-                    //}
-                    //else
-                    //{
-                    //    Customer newCustomer = new Customer();
-                    //    newCustomer.UpdateCustomer(customer);
-                    //    _customersRepository.Add(newCustomer);
+                    if (_customersRepository.UserExists(customer.Email, customer.IdentityCard))
+                    {
+                        ModelState.AddModelError("Invalid user", "Email or Identity Card number already exists");
+                        response = request.CreateResponse(HttpStatusCode.BadRequest,
+                        ModelState.Keys.SelectMany(k => ModelState[k].Errors)
+                              .Select(m => m.ErrorMessage).ToArray());
+                    }
+                    else
+                    {
+                        Customer newCustomer = new Customer();
+                        newCustomer.UpdateCustomer(customer);
+                        _customersRepository.Add(newCustomer);
 
-                    //    UnitOfWork.Commit();
+                        UnitOfWork.Commit();
 
-                    //    // Update view model
-                    //    customer = Mapper.Map<Customer, CustomerViewModel>(newCustomer);
-                    //    response = request.CreateResponse<CustomerViewModel>(HttpStatusCode.Created, customer);
-                    //}
+                        // Update view model
+                        customer = Mapper.Map<Customer, CustomerViewModel>(newCustomer);
+                        response = request.CreateResponse<CustomerViewModel>(HttpStatusCode.Created, customer);
+                    }
                 }
 
                 return response;

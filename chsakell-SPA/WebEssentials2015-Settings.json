@@ -1,7 +1,7 @@
 ﻿{
   "BrowserLink": {
     "CssIgnorePatterns": "bootstrap*; reset.css; normalize.css; jquery*; toastr*; foundation*; animate*; inuit*; elements*; ratchet*; hint*; flat-ui*; 960*; skeleton*",
-    "EnableMenu": true,
+    "EnableMenu": false,
     "EnablePixelPushing": true,
     "ShowMenu": true
   },
@@ -22,9 +22,9 @@
   },
   "General": {
     "AllMessagesToOutputWindow": false,
-    "KeepImportantComments": true,
-    "ShowLogoWatermark": true,
-    "SvgPreviewPane": true
+    "KeepImportantComments": false,
+    "ShowLogoWatermark": false,
+    "SvgPreviewPane": false
   },
   "Html": {
     "AttributeQuotesRemovalMode": "KeepQuotes",
