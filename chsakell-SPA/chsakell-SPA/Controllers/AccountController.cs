@@ -11,6 +11,7 @@ using HomeCinema.DataRepositories.Repositories;
 using HomeCinema.Entities.Entities;
 using HomeCinema.Services;
 using HomeCinema.Services.Abstract;
+using AutoMapper;
 
 namespace chsakell_SPA.Controllers
 {
@@ -21,8 +22,8 @@ namespace chsakell_SPA.Controllers
         private readonly IMembershipService _membershipService;
 
         public AccountController(IMembershipService membershipService,
-            IEntityBaseRepository<Error> errorsRepository, IUnitOfWork _unitOfWork)
-            : base(errorsRepository, _unitOfWork)
+            IEntityBaseRepository<Error> errorsRepository, IUnitOfWork _unitOfWork, IMapper mapper)
+            : base(errorsRepository, _unitOfWork,mapper)
         {
             _membershipService = membershipService;
         }

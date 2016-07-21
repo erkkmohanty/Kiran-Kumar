@@ -9,6 +9,7 @@ using HomeCinema.DataRepositories.Infrastructure;
 using HomeCinema.DataRepositories.Repositories;
 using HomeCinema.Entities.Entities;
 using WebGrease.Activities;
+using AutoMapper;
 
 namespace chsakell_SPA.Infrastructure.core
 {
@@ -16,10 +17,12 @@ namespace chsakell_SPA.Infrastructure.core
     {
         protected readonly IEntityBaseRepository<Error> ErrorsRepository;
         protected readonly IUnitOfWork UnitOfWork;
-        public ApiControllerBase(IEntityBaseRepository<Error> errorsRepository, IUnitOfWork unitOfWork)
+        protected readonly IMapper Mapper;
+        public ApiControllerBase(IEntityBaseRepository<Error> errorsRepository, IUnitOfWork unitOfWork, IMapper mapper)
         {
             ErrorsRepository = errorsRepository;
             UnitOfWork = unitOfWork;
+            Mapper = mapper;
         }
         protected HttpResponseMessage CreateHttpResponse(HttpRequestMessage request, Func<HttpResponseMessage> function)
         {

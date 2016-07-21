@@ -26,8 +26,8 @@ namespace chsakell_SPA.Controllers
         public RentalsController(IEntityBaseRepository<Rental> rentalsRepository,
             IEntityBaseRepository<Customer> customersRepository, IEntityBaseRepository<Movie> moviesRepository,
             IEntityBaseRepository<Stock> stocksRepository,
-            IEntityBaseRepository<Error> _errorsRepository, IUnitOfWork _unitOfWork)
-            : base(_errorsRepository, _unitOfWork)
+            IEntityBaseRepository<Error> _errorsRepository, IUnitOfWork _unitOfWork,IMapper mapper)
+            : base(_errorsRepository, _unitOfWork,mapper)
         {
             _rentalsRepository = rentalsRepository;
             _moviesRepository = moviesRepository;

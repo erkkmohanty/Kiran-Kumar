@@ -8,12 +8,12 @@ namespace chsakell_SPA.Infrastructure.Mappings
 {
     public class AutoMapperConfiguration
     {
-        public static void Configure()
+        public static MapperConfiguration Configure()
         {
-            Mapper.Initialize(x =>
-            {
-                x.AddProfile<DomainToViewModelMappingProfile>();
-            });
+            return new MapperConfiguration(cfg =>
+           {
+               cfg.AddProfile(new DomainToViewModelMappingProfile());
+           });
         }
     }
 }

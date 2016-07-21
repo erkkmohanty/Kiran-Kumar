@@ -215,10 +215,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Help.html" />
-    <Content Include="scripts\account\login.html" />
-    <Content Include="scripts\account\loginCtrl.js" />
-    <Content Include="scripts\account\register.html" />
-    <Content Include="scripts\account\registerCtrl.js" />
+    <Content Include="scripts\spa\account\login.html" />
+    <Content Include="scripts\spa\account\loginCtrl.js" />
+    <Content Include="scripts\spa\account\register.html" />
+    <Content Include="scripts\spa\account\registerCtrl.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
@@ -254,10 +254,10 @@
     <Content Include="scripts\spa\movies\movieEditCtrl.js" />
     <Content Include="scripts\spa\movies\movies.html" />
     <Content Include="scripts\spa\movies\moviesCtrl.js" />
-    <Content Include="scripts\spa\movies\rentMovieCtrl.js" />
+    <Content Include="scripts\spa\rental\rentMovieCtrl.js" />
     <Content Include="scripts\spa\movies\rentMovieModal.html" />
     <Content Include="scripts\spa\rental\rental.html" />
-    <Content Include="scripts\spa\rental\rentalStatsCtrl.js" />
+    <Content Include="scripts\spa\rental\rentStatsCtrl.js" />
     <Content Include="scripts\spa\services\apiService.js" />
     <Content Include="scripts\spa\services\fileUploadService.js" />
     <Content Include="scripts\spa\services\membershipService.js" />

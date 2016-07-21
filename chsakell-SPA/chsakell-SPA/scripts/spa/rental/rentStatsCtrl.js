@@ -6,10 +6,12 @@
     rentStatsCtrl.$inject = ['$scope', 'apiService', 'notificationService', '$timeout'];
 
     function rentStatsCtrl($scope, apiService, notificationService, $timeout) {
+        debugger;
         $scope.loadStatistics = loadStatistics;
         $scope.rentals = [];
 
         function loadStatistics() {
+            debugger;
             $scope.loadingStatistics = true;
 
             apiService.get('/api/rentals/rentalhistory', null,
@@ -18,6 +20,7 @@
         }
 
         function rentalHistoryLoadCompleted(result) {
+        debugger;
             $scope.rentals = result.data;
 
             $timeout(function () {

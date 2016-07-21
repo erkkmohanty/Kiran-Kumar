@@ -12,15 +12,16 @@ using HomeCinema.DataRepositories.Infrastructure;
 using HomeCinema.DataRepositories.Repositories;
 using HomeCinema.Services;
 using HomeCinema.Services.Abstract;
+using AutoMapper;
 
 namespace chsakell_SPA.App_Start
 {
     public class AutofacWebapiConfig
     {
         public static IContainer Container;
-        public static void Initialize(HttpConfiguration config)
+        public static void Initialize(HttpConfiguration config, MapperConfiguration mappingConfig)
         {
-            Initialize(config, RegisterServices(new ContainerBuilder()));
+            Initialize(config, RegisterServices(new ContainerBuilder(), mappingConfig));
         }
 
         public static void Initialize(HttpConfiguration config, IContainer container)
@@ -28,7 +29,7 @@ namespace chsakell_SPA.App_Start
             config.DependencyResolver = new AutofacWebApiDependencyResolver(container);
         }
 
-        private static IContainer RegisterServices(ContainerBuilder builder)
+        private static IContainer RegisterServices(ContainerBuilder builder, MapperConfiguration mappingConfig)
         {
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
 
@@ -57,6 +58,11 @@ namespace chsakell_SPA.App_Start
             builder.RegisterType<MembershipService>()
                 .As<IMembershipService>()
                 .InstancePerRequest();
+
+            builder.RegisterInstance(mappingConfig.CreateMapper())
+                .SingleInstance();
+
+
 
             Container = builder.Build();
 

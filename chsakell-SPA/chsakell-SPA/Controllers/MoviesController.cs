@@ -23,8 +23,8 @@ namespace chsakell_SPA.Controllers
         private readonly IEntityBaseRepository<Movie> _moviesRepository;
 
         public MoviesController(IEntityBaseRepository<Movie> moviesRepository,
-            IEntityBaseRepository<Error> errorsRepository, IUnitOfWork unitOfWork)
-            : base(errorsRepository, unitOfWork)
+            IEntityBaseRepository<Error> errorsRepository, IUnitOfWork unitOfWork,IMapper mapper)
+            : base(errorsRepository, unitOfWork,mapper)
         {
             _moviesRepository = moviesRepository;
         }

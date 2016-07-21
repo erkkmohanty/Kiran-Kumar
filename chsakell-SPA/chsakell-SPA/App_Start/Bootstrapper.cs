@@ -12,9 +12,9 @@ namespace chsakell_SPA.App_Start
         public static void Run()
         {
             // Configure Autofac
-            AutofacWebapiConfig.Initialize(GlobalConfiguration.Configuration);
+            AutofacWebapiConfig.Initialize(GlobalConfiguration.Configuration, AutoMapperConfiguration.Configure());
             //Configure AutoMapper
-            AutoMapperConfiguration.Configure();
+           
         }
     }
 }

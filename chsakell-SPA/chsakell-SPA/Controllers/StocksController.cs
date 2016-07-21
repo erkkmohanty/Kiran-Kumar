@@ -20,8 +20,8 @@ namespace chsakell_SPA.Controllers
     {
         private readonly IEntityBaseRepository<Stock> _stocksRepository;
         public StocksController(IEntityBaseRepository<Stock> stocksRepository,
-            IEntityBaseRepository<Error> _errorsRepository, IUnitOfWork _unitOfWork)
-            : base(_errorsRepository, _unitOfWork)
+            IEntityBaseRepository<Error> _errorsRepository, IUnitOfWork _unitOfWork,IMapper mapper)
+            : base(_errorsRepository, _unitOfWork,mapper)
         {
             _stocksRepository = stocksRepository;
         }

@@ -22,9 +22,10 @@ namespace chsakell_SPA.Controllers
         private readonly IEntityBaseRepository<Customer> _customersRepository;
 
         public CustomersController(IEntityBaseRepository<Customer> customersRepository,
-            IEntityBaseRepository<Error> _errorsRepository, IUnitOfWork _unitOfWork)
-            : base(_errorsRepository, _unitOfWork)
+            IEntityBaseRepository<Error> _errorsRepository, IUnitOfWork _unitOfWork, IMapper mapper)
+            : base(_errorsRepository, _unitOfWork,mapper)
         {
+            _customersRepository = customersRepository;
         }
         [HttpGet]
         [Route("search/{page:int=0}/{pageSize=4}/{filter?}")]

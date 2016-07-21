@@ -18,8 +18,8 @@ namespace chsakell_SPA.Controllers
         private readonly IEntityBaseRepository<Genre> _genresRepository;
 
         public GenresController(IEntityBaseRepository<Genre> genresRepository,
-             IEntityBaseRepository<Error> errorsRepository, IUnitOfWork unitOfWork)
-            : base(errorsRepository, unitOfWork)
+             IEntityBaseRepository<Error> errorsRepository, IUnitOfWork unitOfWork, IMapper mapper)
+            : base(errorsRepository, unitOfWork,mapper)
         {
             _genresRepository = genresRepository;
         }
