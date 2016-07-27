@@ -1,0 +1,44 @@
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\bin\Debug\UnitTestingWebAPI.API.Core.dll.config
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\bin\Debug\UnitTestingWebAPI.API.Core.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\bin\Debug\UnitTestingWebAPI.API.Core.pdb
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\bin\Debug\EntityFramework.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\bin\Debug\EntityFramework.SqlServer.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\bin\Debug\Newtonsoft.Json.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\bin\Debug\System.Net.Http.Formatting.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\bin\Debug\System.Web.Http.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\bin\Debug\UnitTestingWebAPI.Domain.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\bin\Debug\UnitTestingWebAPI.Services.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\bin\Debug\UnitTestingWebAPI.Data.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\bin\Debug\UnitTestingWebAPI.Domain.pdb
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\bin\Debug\UnitTestingWebAPI.Services.pdb
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\bin\Debug\EntityFramework.xml
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\bin\Debug\EntityFramework.SqlServer.xml
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\bin\Debug\Newtonsoft.Json.xml
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\bin\Debug\System.Net.Http.Formatting.xml
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\bin\Debug\System.Web.Http.xml
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\bin\Debug\UnitTestingWebAPI.Data.pdb
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\obj\Debug\UnitTestingWebAPI.API.Core.csprojResolveAssemblyReference.cache
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\obj\Debug\UnitTestingWebAPI.API.Core.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.API.Core\obj\Debug\UnitTestingWebAPI.API.Core.pdb
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\bin\Debug\UnitTestingWebAPI.API.Core.dll.config
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\bin\Debug\UnitTestingWebAPI.API.Core.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\bin\Debug\UnitTestingWebAPI.API.Core.pdb
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\bin\Debug\EntityFramework.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\bin\Debug\EntityFramework.SqlServer.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\bin\Debug\Newtonsoft.Json.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\bin\Debug\System.Net.Http.Formatting.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\bin\Debug\System.Web.Http.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\bin\Debug\UnitTestingWebAPI.Domain.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\bin\Debug\UnitTestingWebAPI.Services.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\bin\Debug\UnitTestingWebAPI.Data.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\bin\Debug\UnitTestingWebAPI.Domain.pdb
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\bin\Debug\UnitTestingWebAPI.Services.pdb
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\bin\Debug\EntityFramework.xml
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\bin\Debug\EntityFramework.SqlServer.xml
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\bin\Debug\Newtonsoft.Json.xml
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\bin\Debug\System.Net.Http.Formatting.xml
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\bin\Debug\System.Web.Http.xml
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\bin\Debug\UnitTestingWebAPI.Data.pdb
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\obj\Debug\UnitTestingWebAPI.API.Core.csprojResolveAssemblyReference.cache
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\obj\Debug\UnitTestingWebAPI.API.Core.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.API.Core\obj\Debug\UnitTestingWebAPI.API.Core.pdb

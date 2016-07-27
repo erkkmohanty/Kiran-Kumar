@@ -1,0 +1,24 @@
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Data\bin\Debug\UnitTestingWebAPI.Data.dll.config
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Data\bin\Debug\UnitTestingWebAPI.Data.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Data\bin\Debug\UnitTestingWebAPI.Data.pdb
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Data\bin\Debug\EntityFramework.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Data\bin\Debug\UnitTestingWebAPI.Domain.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Data\bin\Debug\UnitTestingWebAPI.Domain.pdb
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Data\bin\Debug\EntityFramework.xml
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Data\obj\Debug\UnitTestingWebAPI.Data.csprojResolveAssemblyReference.cache
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Data\obj\Debug\UnitTestingWebAPI.Data.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Data\obj\Debug\UnitTestingWebAPI.Data.pdb
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Data\bin\Debug\UnitTestingWebAPI.Data.dll.config
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Data\bin\Debug\UnitTestingWebAPI.Data.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Data\bin\Debug\UnitTestingWebAPI.Data.pdb
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Data\bin\Debug\EntityFramework.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Data\bin\Debug\UnitTestingWebAPI.Domain.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Data\bin\Debug\UnitTestingWebAPI.Domain.pdb
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Data\bin\Debug\EntityFramework.xml
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Data\obj\Debug\UnitTestingWebAPI.Data.csprojResolveAssemblyReference.cache
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Data\obj\Debug\UnitTestingWebAPI.Data.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Data\obj\Debug\UnitTestingWebAPI.Data.pdb

@@ -1,0 +1,22 @@
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Services\bin\Debug\UnitTestingWebAPI.Services.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Services\bin\Debug\UnitTestingWebAPI.Services.pdb
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Services\bin\Debug\UnitTestingWebAPI.Data.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Services\bin\Debug\UnitTestingWebAPI.Domain.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Services\bin\Debug\EntityFramework.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Services\bin\Debug\UnitTestingWebAPI.Data.pdb
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Services\bin\Debug\UnitTestingWebAPI.Domain.pdb
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Services\bin\Debug\EntityFramework.xml
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Services\obj\Debug\UnitTestingWebAPI.Services.csprojResolveAssemblyReference.cache
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Services\obj\Debug\UnitTestingWebAPI.Services.dll
+E:\Kiran Kumar\UnitTestingWebAPI\UnitTestingWebAPI.Services\obj\Debug\UnitTestingWebAPI.Services.pdb
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Services\bin\Debug\UnitTestingWebAPI.Services.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Services\bin\Debug\UnitTestingWebAPI.Services.pdb
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Services\bin\Debug\UnitTestingWebAPI.Data.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Services\bin\Debug\UnitTestingWebAPI.Domain.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Services\bin\Debug\EntityFramework.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Services\bin\Debug\UnitTestingWebAPI.Data.pdb
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Services\bin\Debug\UnitTestingWebAPI.Domain.pdb
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Services\bin\Debug\EntityFramework.xml
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Services\obj\Debug\UnitTestingWebAPI.Services.csprojResolveAssemblyReference.cache
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Services\obj\Debug\UnitTestingWebAPI.Services.dll
+E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Services\obj\Debug\UnitTestingWebAPI.Services.pdb
