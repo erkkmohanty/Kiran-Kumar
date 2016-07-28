@@ -14,6 +14,5 @@ E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Domain\bin\Debug\EntityFra
 E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Domain\bin\Debug\EntityFramework.SqlServer.dll
 E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Domain\bin\Debug\EntityFramework.xml
 E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Domain\bin\Debug\EntityFramework.SqlServer.xml
-E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Domain\obj\Debug\UnitTestingWebAPI.Domain.csprojResolveAssemblyReference.cache
 E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Domain\obj\Debug\UnitTestingWebAPI.Domain.dll
 E:\Kiran Kumar\WEB API Unit Testing\UnitTestingWebAPI.Domain\obj\Debug\UnitTestingWebAPI.Domain.pdb

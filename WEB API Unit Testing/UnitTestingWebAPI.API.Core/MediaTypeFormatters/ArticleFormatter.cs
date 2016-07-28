@@ -48,7 +48,7 @@ namespace UnitTestingWebAPI.API.Core.MediaTypeFormatters
                 {
                     foreach (var article in articles)
                     {
-                        writer.Write(String.Format("[{0},\"{1}\",\"{2}\",\"{3}\",\"{4}\"]",
+                        writer.Write(string.Format("[{0},\"{1}\",\"{2}\",\"{3}\",\"{4}\"]",
                                                     article.ID,
                                                     article.Title,
                                                     article.Author,
@@ -63,7 +63,7 @@ namespace UnitTestingWebAPI.API.Core.MediaTypeFormatters
                     {
                         throw new InvalidOperationException("Cannot serialize type");
                     }
-                    writer.Write(String.Format("[{0},\"{1}\",\"{2}\",\"{3}\",\"{4}\"]",
+                    writer.Write(string.Format("[{0},\"{1}\",\"{2}\",\"{3}\",\"{4}\"]",
                                                     _article.ID,
                                                     _article.Title,
                                                     _article.Author,
