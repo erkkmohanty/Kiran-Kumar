@@ -3,11 +3,13 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Results;
+using System.Web.Http.Routing;
 using UnitTestingWebAPI.API.Core.Controllers;
 using UnitTestingWebAPI.Data;
 using UnitTestingWebAPI.Data.Infrastructure;
@@ -130,6 +132,102 @@ namespace UnitTestingWebAPI.Tests
 
             var badresult = _articlesController.PutArticle(-1, new Article() { Title = "Unknown Article" });
             Assert.That(badresult, Is.TypeOf<BadRequestResult>());
+        }
+        [Test]
+        public void ControlerShouldPutUpdateFirstArticle()
+        {
+            var _articlesController = new ArticlesController(_articleService)
+            {
+                Configuration = new HttpConfiguration(),
+                Request = new HttpRequestMessage
+                {
+                    Method = HttpMethod.Put,
+                    RequestUri = new Uri("http://localhost/api/articles/1")
+                }
+            };
+
+            IHttpActionResult updateResult = _articlesController.PutArticle(1, new Article()
+            {
+                ID = 1,
+                Title = "ASP.NET Web API feat. OData",
+                URL = "http://t.co/fuIbNoc7Zh",
+                Contents = @"OData is an open standard protocol.."
+            }) as IHttpActionResult;
+
+            Assert.That(updateResult, Is.TypeOf<StatusCodeResult>());
+
+            StatusCodeResult statusCodeResult = updateResult as StatusCodeResult;
+
+            Assert.That(statusCodeResult.StatusCode, Is.EqualTo(HttpStatusCode.NoContent));
+
+            Assert.That(_randomArticles.First().URL, Is.EqualTo("http://t.co/fuIbNoc7Zh"));
+        }
+
+        [Test]
+        public void ControlerShouldPostNewArticle()
+        {
+            var article = new Article
+            {
+                Title = "Web API Unit Testing",
+                URL = "https://chsakell.com/web-api-unit-testing",
+                Author = "Chris Sakellarios",
+                DateCreated = DateTime.Now,
+                Contents = "Unit testing Web API.."
+            };
+
+            var _articlesController = new ArticlesController(_articleService)
+            {
+                Configuration = new HttpConfiguration(),
+                Request = new HttpRequestMessage
+                {
+                    Method = HttpMethod.Post,
+                    RequestUri = new Uri("http://localhost/api/articles")
+                }
+            };
+
+            _articlesController.Configuration.MapHttpAttributeRoutes();
+            _articlesController.Configuration.EnsureInitialized();
+            _articlesController.RequestContext.RouteData = new HttpRouteData(
+            new HttpRoute(), new HttpRouteValueDictionary { { "_articlesController", "Articles" } });
+            var result = _articlesController.PostArticle(article) as CreatedAtRouteNegotiatedContentResult<Article>;
+
+            Assert.That(result.RouteName, Is.EqualTo("DefaultApi"));
+            Assert.That(result.Content.ID, Is.EqualTo(result.RouteValues["id"]));
+            Assert.That(result.Content.ID, Is.EqualTo(_randomArticles.Max(a => a.ID)));
+        }
+
+        [Test]
+        public void ControlerShouldNotPostNewArticle()
+        {
+            var article = new Article
+            {
+                Title = "Web API Unit Testing",
+                URL = "https://chsakell.com/web-api-unit-testing",
+                Author = "Chris Sakellarios",
+                DateCreated = DateTime.Now,
+                Contents = null
+            };
+
+            var _articlesController = new ArticlesController(_articleService)
+            {
+                Configuration = new HttpConfiguration(),
+                Request = new HttpRequestMessage
+                {
+                    Method = HttpMethod.Post,
+                    RequestUri = new Uri("http://localhost/api/articles")
+                }
+            };
+
+            _articlesController.Configuration.MapHttpAttributeRoutes();
+            _articlesController.Configuration.EnsureInitialized();
+            _articlesController.RequestContext.RouteData = new HttpRouteData(
+            new HttpRoute(), new HttpRouteValueDictionary { { "Controller", "Articles" } });
+            _articlesController.ModelState.AddModelError("Contents", "Contents is required field");
+
+            var result = _articlesController.PostArticle(article) as InvalidModelStateResult;
+
+            Assert.That(result.ModelState.Count, Is.EqualTo(1));
+            Assert.That(result.ModelState.IsValid, Is.EqualTo(false));
         }
 
     }
