@@ -17,12 +17,16 @@
     <div ng-controller="MyCtrl3" id="div3">
         {{controllerName}}
     </div>
+    <div ng-controller="MyCtrl3" id="div4">
+        {{controllerName}}
+    </div>
 </body>
 <script type="text/javascript">
     angular.element(document).ready(function () {
         angular.bootstrap(document.getElementById("div1"), ["MyApp"]);
         angular.bootstrap(document.getElementById("div2"), ["MyApp2"]);
         angular.bootstrap(document.getElementById("div3"), ["MyApp3"]);
+        angular.bootstrap(document.getElementById("div4"), ["MyApp3"]);
     })
     var app = angular.module("MyApp", []);
     app.controller("MyCtrl", function ($scope) {

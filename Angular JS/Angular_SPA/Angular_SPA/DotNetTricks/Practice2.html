@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<script src="../Scripts/angular.js"></script>
+<body >
+    <div ng-controller="ParentCtrl">
+        <h4>Parent Controller</h4>
+        Manager Name: {{managerName}}<br />
+        Company Name:{{companyName}}  (RootScope)<br />
+        Company using $parent:{{$parent.companyName}}
+        <br />
+        <div ng-controller="ChildCtrl">
+            <h4>Child Controller</h4>
+            Team Lead Name: {{teamLeadName}}<br />
+            Comapny Name:{{companyName}}(RootScope)<br />
+            Manager Name:{{$parent.managerName}}(Parent Scope)<br />
+            Company Name using rootScope:{{$rootScope.managerName}}//Not possible
+        </div>
+    </div>
+   
+</body>
+<script type="text/javascript">
+    var app = angular.module("app", []);
+    app.controller("ParentCtrl", function ($scope) {
+        $scope.managerName = "Kiran Kumar Mohanty";
+        $scope.$parent.companyName = "Techno Arcade";
+    });
+    app.controller("ChildCtrl", function ($scope) {
+        $scope.teamLeadName = "Pta Nhi";
+    });
+
+
+</script>
+</html>
