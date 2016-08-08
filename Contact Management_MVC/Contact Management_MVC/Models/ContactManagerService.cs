@@ -149,5 +149,11 @@ namespace Contact_Management_MVC.Models
                 _validationDictionary.AddError("Name", "Name is required.");
             return _validationDictionary.IsValid;
         }
+
+
+        public Group GetGroup(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

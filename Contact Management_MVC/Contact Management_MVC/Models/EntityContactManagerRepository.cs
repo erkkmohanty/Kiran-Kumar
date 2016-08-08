@@ -99,5 +99,11 @@ namespace Contact_Management_MVC.Models
             }
 
         }
+
+
+        public Group CreateGroup(Group groupToCreate)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

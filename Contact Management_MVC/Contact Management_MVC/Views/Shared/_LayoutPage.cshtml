@@ -18,6 +18,9 @@
             <div id="logindisplay">
                @{Html.RenderPartial("_LogInDetails");}
             </div>
+            <div>
+                @RenderSection("MyMenu",false)
+            </div>
             <div id="menucontainer">
                 <ul id="menu">
                     @Html.MenuItem("My Contacts", "Index", "Contact")
