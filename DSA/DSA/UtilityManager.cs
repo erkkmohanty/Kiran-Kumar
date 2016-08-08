@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -77,6 +78,24 @@ namespace DSA
         public static void Count()
         {
             Miscellaneous.CountMinimalWay(new int[] { 123, 234, 345, 456, 567, 789 });
+        }
+
+
+        public static void CreateBinaryTree()
+        {
+            BinarySearchTree bst = new BinarySearchTree();
+            bst.Insert(50);
+            bst.Insert(90);
+            bst.Insert(40);
+            bst.Insert(30);
+            bst.Insert(40);
+            bst.Insert(60);
+            bst.Insert(170);
+            bst.Insert(250);
+            bst.Insert(450);
+            bst.Insert(51);
+            bst.Print();
+            Console.ReadLine();
         }
     }
 }

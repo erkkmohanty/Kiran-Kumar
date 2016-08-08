@@ -41,8 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinaryHeap.cs" />
+    <Compile Include="BinarySearchTree.cs" />
     <Compile Include="CircularLinkedList.cs" />
     <Compile Include="LinkedList.cs" />
+    <Compile Include="MaximumSubArray.cs" />
     <Compile Include="Miscellaneous.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
