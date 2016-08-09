@@ -146,9 +146,20 @@ namespace DSA
                 counter++;
             }
         }
-        public void Reverse()
+        public Node<T> Reverse(Node<T> node)
         {
-
+            Node<T> prev = null;
+            Node<T> current = node;
+            Node<T> next = null;
+            while (current != null)
+            {
+                next = current.next;
+                current.next = prev;
+                prev = current;
+                current = next;
+            }
+            node = prev;
+            return node;
         }
         /// <summary>
         /// Search by iteration

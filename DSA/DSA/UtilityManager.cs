@@ -55,6 +55,9 @@ namespace DSA
              DisplayLinkedList(linkedList);
              Node<int> node=linkedList.GetNthNodebyIndex(10);
              Node<int> midNode = linkedList.GetMiddleNode();
+             DisplayLinkedList(linkedList);
+             linkedList.Reverse(linkedList.head);
+             DisplayLinkedList(linkedList);
              Debug.Assert(node != null);
             
         }
