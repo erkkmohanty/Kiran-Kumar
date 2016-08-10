@@ -97,6 +97,7 @@
     <Content Include="data.txt" />
     <Content Include="DotNetTricks\Practice1.html" />
     <Content Include="DotNetTricks\Practice2.html" />
+    <Content Include="DotNetTricks\Practice3.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Html\ajax.html" />
@@ -143,6 +144,7 @@
     <Content Include="Html\Test2.html" />
     <Content Include="Html\Test.html" />
     <Content Include="Html\_Sample.html" />
+    <Content Include="Javascript\EventPropagation.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />

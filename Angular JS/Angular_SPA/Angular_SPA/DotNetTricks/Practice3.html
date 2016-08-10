@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyModule">
+<head>
+    <title>ng-if//ng-switch//ng-repeat</title>
+	<meta charset="utf-8" />
+</head>
+<script src="../Scripts/angular.js"></script>
+<body ng-controller="MyCtrl as CT">
+    <h4>ng-if</h4>
+    <input type="checkbox" ng-model="CT.ShowData" value="Check Here" />
+    {{CT.ShowData}}
+    <div ng-if="CT.ShowData">
+        The data is showing when ng-if is set to true.
+    </div>
+    <h4>ng-switch</h4>
+    <div ng-switch on="!CT.ShowData">
+        <div ng-switch-when="1">Shown when case is 1</div>
+        <div ng-switch-when="2">Shown when case is 2</div>
+        <div ng-switch-default>Shown when case is anything else than 1 and 2</div>
+    </div>
+    <div class="col-md-3">
+        <select class="form-control" ng-model="ishide" ng-options="t.ishide as t.text for t in CT.temp"></select>
+        {{CT.ishide}}
+    </div>
+</body>
+<script type="text/javascript">
+    var app = angular.module("MyModule", []);
+    app.controller("MyCtrl", function () {
+        var obj = this;
+        obj.ShowData = true;
+        obj.data = {};
+        obj.data.case = true;
+        obj.temp = [{ text: "Hide", ishide: true }, { text: "Show", ishide: false }];
+    });
+</script>
+</html>

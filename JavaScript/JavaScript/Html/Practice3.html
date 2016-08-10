@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<script>
+    (function () {
+        setTimeout(function () {
+            console.log(1000000);
+        }, 1000);
+        setTimeout(function () {
+            console.log(5000000);
+        }, 5000);
+        setTimeout(function () {
+            console.log(9000000);
+        }, 10000);
+        setTimeout(function () {
+            console.log(20000000000);
+        }, 20000);
+
+        console.log("console log parseInt");
+
+        console.log("Value is::" + parseInt("100"));
+        console.log("Value is::" + parseInt("q100"));
+        console.log("Value is::" + parseInt("1q00"));
+        console.log("Value is::" + parseInt("10s0a"));
+        console.log("Value is::" + parseInt("100aa"));
+        console.log("Value is::" + parseInt("00aa100"));
+
+
+        console.log("console log parseFloat");
+        console.log("Value is::" + parseFloat("100.00"));
+        console.log("Value is::" + parseFloat("q100"));
+        console.log("Value is::" + parseFloat(".1q00"));
+        console.log("Value is::" + parseFloat("10s0a"));
+        console.log("Value is::" + parseFloat("1.00aa"));
+        console.log("Value is::" + parseFloat("00.aa100"));
+    })();
+</script>
+<body>
+
+</body>
+</html>

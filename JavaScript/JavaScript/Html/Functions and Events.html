@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<script>
+    function myfunction() {
+        alert("button is pressed");
+    }
+   
+    function submit()
+    {
+        alert("fsadghsacd");
+    }
+    (function () {
+        celsius = 0;
+        while (celsius <= 50) {
+            document.write("<tr><td>" + celsius +
+            "</td><td>" + ((celsius * 9 / 5) + 32) + "</td></tr>");
+            celsius = celsius + 1;
+        }
+    })();
+
+    (function () {
+        var array = new Array();
+        array[10] = 10
+        array[11]=NaN
+        for(var d in array)
+        {
+            console.log(array[d]);
+        }
+    })();
+</script>
+<body>
+    <button type="button" onclick="myfunction()">click here</button>
+    <button type="submit" onclick="submit()">Submit</button>
+    <div style="height:50%;width:50%;background-color:'aqua'" >
+        <a href="#" onmouseover="alert('I detected an onmouseover event'); " onmouseout="alert('I detected an onmouseout event'); ">
+            <img src="rainbow.gif" width="60" height="60">
+        </a> 
+    </div>
+</body>
+</html>
