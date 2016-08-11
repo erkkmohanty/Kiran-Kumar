@@ -6,10 +6,24 @@
 </head>
 <script>
     (function () {
+        "use strict";
         var array = new Array("Kiran", 1, 2, "3asa");
         for (var i = 0; i < array.length; i++) {
             console.log(array[i]);
         }
+
+        console.log("Blocked statements");
+        var x = 10;
+        var y = 40;
+        {
+            console.log("The value of X is" + x);
+            console.log("The value of Y is" + y);
+            var x = 50;
+            y = 90;
+        }
+        console.log("The value of X is" + x);
+        console.log("The value of Y is" + y);
+
     })();
 </script>
 <body>

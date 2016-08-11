@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<script>
+    (function () {
+        "use strict";
+        var x = 10, y = 10;
+        var z;
+        if((z=x))
+        {
+            console.log("z=x")
+        }
+        else
+        {
+            console.log("x");
+        }
+        if(false)
+        {
+            console.log('true');
+        }
+        else {
+            console.log('false');
+        }
+        if(undefined)
+        {
+            console.log('defined')
+        }
+        else
+        {
+            console.log('undefined');
+        }
+        if(null)
+        {
+            console.log('not null');
+        }
+        else
+        {
+            console.log('null')
+        }
+        if (0) {
+            console.log('1');
+        }
+        else {
+            console.log('0')
+        }
+        if (NaN) {
+            console.log('Number');
+        }
+        else {
+            console.log(NaN)
+        }
+        if ('') {
+            console.log('Not empty');
+        }
+        else {
+            console.log('empty')
+        }
+        var b = new Boolean(false);
+        if (b) {
+            console.log('true');
+        }
+        else {
+            console.log('false')
+        }
+
+        if (b==true) {
+            console.log('true');
+        }
+        else {
+            console.log('false')
+        }
+
+        if (b) {
+            console.log(b.toString());
+        }
+        else {
+            console.log('false')
+        }
+        if (document.form1.threeChar.value.length == 3) {
+            return true;
+        } else {
+            alert("Enter exactly three characters. " +
+            document.form1.threeChar.value + " is not valid.");
+            return false;
+        }
+    })();
+
+</script>
+<body>
+
+</body>
+</html>

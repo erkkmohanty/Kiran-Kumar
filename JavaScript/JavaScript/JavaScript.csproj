@@ -132,6 +132,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Html\array.html" />
+    <Content Include="Html\conditional-statement.html" />
     <Content Include="Html\Functions and Events.html" />
     <Content Include="Html\JS-Object.html" />
     <Content Include="Html\Practice1.html" />
