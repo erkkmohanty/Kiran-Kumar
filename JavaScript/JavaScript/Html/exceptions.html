@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<script type="text/javascript">
+    (function () {
+        "use strict";
+        try {
+            //throw { toString: "data", ptaNhi: 33, func: function () { return "Hello data"; } };
+            //throw new UserException("User Exception occured");
+            try { // statements to try
+                var monthName = getMonthName(33); // function could throw exception
+            }
+            catch (e) {
+                monthName = "unknown";
+                console.log(e);
+                //logMyErrors(e); // pass exception object to error handler -> your own function
+            }
+        } catch (e) {
+            console.log(e);
+        }
+    })();
+
+    function UserException(message) {
+        this.message = message;
+        this.name = "User Exception";
+    }
+
+    UserException.prototype.toString = function () {
+        return this.name + ":" + this.message;
+    }
+
+    function getMonthName(mo) {
+        mo = mo - 1; // Adjust month number for array index (1 = Jan, 12 = Dec)
+        var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul",
+                      "Aug", "Sep", "Oct", "Nov", "Dec"];
+        if (months[mo]) {
+            return months[mo];
+        } else {
+            throw new UserException("Invalid Month No"); //throw keyword is used here
+        }
+    }
+
+    (function () {
+        "use strict";
+        try {
+            throw "dd"
+        } catch (e) {
+            console.log("catch");
+        }
+        finally {
+            console.log("finally");
+        }
+    })();
+
+    (function () {
+        "use strict";
+        myfunction();
+        function myfunction() {
+            try {
+                console.log("%d", 111);
+                myFunction2();
+                return console.log("%d", 111);
+            }
+            catch (e) {
+
+            }
+            finally {
+                return console.log("%d", 222222222222222222222222222222222222);
+            }
+        }
+
+        function myFunction2()
+        {
+            try {
+                throw "exception";
+            } catch (e) {
+                console.log(e.name);
+                console.log(e.message);
+                throw e;
+            }
+            finally {
+                return console.log('throw cancelled');
+            }
+        }
+    })();
+</script>
+<body>
+
+</body>
+</html>

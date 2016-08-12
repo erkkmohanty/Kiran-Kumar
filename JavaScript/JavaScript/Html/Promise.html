@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<script type="text/javascript">
+    (function (url) {
+
+        getImage().then(resolve,reject);
+        function getImage() {
+            debugger;
+            return new Promise(function (resolveMethod, rejectMethod) {
+                var request = new XMLHttpRequest();
+                request.open("GET", url);
+                request.responseType = "blob";
+                request.onload = function () {
+                    debugger;
+                    if (request.status == 200) {
+                        
+                        resolveMethod(request.response);
+                    }
+                    else {
+                        rejectMethod(request.response);
+                    }
+                };
+                request.onerror = function () {
+                    reject(Error("there was a network error"));
+                };
+                request.send();
+            });
+        }
+       
+        function resolve(response)
+        {
+            debugger;
+            var image = document.getElementById('img');
+            image.src = URL.createObjectURL(response);
+        }
+        function reject(response)
+        {
+            debugger;
+            alert("error", response);
+        }
+    })("Chrysanthemum.jpg");
+</script>
+<body>
+    <img id="img" name="nmm" />
+</body>
+</html>
