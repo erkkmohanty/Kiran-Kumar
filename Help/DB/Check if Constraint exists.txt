@@ -1,0 +1,35 @@
+SELECT
+    * 
+    FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS 
+    WHERE CONSTRAINT_NAME ='FK_ChannelPlayerSkins_Channels'
+-----------------------------------------------------------------------------------------------
+
+--Returns one row for each CHECK, UNIQUE, PRIMARY KEY, and/or FOREIGN KEY
+SELECT * 
+    FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS
+    WHERE CONSTRAINT_NAME='XYZ'  
+
+
+--Returns one row for each FOREIGN KEY constrain
+SELECT * 
+    FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS 
+    WHERE CONSTRAINT_NAME='XYZ'
+
+
+--Returns one row for each CHECK constraint 
+SELECT * 
+    FROM INFORMATION_SCHEMA.CHECK_CONSTRAINTS
+    WHERE CONSTRAINT_NAME='XYZ'
+
+--Returns 1 row for each CHECK, UNIQUE, PRIMARY KEY, FOREIGN KEY, and/or DEFAULT
+SELECT 
+    OBJECT_NAME(OBJECT_ID) AS NameofConstraint
+        ,SCHEMA_NAME(schema_id) AS SchemaName
+        ,OBJECT_NAME(parent_object_id) AS TableName
+        ,type_desc AS ConstraintType
+    FROM sys.objects
+    WHERE type_desc LIKE '%CONSTRAINT'
+        AND OBJECT_NAME(OBJECT_ID)='XYZ'
+--------------------------------------------------
+For Getting indexex from table
+select COUNT(*) from sys.indexes where name='IX_IPAddress' AND OBJECT_NAME(OBJECT_ID)='HitCountWithIP'

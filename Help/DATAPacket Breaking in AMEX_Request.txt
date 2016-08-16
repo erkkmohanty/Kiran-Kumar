@@ -6,4 +6,5 @@
 00 10 87 --STAN
 00 12-NII
 36 32 30 30 30 30 30 32 --TID
-00 11 41 50 49 56 35 32 30 2E 35 30 31
+00 11--Number of bytes present(bytes length here 11 bytes) 
+41 50 49 56 35 32 30 2E 35 30 31--App Version with Terminal Type or App Version Only
