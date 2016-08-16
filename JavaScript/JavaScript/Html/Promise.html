@@ -7,7 +7,7 @@
 <script type="text/javascript">
     (function (url) {
 
-        getImage().then(resolve,reject);
+        getImage().then(resolve, reject);
         function getImage() {
             debugger;
             return new Promise(function (resolveMethod, rejectMethod) {
@@ -17,7 +17,7 @@
                 request.onload = function () {
                     debugger;
                     if (request.status == 200) {
-                        
+
                         resolveMethod(request.response);
                     }
                     else {
@@ -30,15 +30,13 @@
                 request.send();
             });
         }
-       
-        function resolve(response)
-        {
+
+        function resolve(response) {
             debugger;
             var image = document.getElementById('img');
             image.src = URL.createObjectURL(response);
         }
-        function reject(response)
-        {
+        function reject(response) {
             debugger;
             alert("error", response);
         }
