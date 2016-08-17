@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<script type="text/javascript">
+    (function () {
+        setTimeout(function () {
+            var val1 = 0, val2 = 0;
+            labelOuterLoop: while (true) {
+
+                debugger;
+                console.log("Outer Loop" + ++val1);
+                labelInnerLoop: while (true) {
+                    console.log("Outer Loop" + ++val1);
+                    console.log("Inner Loop" + ++val2);
+                    if (val2 === 5)
+                        break;
+                    else if (val1 == 9)
+                        break labelOuterLoop;
+                }
+            }
+        },2000);
+        console.log("Loop completed");
+    })();
+</script>
+<body>
+
+</body>
+</html>

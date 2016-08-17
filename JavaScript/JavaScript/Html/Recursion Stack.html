@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<script type="text/javascript">
+    (function () {
+        "use strict";
+        foo(3);
+        function foo(num) {
+            if (num < 0)
+                return;
+            console.log("begin "+num);
+            foo(num - 1);
+            console.log("end " +num);
+        }
+    })();
+</script>
+<body>
+
+</body>
+</html>

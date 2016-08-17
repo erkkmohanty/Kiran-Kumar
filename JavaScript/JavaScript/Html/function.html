@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<script type="text/javascript">
+    (function () {
+        function myFunc(theObject) {
+            theObject.make = "Toyota";
+        }
+
+        var mycar = { make: "Honda", model: "Accord", year: 1998 };
+        var x, y;
+
+        x = mycar.make; // x gets the value "Honda"
+
+        myFunc(mycar);
+        y = mycar.make; // y gets the value "Toyota"
+        // (the make property was changed by the function)
+
+        console.log(x);
+        console.log(y);
+    })();
+</script>
+<body>
+
+</body>
+</html>

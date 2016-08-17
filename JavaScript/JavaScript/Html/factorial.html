@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<script type="text/javascript">
+    (function () {
+        "use strict";
+        var factorial = function func(num) {
+            return num < 2 ? 1 : num * func(num - 1);
+        }
+        console.log(factorial(1));
+        console.log(factorial(2));
+        console.log(factorial(3));
+        console.log(factorial(4));
+        console.log(factorial(5));
+
+
+        function map(x, y) {
+            var result = [];
+            for (var d = 0; d < y.length; d++) {
+                result[d] = x(y[d]);
+            }
+            return result;
+        }
+        console.log(map(function anon(num) { return num * num; }, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]));
+
+
+        console.log("Using Function constructor");
+
+        var func = new Function("a", "b", "c", "d", "e", "return a+b+c+d+e");
+        console.log(func(1, 2, 3, 4, 5));
+
+        var func = new Function("a", "b", "c", "d", "return a+b+c+d");
+        console.log(func(1, 2, 3, 4));
+        console.log(func(1, 2, 3, 4, 5));
+        console.log(func(1, 2, 3, 4, 5,6));
+    })();
+</script>
+<body>
+
+</body>
+</html>

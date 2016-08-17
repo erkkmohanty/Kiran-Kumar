@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<script type="text/javascript">
+    (function () {
+        "use strict";
+         var a = (function () {
+            var privateFunction = function () {
+                alert('Hello');
+                return 'data';
+            };
+            return {
+                publicFunction: function () {
+                    return privateFunction();
+                }
+            }
+        })();
+
+         console.log(typeof a);
+         console.log(a.publicFunction());
+    })();
+</script>
+<body>
+
+</body>
+</html>
