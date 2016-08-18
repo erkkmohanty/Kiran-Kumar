@@ -1,0 +1,203 @@
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\ApplicationInsights.config
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\csc.exe
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\System.Collections.Immutable.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\System.Reflection.Metadata.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\vbc.exe
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\VBCSCompiler.exe
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\VBCSCompiler.exe.config
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\AngularJSAuthentication.API.dll.config
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\AngularJSAuthentication.API.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\AngularJSAuthentication.API.pdb
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.DependencyCollector.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.Web.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.WindowsServer.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.ApplicationInsights.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Newtonsoft.Json.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Net.Http.Formatting.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.WebHost.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.DependencyCollector.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.Web.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.WindowsServer.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.ApplicationInsights.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Newtonsoft.Json.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Net.Http.Formatting.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.WebHost.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.pdb
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\EntityFramework.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\EntityFramework.SqlServer.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Owin.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.Owin.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\EntityFramework.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\EntityFramework.SqlServer.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.Owin.xml
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.csprojResolveAssemblyReference.cache
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Cors.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Cors.dll
+E:\Kiran Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Cors.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\ApplicationInsights.config
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\csc.exe
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\vbc.exe
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\VBCSCompiler.exe
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\AngularJSAuthentication.API.dll.config
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\AngularJSAuthentication.API.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\AngularJSAuthentication.API.pdb
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\EntityFramework.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\EntityFramework.SqlServer.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.Web.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.ApplicationInsights.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Cors.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Newtonsoft.Json.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Owin.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Net.Http.Formatting.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Cors.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.Owin.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.WebHost.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\EntityFramework.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\EntityFramework.SqlServer.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.Web.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.ApplicationInsights.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Cors.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.Owin.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\Newtonsoft.Json.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Net.Http.Formatting.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.WebHost.xml
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.csprojResolveAssemblyReference.cache
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.dll
+C:\Users\KIRAN KUMAR\Downloads\Compressed\Kiran-Kumar-83f9c675b79306bb45e9d29fe04212984499a350\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.pdb
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\ApplicationInsights.config
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\csc.exe
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\System.Collections.Immutable.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\System.Reflection.Metadata.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\vbc.exe
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\VBCSCompiler.exe
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\roslyn\VBCSCompiler.exe.config
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\AngularJSAuthentication.API.dll.config
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\AngularJSAuthentication.API.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\AngularJSAuthentication.API.pdb
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\EntityFramework.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\EntityFramework.SqlServer.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.DependencyCollector.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.Web.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.WindowsServer.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.ApplicationInsights.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Cors.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Newtonsoft.Json.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Owin.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Net.Http.Formatting.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Cors.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.Owin.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.WebHost.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\EntityFramework.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\EntityFramework.SqlServer.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.DependencyCollector.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.Web.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AI.WindowsServer.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.ApplicationInsights.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Cors.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.Owin.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\Newtonsoft.Json.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Net.Http.Formatting.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.WebHost.xml
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.csprojResolveAssemblyReference.cache
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.dll
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.pdb
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.Migrations.InitialCreate.resources
+E:\Practice\Janu\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.csproj.GenerateResource.Cache
