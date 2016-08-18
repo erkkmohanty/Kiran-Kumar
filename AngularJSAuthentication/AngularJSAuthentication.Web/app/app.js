@@ -24,8 +24,21 @@ app.config(["$routeProvider", function ($routeProvider) {
     });
 }]);
 
+app.provider("url_provider", urlProvider);
 
-app.config(function ($httpProvider) {
+function urlProvider() {
+    var urlName = '';
+    this.setUrl = function (url) {
+        urlName = url;
+    };
+    this.$get = function () {
+        return { url: urlName };
+    }
+}
+
+
+app.config(function ($httpProvider, url_providerProvider) {
+    url_providerProvider.setUrl("http://localhost:18470/");
     $httpProvider.interceptors.push('authInterceptorService');
 });
 

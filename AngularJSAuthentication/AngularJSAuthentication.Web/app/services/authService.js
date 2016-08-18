@@ -2,9 +2,9 @@
 "use strict";
 
 
-app.factory("authService", ["$http", "$q", "localStorageService", function ($http, $q, localStorageService) {
-
-    var serviceBase = "http://localhost:18470/";
+app.factory("authService", ["$http", "$q", "localStorageService", "url_provider", function ($http, $q, localStorageService, url_provider) {
+    debugger;
+    var serviceBase = url_provider.url;
     var authServiceFactory = {};
 
     var _authentication = { isAuth: false, userName: "" };
@@ -13,7 +13,7 @@ app.factory("authService", ["$http", "$q", "localStorageService", function ($htt
 
     var _saveRegistration = function (registration) {
         _logOut();
-
+        debugger;
         return $http.post(serviceBase + "api/account/register", registration).then(function (response) {
             return response;
         });
@@ -50,6 +50,7 @@ app.factory("authService", ["$http", "$q", "localStorageService", function ($htt
     }
 
     var _logOut = function () {
+        debugger;
         localStorageService.remove("authorizationData");
         _authentication.isAuth = false;
         _authentication.userName = "";

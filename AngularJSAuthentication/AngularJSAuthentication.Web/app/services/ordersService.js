@@ -1,7 +1,7 @@
 ﻿'use strict';
-app.factory('ordersService', ['$http', function ($http) {
+app.factory("ordersService", ["$http", "url", function ($http,url) {
 
-    var serviceBase = 'http://localhost:18470/';
+    var serviceBase = url.urlName;
     var ordersServiceFactory = {};
 
     var _getOrders = function () {
