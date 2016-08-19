@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<script type="text/javascript">
+    (function () {
+        "use strict";
+        function Person() {
+            this.age = 24;
+            setTimeout(function growUp() {
+                this.age++;
+                console.log("Person::" + this);
+                console.log("Person::" + this.age++);
+            }, 1000);
+        }
+        console.log(new Person());
+
+        function Person2() {
+            var self = this;
+            self.age = 23;
+            setTimeout(function growUp() {
+                self.age++;
+                console.log("Person2::" + self.age);
+            }, 1000);
+        }
+        console.log(new Person2());
+
+        function Person3() {
+            this.age = 23;
+            setTimeout(() => {
+                this.age++; console.log("Person3::" + this.age);
+
+            }, 1000)
+        }
+        console.log(new Person3());
+    })();
+</script>
+<body>
+
+</body>
+</html>

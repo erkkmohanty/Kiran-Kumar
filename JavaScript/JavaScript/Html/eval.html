@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<script type="text/javascript">
+    (function () {
+        "use strict";
+        console.log(eval(new String("2 + 2").toString())); // returns a String object containing "2 + 2"
+        console.log(eval("2 + 2"));
+        test();
+        function test() {
+            var x = 2, y = 4;
+            console.log(eval("x + y"));  // Direct call, uses local scope, result is 6
+            var geval = eval;
+            //console.log(geval("x + y")); // Indirect call, uses global scope, throws ReferenceError because `x` is undefined
+        }
+
+        var x = 5;
+        var str = "if (x == 5) {console.log('z is 42'); z = 42;} else z = 0; ";
+
+        console.log("z is ", eval(str));
+    })();
+</script>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<script type="text/javascript">
+    (function () {
+        "use strict";
+        function oldFunction(data)
+        {
+            data = typeof data === "undefined" ? 1 : data;
+            return data * 5;
+        }
+        console.log(oldFunction(10));
+
+        //From ECMA Script 6
+
+        function ecmaFunction(a,b=9)
+            {
+                return a*b;
+            }
+            console.log(ecmaFunction(5,10))
+        })();
+</script>
+<body>
+
+</body>
+</html>

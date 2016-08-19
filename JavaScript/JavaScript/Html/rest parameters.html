@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<script type="text/javascript">
+    (function () {
+        "use strict";
+        function multiply(element, ...theArguments) {
+            for(var element of theArguments)
+            {
+                console.log(element);
+            }
+            for (var el in theArguments) {
+                console.log("Index::" + el);
+                console.log("Element::" + theArguments[el]);
+            }
+        }
+
+        console.log(multiply(2, 1, 2, 3, 4, 5));
+        console.log(multiply(0, 1, 2, 3, 4, 5));
+        console.log(multiply(undefined, 1, 2, 3, 4, 5));
+        console.log(multiply(NaN, 1, 2, 3, 4, 5));
+    })();
+</script>
+<body>
+
+</body>
+</html>
