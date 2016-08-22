@@ -1,4 +1,5 @@
-﻿using AngularJSAuthentication.API.Models;
+﻿using AngularJSAuthentication.API.Entities;
+using AngularJSAuthentication.API.Models;
 using AngularJSAuthentication.API.Repository;
 using Microsoft.AspNet.Identity;
 using System;
@@ -33,6 +34,16 @@ namespace AngularJSAuthentication.API.Controllers
             {
                 return errorResult;
             }
+            return Ok();
+        }
+
+        [AllowAnonymous]
+        [Route("RegisterClient")]
+        public  IHttpActionResult RegisterClient(ClientModel clientModel)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            Client client = _repository.RegisterClient(clientModel);
             return Ok();
         }
         protected override void Dispose(bool disposing)

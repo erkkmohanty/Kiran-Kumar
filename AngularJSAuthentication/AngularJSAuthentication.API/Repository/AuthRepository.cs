@@ -32,6 +32,23 @@ namespace AngularJSAuthentication.API.Repository
             var result = await _userManager.CreateAsync(user, userModel.Password);
             return result;
         }
+        public  Client RegisterClient(ClientModel clientModel)
+        {
+            Client client = new Client
+            {
+                Id = clientModel.ClientId,
+                Secret = Helper.GetHash(clientModel.Secret),
+                Name = clientModel.Name,
+                ApplicationType = ApplicationTypes.JavaScript,
+                Active = true,
+                RefreshTokenLifeTime = 5,
+                AllowedOrigin = "*"
+            };
+
+            var result = _ctx.Clients.Add(client);
+            _ctx.SaveChanges();
+            return result;
+        }
 
         public async Task<IdentityUser> FindUser(string userName, string password)
         {

@@ -39,9 +39,6 @@ E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\bin\
 E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\bin\EntityFramework.SqlServer.xml
 E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\bin\Microsoft.AspNet.Identity.Core.xml
 E:\Practice\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\obj\Debug\AngularJSAuthentication.Web.csprojResolveAssemblyReference.cache
-E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\obj\Debug\AngularJSAuthentication.Web.dll
-E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\obj\Debug\AngularJSAuthentication.Web.pdb
 E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\bin\roslyn\csc.exe
 E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -79,3 +76,6 @@ E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web
 E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\bin\Microsoft.AspNet.Identity.Core.xml
 E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
 E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\obj\Debug\AngularJSAuthentication.Web.dll
+E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\obj\Debug\AngularJSAuthentication.Web.pdb
+E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web\obj\Debug\AngularJSAuthentication.Web.csprojResolveAssemblyReference.cache

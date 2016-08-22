@@ -1,4 +1,5 @@
 ﻿using AngularJSAuthentication.API.Entities;
+using AngularJSAuthentication.API.Models;
 using AngularJSAuthentication.API.Repository;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
@@ -97,7 +98,7 @@ namespace AngularJSAuthentication.API.Providers
                 return Task.FromResult<object>(null);
             }
 
-            if (client.ApplicationType == Models.ApplicationTypes.NativeConfidential)
+            if (client.ApplicationType == ApplicationTypes.NativeConfidential)
             {
                 if (string.IsNullOrWhiteSpace(clientSecret))
                 {
