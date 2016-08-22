@@ -1,0 +1,14 @@
+1.enable-migrations    (for enabling the migrations)
+2.add-migration InitialCreate
+
+The enable-migrations command creates a Migrations folder in the ContosoUniversity project, and it puts in that folder a Configuration.cs file that you can edit to configure Migrations.
+
+(If you missed the step above that directs you to change the database name, Migrations will find the existing database and automatically do the add-migration command. That's OK, it just means you won't run a test of the migrations code before you deploy the database. Later when you run the update-database command nothing will happen because the database will already exist.)
+
+3.update-database
+
+
+
+For more info visit the below link
+
+http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/migrations-and-deployment-with-the-entity-framework-in-an-asp-net-mvc-application
