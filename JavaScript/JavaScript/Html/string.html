@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<script type="text/javascript">
+    (function () {
+        "use strict";
+        var s = new String("kirankumar");
+        console.log(s);
+        console.log(typeof s);
+
+        console.log(s.split(''));
+        console.log(s.slice(2, 4));
+        console.log(s.substring(2, 4));
+        var reg1 = /kira/gi;
+        console.log(s.match(reg1));
+        var reg2 = /k/g;
+        console.log(s.match(reg2));
+        console.log(s.search(reg1));
+        console.log(s.indexOf("sskumar"));
+        console.log(s.repeat(12));
+        console.log(s.replace("kiran", ""));
+
+        console.log("kiran\nkumar");
+      
+    })();
+</script>
+<body>
+
+</body>
+</html>

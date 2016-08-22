@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<script type="text/javascript">
+    (function () {
+        "use strict";
+        var arr = ["ss1", "2", "3", "4", "5", "6", "7"];
+        console.log(1 in arr);
+        console.log(6 in arr);
+        console.log(7 in arr);
+        console.log("ss1" in arr);
+        console.log("length" in arr);
+        var myCar = {
+            "wheels": 4,
+            "engine": 1,
+            "seats":4
+        };
+        console.log(myCar in myCar);
+        console.log("length" in myCar);
+        console.log("wheels" in myCar);
+        console.log("seats" in myCar);
+    })();
+</script>
+<body>
+
+</body>
+</html>
