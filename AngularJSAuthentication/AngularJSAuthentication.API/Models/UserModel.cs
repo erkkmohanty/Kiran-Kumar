@@ -23,4 +23,22 @@ namespace AngularJSAuthentication.API.Models
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
     }
+    public class ClientModel
+    {
+        [Required]
+        [Display(Name = "Client Id")]
+        [StringLength(100,ErrorMessage = "The {0} must be at least {2} characters long.",MinimumLength =6)]
+        public string ClientId { get; set; }
+
+        [Required]
+        [Display(Name = "Secret")]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength  = 6)]
+        public string Secret { get; set; }
+
+        [Required]
+        [Display(Name = "Name")]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        public string Name { get; set; }
+
+    }
 }

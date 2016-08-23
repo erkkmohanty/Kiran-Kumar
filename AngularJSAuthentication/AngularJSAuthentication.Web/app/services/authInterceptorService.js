@@ -10,6 +10,8 @@
         return config;
     }
 
+    
+
     var _responseError = function (rejection) {
         if (rejection.status === 401) {
             $location.path("/login");
