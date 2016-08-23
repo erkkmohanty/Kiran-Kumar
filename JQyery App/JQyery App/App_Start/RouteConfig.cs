@@ -18,6 +18,9 @@ namespace JQyery_App
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(name: "KK", url: "{controller}/{action}/{id}", defaults:new { controller="Home",action= "ShowForm", id=UrlParameter.Optional});
         }
     }
+
 }
