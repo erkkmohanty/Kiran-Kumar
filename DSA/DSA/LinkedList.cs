@@ -146,11 +146,10 @@ namespace DSA
                 counter++;
             }
         }
-        public Node<T> Reverse(Node<T> node)
+        public Node<T> Reverse(Node<T> head)
         {
-            Node<T> prev = null;
-            Node<T> current = node;
-            Node<T> next = null;
+            Node<T> current = head;
+            Node<T> next = null, prev = null;
             while (current != null)
             {
                 next = current.next;
@@ -158,8 +157,8 @@ namespace DSA
                 prev = current;
                 current = next;
             }
-            node = prev;
-            return node;
+            return (head = prev);
+
         }
         /// <summary>
         /// Search by iteration
