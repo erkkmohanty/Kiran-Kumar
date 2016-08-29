@@ -29,3 +29,4 @@ E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\
 E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\obj\Debug\Basic HTTP Authetication With Angular.dll
 E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\obj\Debug\Basic HTTP Authetication With Angular.pdb
+E:\Kiran Kumar\Angular JS\Angular_SPA\Basic HTTP Authetication With Angular\obj\Debug\Basic HTTP Authetication With Angular.csprojResolveAssemblyReference.cache
