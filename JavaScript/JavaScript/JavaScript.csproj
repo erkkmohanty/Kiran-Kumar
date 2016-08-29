@@ -159,6 +159,7 @@
     <Content Include="Html\Promise.html" />
     <Content Include="Html\Promise2.html" />
     <Content Include="Html\Recursion Stack.html" />
+    <Content Include="Html\RegExp-Simple.html" />
     <Content Include="Html\rest parameters.html" />
     <Content Include="Html\Shorter Functions.html" />
     <Content Include="Html\string.html" />

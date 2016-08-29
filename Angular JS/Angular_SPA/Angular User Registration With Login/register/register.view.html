@@ -36,7 +36,7 @@
             <span ng-show="registerform.confirmpassword.$error.compareTo" class="help-block">Confirm Password must be same as password</span>
             <span ng-messages="registerform.confirmpassword.$error" ng-messages-include="messages.html"></span>
         </div>
-        <div class="form-group"  ng-class="{'has-error':registerform.confirmpassword.$dirty && registerform.postalcode.$invalid}">
+        <div class="form-group"  ng-class="{'has-error':registerform.postalcode.$dirty && registerform.postalcode.$invalid}">
             <label for="postalcode">PIN Code</label>
             <input type="text" id="postalcode" name="postalcode"
                    ng-model="vm.postalcode"
@@ -44,9 +44,32 @@
             <span ng-show="registerform.confirmpassword.$dirty && registerform.postalcode.$invalid||registerform.postalcode.$error.minlength
                   ||registerform.postalcode.$error.maxlength" class="help-block">Invalid Pincode</span>
         </div>
+        <div class="form-group"   ng-class="{'has-error':registerform.country.$dirty && registerform.country.$invalid}">
+            <label for="country">Country</label>
+            <select name="country" ng-change="vm.getStates()" ng-required="true" ng-model="vm.selectedCountry" ng-options="country.Id as country.Name for country in vm.countryList">
+                <option value=""  >Select Country</option>
+            </select>
+            <span ng-show="registerform.country.$dirty && registerform.country.$invalid" class="help-block">Invalid country</span>
+        </div>
+        <div class="form-group" ng-hide="!vm.selectedCountry" ng-class="{'has-error':registerform.state.$dirty && registerform.state.$invalid}">
+            <label for="state">State</label>
+            <select name="state" ng-required="true" ng-model="vm.selectedState" ng-options="state.Id as state.Name for state in vm.stateList">
+                <option value="">Select State</option>
+            </select>
+            <span ng-show="registerform.state.$dirty && registerform.state.$invalid" class="help-block">Invalid state</span>
+        </div>
+        <div class="form-group"  ng-class="{'has-error':registerform.hobbies.$dirty && registerform.hobbies.$invalid}">
+            <label for="hobby">Hobbies</label>
+            <select name="hobby" ng-required="true" ng-model="vm.selectedState" ng-options="state.Id as state.Name for state in vm.stateList">
+                <option value="">Select State</option>
+            </select>
+            <span ng-show="registerform.state.$dirty && registerform.state.$invalid" class="help-block">Invalid state</span>
+        </div>
+        Selected{{vm.selectedCountry}}
+        Selected{{vm.selectedState}}
         <div class="form-actions">
             <button type="submit" ng-disabled="registerform.$invalid || vm.dataLoading" class="btn btn-primary">Register</button>
-            <img ng-if="vm.dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="/>
+            <img ng-show="vm.dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="/>
             <a href="#/login" class="btn btn-link">Cancel</a>
         </div>
     </form>

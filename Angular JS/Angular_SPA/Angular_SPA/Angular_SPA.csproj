@@ -133,6 +133,7 @@
     <Content Include="Html\NGExpressions.html" />
     <Content Include="Html\NGFilter.html" />
     <Content Include="Html\NGHtmlDOM.html" />
+    <Content Include="Html\regisration-form.html" />
     <Content Include="Html\route_templates\add.html" />
     <Content Include="Html\route_templates\delete.html" />
     <Content Include="Html\route_templates\show.html" />
