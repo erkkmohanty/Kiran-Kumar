@@ -3,6 +3,7 @@ var app = angular.module("AngularAuthApp", ['ngRoute', 'LocalStorageModule', 'an
 
 
 app.config(["$routeProvider", function ($routeProvider) {
+    debugger;
     $routeProvider.when("/home", {
         controller: "homeController",
         templateUrl: "/app/views/home.html"

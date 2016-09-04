@@ -13,3 +13,18 @@ E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\obj\Debug\HomeCinema.Dat
 E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\obj\Debug\HomeCinema.DataRepositories.csproj.GenerateResource.Cache
 E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\obj\Debug\HomeCinema.DataRepositories.dll
 E:\Kiran Kumar\chsakell-SPA\HomeCinema.DataRepositories\obj\Debug\HomeCinema.DataRepositories.pdb
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.DataRepositories\bin\Debug\HomeCinema.DataRepositories.dll.config
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.DataRepositories\bin\Debug\HomeCinema.DataRepositories.dll
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.DataRepositories\bin\Debug\HomeCinema.DataRepositories.pdb
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.DataRepositories\bin\Debug\EntityFramework.dll
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.DataRepositories\bin\Debug\EntityFramework.SqlServer.dll
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.DataRepositories\bin\Debug\HomeCinema.Entities.dll
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.DataRepositories\bin\Debug\MockData.dll
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.DataRepositories\bin\Debug\HomeCinema.Entities.pdb
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.DataRepositories\bin\Debug\EntityFramework.xml
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.DataRepositories\bin\Debug\EntityFramework.SqlServer.xml
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.DataRepositories\obj\Debug\HomeCinema.DataRepositories.csprojResolveAssemblyReference.cache
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.DataRepositories\obj\Debug\HomeCinema.DataRepositories.Migrations.initial_migration.resources
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.DataRepositories\obj\Debug\HomeCinema.DataRepositories.csproj.GenerateResource.Cache
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.DataRepositories\obj\Debug\HomeCinema.DataRepositories.dll
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.DataRepositories\obj\Debug\HomeCinema.DataRepositories.pdb
