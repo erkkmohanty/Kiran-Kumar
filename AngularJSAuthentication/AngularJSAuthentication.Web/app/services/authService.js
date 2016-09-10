@@ -33,6 +33,7 @@ app.factory("authService", ["$http", "$q", "localStorageService", "url_provider"
             deferred.resolve(response);
 
         }).error(function (err, status) {
+            debugger;
             _logOut();
             deferred.reject(err);
         });
