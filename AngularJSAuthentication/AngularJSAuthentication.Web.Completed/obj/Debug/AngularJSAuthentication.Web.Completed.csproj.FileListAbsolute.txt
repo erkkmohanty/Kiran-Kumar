@@ -1,0 +1,6 @@
+E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web.Completed\bin\AngularJSAuthentication.Web.dll.config
+E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web.Completed\bin\AngularJSAuthentication.Web.dll
+E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web.Completed\bin\AngularJSAuthentication.Web.pdb
+E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web.Completed\obj\Debug\AngularJSAuthentication.Web.dll
+E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web.Completed\obj\Debug\AngularJSAuthentication.Web.pdb
+E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.Web.Completed\obj\Debug\AngularJSAuthentication.Web.Completed.csprojResolveAssemblyReference.cache

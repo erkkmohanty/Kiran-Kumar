@@ -29,6 +29,7 @@ app.controller('loginController', ['$scope', '$location', 'authService', 'ngAuth
                                                                     + "&response_type=token&client_id=" + ngAuthSettings.clientId
                                                                     + "&redirect_uri=" + redirectUri;
         window.$windowScope = $scope;
+        debugger;
 
         var oauthWindow = window.open(externalProviderUrl, "Authenticate Account", "location=0,status=0,width=600,height=750");
     };

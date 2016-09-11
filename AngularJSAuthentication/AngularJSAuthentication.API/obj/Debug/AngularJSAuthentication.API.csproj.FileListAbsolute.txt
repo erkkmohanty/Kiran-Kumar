@@ -198,8 +198,11 @@ E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.API
 E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Net.Http.Formatting.xml
 E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.xml
 E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\System.Web.Http.WebHost.xml
-E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.csprojResolveAssemblyReference.cache
 E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.Migrations.InitialCreate.resources
 E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.csproj.GenerateResource.Cache
 E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.dll
 E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.API\obj\Debug\AngularJSAuthentication.API.pdb
+E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.Google.dll
+E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Practice\Janu\Kiran-Kumar\AngularJSAuthentication\AngularJSAuthentication.API\bin\Microsoft.Owin.Security.Google.xml
