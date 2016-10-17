@@ -3,3 +3,8 @@ E:\Kiran Kumar\chsakell-SPA\HomeCinema.Entities\bin\Debug\HomeCinema.Entities.pd
 E:\Kiran Kumar\chsakell-SPA\HomeCinema.Entities\obj\Debug\HomeCinema.Entities.csprojResolveAssemblyReference.cache
 E:\Kiran Kumar\chsakell-SPA\HomeCinema.Entities\obj\Debug\HomeCinema.Entities.dll
 E:\Kiran Kumar\chsakell-SPA\HomeCinema.Entities\obj\Debug\HomeCinema.Entities.pdb
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.Entities\bin\Debug\HomeCinema.Entities.dll
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.Entities\bin\Debug\HomeCinema.Entities.pdb
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.Entities\obj\Debug\HomeCinema.Entities.csprojResolveAssemblyReference.cache
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.Entities\obj\Debug\HomeCinema.Entities.dll
+E:\Practice\Janu\Kiran-Kumar\chsakell-SPA\HomeCinema.Entities\obj\Debug\HomeCinema.Entities.pdb
