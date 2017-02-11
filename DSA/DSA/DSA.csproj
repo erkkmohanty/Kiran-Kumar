@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="BinaryHeap.cs" />
     <Compile Include="BinarySearchTree.cs" />
+    <Compile Include="Tree\BinaryTree.cs" />
+    <Compile Include="Tree\BNode.cs" />
     <Compile Include="CircularLinkedList.cs" />
     <Compile Include="LinkedList.cs" />
     <Compile Include="MaximumSubArray.cs" />
