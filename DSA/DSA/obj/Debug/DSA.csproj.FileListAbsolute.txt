@@ -10,3 +10,9 @@ E:\Kiran Kumar\DSA\DSA\obj\Debug\DSA.csprojResolveAssemblyReference.cache
 E:\Practice\Janu\Kiran-Kumar\DSA\DSA\bin\Debug\DSA.exe.config
 E:\Practice\Janu\Kiran-Kumar\DSA\DSA\obj\Debug\DSA.exe
 E:\Practice\Janu\Kiran-Kumar\DSA\DSA\obj\Debug\DSA.pdb
+D:\Personal\Kiran-Kumar\DSA\DSA\bin\Debug\DSA.exe.config
+D:\Personal\Kiran-Kumar\DSA\DSA\obj\Debug\DSA.exe
+D:\Personal\Kiran-Kumar\DSA\DSA\obj\Debug\DSA.pdb
+D:\Personal\Kiran-Kumar\DSA\DSA\obj\Debug\DSA.csprojResolveAssemblyReference.cache
+D:\Personal\Kiran-Kumar\DSA\DSA\bin\Debug\DSA.exe
+D:\Personal\Kiran-Kumar\DSA\DSA\bin\Debug\DSA.pdb
