@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS Built-in Directives</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script>
+        //module
+        var app=angular.module("myApp",[]);
+        app.controller("ctrl",function ($scope) {
+            $scope.Colors=[{id:1,name:"red"},{id:2,name:"yellow"},{id:3,name:"green"},{id:4,name:"purple"}];
+        });
+
+    </script>
+</head>
+<body>
+<div ng-controller="ctrl">
+<select ng-options="color.name for color in Colors" ng-model="ddlColor" >
+<option value="">Select Color</option>
+</select>
+    <p style="background-color: {{ddlColor.name}}">
+        Selected color Text:{{ddlColor.name}}<br/>
+        Selected color Value:{{ddlColor.id}}
+    </p>
+    <h2>ng-if</h2>
+    <input type="number" ng-model="Number">
+    <div ng-if="Number!=undefined &&  Number%2==0">Even</div>
+    <div ng-if="Number!=undefined && Number%2!=0">Odd</div>
+    <h2>ng-show/hide</h2>
+    <div ng_show="Number!=undefined && Number%2==0">Even</div>
+    <div ng_hide="Number==undefined || Number%2==0">Odd</div>
+    <h2>ng-switch</h2>
+    <input type="text" ng-model="Alphabet"/>
+    <div ng-switch="Alphabet">
+        <div ng-switch-when="a">Vowel</div>
+        <div ng-switch-when="e">Vowel</div>
+        <div ng-switch-when="i">Vowel</div>
+        <div ng-switch-when="o">Vowel</div>
+        <div ng-switch-when="u">Vowel</div>
+        <div ng-switch-default>Consonant</div>
+    </div>
+    <h2>ng-repeat</h2>
+    <ul>
+        <li ng-repeat="color in Colors">
+            {{$index+1}}  {{color.name}}
+            <span ng-if="$first">First</span>
+            <span ng-if="$middle">Middle</span>
+            <span ng-if="$last">Last</span>
+        </li>
+    </ul>
+    <h2>ng-init</h2>
+    <input type="text" ng-init="Name='Kiran Kumar'" ng-model="Name">
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+﻿<html ng-app="t9Module">
+<head>
+    <title>T9 Keyboard</title>
+	<meta charset="utf-8" />
+</head>
+<link href="../CSS/site.css" rel="stylesheet" />
+<script src="../Scripts/angular.js"></script>
+<script src="../Scripts/app.js"></script>
+<script src="../Scripts/t9Directive.js"></script>
+<script src="../Scripts/t9Service.js"></script>
+<script src="../Scripts/t9KeyboardInput.js"></script>
+<script src="../Scripts/t9Controller.js"></script>
+<body ng-controller="t9Controller as vm">
+    <p id="output-text" numeric-keyboard-input="" ng-model="vm.simple" ng-bind="vm.simple"></p>
+</body>
+<numeric-keyboard />
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS Inheritance</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script>
+        //module
+        var app=angular.module("myApp",[]);
+        app.controller("ctrl1",function ($scope,$rootScope) {
+            $rootScope.Building="IT Park";
+            $scope.Name="TCS";
+            $scope.CEO="AK Singh";
+        });
+        app.controller("ctrl2",function ($scope) {
+            $scope.Name="IBM";
+            $scope.CEO="MK Kumar";
+
+        });
+        app.controller("ctrl1Child",function ($scope) {
+           $scope.Name="IT";
+            $scope.Manager="LK Singh";
+            $scope.Company=$scope.$parent.Name;
+        });
+        app.controller("ctrl2Child",function ($scope) {
+            try {
+                $scope.Name = "Sales";
+                $scope.Manager = "AK Sharma";
+            } catch (e) {
+            } finally {
+            }
+        });
+    </script>
+</head>
+<body>
+<h2>{{Building}}</h2>
+<div ng-controller="ctrl1">
+    Building:{{$parent.Building}}|{{Building}}
+<h3>{{Name}}</h3>
+    <div ng-controller="ctrl1Child">
+        <h2>{{Name}}|{{$parent.Name}}|{{Company}}</h2>
+        <p>
+            {{Manager}} reports to => {{CEO}}
+        </p>
+    </div>
+</div>
+
+<div ng-controller="ctrl2">
+    Building:{{$parent.Building}}|{{Building}}
+    <h3>{{Name}} </h3>
+    <div ng-controller="ctrl2Child">
+        <h2>{{Name}}|{{$parent.Name}}</h2>
+        <p>
+            {{Manager}} reports to => {{CEO}}
+        </p>
+    </div>
+</div>
+</body>
+</html>

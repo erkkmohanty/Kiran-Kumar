@@ -1,0 +1,14 @@
+{
+  "name": "node7am",
+  "version": "1.0.0",
+  "description": "node first app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kiran Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}

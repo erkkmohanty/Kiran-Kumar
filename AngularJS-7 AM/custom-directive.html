@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS Custom Directive</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script>
+        //module
+        var app=angular.module("myApp",[]);
+        app.controller("ctrl",function ($scope) {
+
+        });
+
+        app.directive("myDirective",function () {
+           return{
+               restrict:"EACM",
+               template:"<p>{{Message}}</p>",
+               replace:true,
+               controller:function ($scope) {
+                   $scope.Message="Custom Directive";
+               }
+           }
+        });
+
+        app.directive("myDir",function () {
+           var myDir={};
+            myDir.restrict="EACM";
+            myDir.template="<p><span ng-transclude></span>  {{Message}}</p>";
+            myDir.controller=function ($scope) {
+                $scope.Message="Transculde:This is transclude directive";
+            };
+            myDir.replace=true;
+            myDir.transclude=true;
+            return myDir;
+        });
+        </script>
+</head>
+<body>
+<div ng-controller="ctrl">
+    <h2>As an Element</h2>
+<my:directive></my:directive>
+
+    <h2>As an Attribute</h2>
+    <div my:directive></div>
+
+    <h2>As a Class</h2>
+    <div class="my_directive"></div>
+
+    <h2>As a commennt</h2>
+    <!--  directive:my_directive  -->
+
+    <h2>Transclude directive as an Attribute</h2>
+
+    <div my-dir>
+<p>Transclue details</p>
+    </div>
+
+    <h2>Transclude directive as an Element</h2>
+    <my-dir>
+        <p>Transclude element</p>
+    </my-dir>
+
+</div>
+</body>
+</html>

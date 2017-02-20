@@ -1,0 +1,6 @@
+E:\Practice\DataStructure and Algorithm\DSA\DSA\bin\Debug\DSA.exe.config
+E:\Practice\DataStructure and Algorithm\DSA\DSA\bin\Debug\DSA.exe
+E:\Practice\DataStructure and Algorithm\DSA\DSA\bin\Debug\DSA.pdb
+E:\Practice\DataStructure and Algorithm\DSA\DSA\obj\Debug\DSA.csprojResolveAssemblyReference.cache
+E:\Practice\DataStructure and Algorithm\DSA\DSA\obj\Debug\DSA.exe
+E:\Practice\DataStructure and Algorithm\DSA\DSA\obj\Debug\DSA.pdb

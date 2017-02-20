@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS Routing-{{Title}}</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script>
+        //module
+        var app=angular.module("myApp",["ui.router"]);
+        app.controller("ctrl",function ($scope) {
+
+        });
+
+        app.config(function ($stateProvider,$urlRouterProvider) {
+            $stateProvider.state("home",{
+                url:"/",
+                templateUrl:"templates/home.html",
+                controller:"homeCtrl"
+            }).state("about",{
+                url:"/about/:id/:name",
+                templateUrl:"templates/aboutus.html",
+                controller:"aboutCtrl"
+            }).state("home.details",{
+                url:"/",
+                templateUrl:"templates/details.html",
+            });
+            $urlRouterProvider.otherwise("/");
+        });
+
+        app.controller("homeCtrl",function ($scope,$rootScope) {
+            $rootScope.Title="Home Page";
+            $scope.Message="This is home page";
+            $scope.colors=["red","green","sleek","golden","silver"]
+        });
+        app.controller("aboutCtrl",function ($scope,$rootScope,$stateParams) {
+            $rootScope.Title="Home Page";
+            $scope.Message="This is about us page";
+            $scope.id=$stateParams.id;
+            $scope.name=$stateParams.name;
+        });
+
+    </script>
+</head>
+<body>
+<div ng-controller="ctrl">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a ui-sref="home">Home</a></li>
+                <li><a ui-sref="about({id:1,name:'kiran kumar'})">About us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div ui-view></div>
+    </div>
+</div>
+</body>
+</html>

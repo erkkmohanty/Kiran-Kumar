@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS Event Handling</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script>
+        //module
+        var app=angular.module("myApp",[]);
+        app.controller("ctrl6",function ($scope) {
+            $scope.clickCounter=0;
+            $scope.dbClickCounter=0;
+            $scope.changeCounter=0;
+            $scope.UpdateClickCounter=function () {
+                $scope.clickCounter++;
+            };
+            $scope.UpdateDbClickCounter=function () {
+                $scope.dbClickCounter++;
+            };
+            $scope.UpdatechangeClickCounter=function () {
+                $scope.changeCounter++;
+            };
+        });
+
+    </script>
+</head>
+<body>
+<div ng-controller="ctrl6">
+<p>
+    <button type="button" ng-click="UpdateClickCounter()">Update Click</button>{{clickCounter}}
+</p>
+    <p>
+        <button type="button" ng-click="UpdateDbClickCounter()">Update DB Click</button>{{dbClickCounter}}
+    </p>
+    <p>
+        <button type="button" ng-click="UpdatechangeClickCounter()">Update Change Click</button>{{changeCounter}}
+    </p>
+    <p>
+        <input type="text" ng-model="Name" ng-change="UpdatechangeClickCounter()">{{changeCounter}}
+    </p>
+</div>
+</body>
+</html>

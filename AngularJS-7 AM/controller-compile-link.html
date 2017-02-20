@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html ng-app="myApp2">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS Custom Directive</title>
+    <style>
+        .intro {
+            font-size: 150%;
+            color: red;
+        }
+    </style>
+    <script src="bower_components/angular/angular.js"></script>
+    <script>
+        //module
+        var app=angular.module("myApp2",[]);
+        app.controller("ctrl",function ($scope) {
+            $scope.Name="Kiran Kumar controller";
+            $scope.callMe=function () {
+                alert("call me called");
+            };
+            $scope.colors=["red","blue","green","yellow"];
+        });
+
+        app.directive("myDirective",function () {
+var myDirective={};
+            myDirective.restrict="EA";
+            myDirective.scope={};
+            myDirective.template="<p>This is mydirective</p>";
+            myDirective.controller=function ($scope) {
+                $scope.Message="My Controller";
+                console.log("--Controller");
+            };
+            myDirective.compile=function (tEl,tAttr) {
+                console.log(tEl);
+                console.log(tAttr);
+                console.log("##compile");
+                return{
+                    pre:function (scope,currEl,Attrs,ctrl) {
+                        console.log("--pre link");
+                    },
+                    post:function (scope,currEl,Attrs,ctrl) {
+                        console.log("--post link");
+                    }
+                }
+            };
+            return myDirective;
+        });
+
+        app.directive("myDir",function () {
+            var myDirective={};
+            myDirective.restrict="EA";
+            myDirective.scope={};
+            myDirective.template="<p>This is mydirective</p>";
+            myDirective.controller=function ($scope) {
+                $scope.Message="My Controller";
+                console.log("--Controller");
+            };
+            myDirective.compile=function (tEl,tAttr) {
+                debugger;
+                tEl.children().addClass("intro");
+                //console.log(tEl);
+                //console.log(tAttr);
+                console.log("##compile");
+return this.link;
+            };
+            myDirective.link= {
+
+                    pre:function (scope,currEl,Attrs,ctrl) {
+                        console.log("--pre link");
+                    },
+                    post:function (scope,currEl,Attrs,ctrl) {
+                        console.log("--post link");
+                    }
+
+            }
+            return myDirective;
+        });
+    </script>
+</head>
+<body>
+
+<div ng-controller="ctrl">
+    <my-dir></my-dir>
+
+    <div ng-repeat="color in colors">
+        <my-dir></my-dir>
+    </div>
+</div>
+</body>
+</html>

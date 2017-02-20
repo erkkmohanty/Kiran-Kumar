@@ -1,0 +1,53 @@
+Basic and Advanced .Net Framework Interview Questions and Answers for Freshers, 2 - 3 years Experienced Dot Net developers and Testers on Microsoft Intermediate Language (MS-IL), Common Language Runtime (CLR), Common Type System (CTS), Common Language Specification (CLS), Garbage Collector, Assembly, Global Assembly Cache (GAC), Reflection, Delay Signing, Boxing and Unboxing.
+
+1) What are the advantages of .Net?
+Good Design
+Object-Oriented Programming – Using C# and .NET which are based on object-oriented Concepts.
+Language Independence – All the languages which are supported by .Net (VB.NET, C#, J#, and managed C++) are compiled into common Intermediate Language (IL). So IL makes sure that languages are interoperable.
+Efficient Data Access – ADO.NET provides fast and efficient way to access RDBMS, file system etc.
+Code Sharing – To share code between applications, a new concept called assembly is introduced. Assemblies supports versioning.
+Improved Security
+Support Dynamic Web Pages – Using ASP.NET
+Support for Web Services
+
+2) What is .Net Framework ?
+The .NET framework is a programming framework from Microsoft. Developers can use .Net Framework to develop applications, install and run the application on Windows operating systems.
+
+3) What is MS-IL (Microsoft Intermediate Language) ?
+When a program is complied in .Net, the source code will be converted into an intermediate language called Microsoft Intermediate Language (MS-IL). This is done by Just-In time Compiler (JIT). The dot net framework is built in such a way that the code is Just-In time complied, which means that it get complied when it is called rather than compiling entire code at the start up. A portion of the code will get complied only once and it will exist till the application exit. This will have a significant improvement in performance since the entire section of the code won't get executed in most cases.
+
+Must Read - C# OOPS Interview Questions and Answers
+
+
+4) What is Common Language Runtime (CLR) ?
+
+Common Language Runtime or CLR is the run-time execution environment of .Net Framework. Converting MS-IL into platform or OS specific code is done by the CLR. Currently, .Net programs will run only on windows.
+
+
+5) What is Common Type System (CTS) ?
+
+.Net uses Common Type System (CTS) for Language Interoperability. CTS defines the predefined data types that are available in IL, so that all languages that target the .NET framework will produce the compiled code that is ultimately based on these types. CTS ensures that a data type defined in a VB.net will be understood by C#. For example, VB.Net uses “Integer” to define the data type Integer. C# uses  “int” to define the data type Integer. When VB.Net code is compiled, it will convert the Integer to Int32. Since C# refers Int to Int32, VB.Net code will be understood by C#.
+
+
+Must Read - ADO.Net Interview Questions and Answers
+
+
+6) What is Common Language Specification (CLS) ?
+
+Common Language Specification (CLS) is used for Language Interoperability in tandem with CTS to ensure the interoperability of the languages. CLS defines a set of minimum standards that all compilers targeting dot net must support. For example, VB.Net is not case sensitive. So attribute “EmployeeName” and “employeename” is considered same. But C# is case sensitive. So for language interoperability, C# doesn't allow two variables which differ only in case.
+
+
+Also Read - ASP.Net Interview Questions and Answers
+
+
+7) What is Garbage Collector ?
+
+Garbage Collector is used in dot net Framework for memory management. While running an application, applications make a request for memory for its internal use. Framework allocates memory from the heap. Once the process is completed, allocated memory needs to be reclaimed for future use. The process of reclaiming unused memory is taken care by the Garbage Collector.
+
+
+Also Read - ASP.Net MVC Interview Questions and Answers
+
+
+8) How to invoke garbage collector programmatically ?
+
+To call garbage collector from a program, use code “ GC.Collect();

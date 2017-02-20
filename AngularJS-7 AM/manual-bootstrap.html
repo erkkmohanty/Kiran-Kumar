@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script>
+        //module
+        var app=angular.module("myApp1",[]);
+        app.controller("ctrl1",function ($scope) {
+$scope.Name="Automatic Bootstrap";
+        });
+        var manualModule1=angular.module("manualModule1",[]);
+        var manualModule2=angular.module("manualModule2",[]);
+
+        manualModule1.controller("manualController1",function ($scope) {
+           $scope.Name="Manual Bootstrap 1";
+        });
+        manualModule2.controller("manualController2",function ($scope) {
+            $scope.Name="Manual Bootstrap 2";
+        });
+angular.element(document).ready(function () {
+   var div1=document.getElementById("manual1");
+    var div2=document.getElementById("manual2");
+    var div3=document.getElementById("manual3");
+    angular.bootstrap(div1,["manualModule1"]);
+    angular.bootstrap(div2,["manualModule2"]);
+    angular.bootstrap(div3,["manualModule1"]);
+});
+    </script>
+</head>
+<body>
+<div ng-controller="ctrl1" ng-app="myApp1">
+    {{Name}}
+</div>
+<div id="manual1" ng-controller="manualController1">
+{{Name}}
+</div>
+<div id="manual2" ng-controller="manualController2">
+    {{Name}}
+</div>
+<div id="manual3" ng-controller="manualController1">
+    {{Name}}
+</div>
+</body>
+</html>

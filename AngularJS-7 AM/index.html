@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script>
+        //module
+        var app=angular.module("myApp",[]);
+        app.controller("ctrl",function ($scope) {
+            $scope.Name="Kiran Kumar";
+            $scope.greet=function () {
+                $scope.Message="Hi Angular JS";
+            }
+        });
+    </script>
+</head>
+<body>
+<div ng-controller="ctrl">
+    <p></p><input type="text" ng-model="Name"/>:{{Name}}</div></p>
+<div>
+    <button type="button" ng-click="greet()">Greet!</button>
+    </div>
+</div>
+</body>
+</html>

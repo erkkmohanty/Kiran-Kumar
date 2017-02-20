@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script>
+        //module
+        var app=angular.module("myApp",[]);
+        app.controller("ctrl",function ($scope) {
+$scope.EmployeeList=[{id:1,name:'Kiran Kumar Mohanty',salary:900000000000000,joiningDat:new Date()},
+    {id:2,name:'Tarun Kumar Mohanty',salary:999999999,joiningDat:new Date()},
+    {id:3,name:'Kuntala Mohanty',salary:8878888888888,joiningDat:new Date()},
+    {id:4,name:'Akshaya Kumar Mohanty',salary:999999999999999,joiningDat:new Date()}];
+        });
+
+        app.filter("reverse",function () {
+           return function (input) {
+               var result='';
+               for(var i=input.length-1;i>=0;i--)
+               {
+                   result+=input[i];
+               }
+               return result;
+           }
+        });
+    </script>
+</head>
+<body>
+<div ng-controller="ctrl">
+<ul>
+    <li ng-repeat="emp in EmployeeList|orderBy:'salary' :true">
+        {{emp.name|uppercase|reverse}}  {{emp.name|lowercase}}   {{emp.salary|currency:'INR'}} {{emp.joiningDat|date:'MM/yyyy/dd hh:mm:ss'}}
+    </li>
+</ul>
+</div>
+</body>
+</html>

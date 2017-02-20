@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS Data binding</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script>
+        //module
+        var app=angular.module("myApp",[]);
+        app.controller("ctrl",function ($scope) {
+
+        });
+    </script>
+</head>
+<body>
+<div ng-controller="ctrl">
+<p>
+    Two way data binding:<input type="text" ng-model="Name" >
+</p>
+    <p>
+        One way data binding: {{Name}}|<span ng-bind="Name"></span>
+    </p>
+    <p>
+        One way data binding:{{::Name}}|<span ng-bind="::Name"></span>
+    </p>
+</div>
+</body>
+</html>

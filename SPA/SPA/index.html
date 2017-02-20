@@ -1,0 +1,88 @@
+﻿<html ng-app="rootModule" ng-strict-di ng-controller="RootCtrl as rc" >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="description" content="Single Page Application">
+    <meta name="author" content="Kiran Kumar Mohanty">
+    <title>SPA</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="Vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="Vendor/bootstrap/css/font-awesome.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="Vendor/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
+    <link href="Vendor/dist/css/AdminLTE.min.css" rel="stylesheet" />
+    <link href="Vendor/dist/css/skins/_all-skins.min.css" rel="stylesheet" />
+    <link href="Vendor/morris/morris.css" rel="stylesheet" />
+    <link href="Vendor/datepicker/datepicker3.css" rel="stylesheet" />
+    <link href="Vendor/daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <link href="Vendor/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" />
+
+    <link href="Content/css/toastr.css" rel="stylesheet" />
+    <link href="Content/css/jquery.fancybox.css" rel="stylesheet" />
+    <link href="Content/css/loading-bar.css" rel="stylesheet" />
+</head>
+<body  ng-class="{'hold-transition login-page':!rc.authentication.isAuthenticated,'sidebar-mini skin-black':rc.authentication.isAuthenticated}">
+    <div  ng-class="{'wrapper':rc.authentication.isAuthenticated}" >
+
+        <header-bar ng-if="rc.authentication.isAuthenticated"></header-bar>
+        <side-bar ng-if="rc.authentication.isAuthenticated"></side-bar>
+        <div ng-class="{'content-wrapper':rc.authentication.isAuthenticated}">
+            <div ui-view=""></div>
+        </div>
+        <footer ng-if="rc.authentication.isAuthenticated"></footer>
+    </div>
+
+
+    <!--jQuery-->
+    <script src="Vendor/jquery/jquery-2.2.3.min.js"></script>
+    <script src="https://cdn.ravenjs.com/3.7.0/raven.min.js"></script>
+    <script src="Vendor/bootstrap.js"></script>
+    <script src="Vendor/sparkline/jquery.sparkline.min.js"></script>
+    <script src="Vendor/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="Vendor/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="Vendor/knob/jquery.knob.js"></script>
+    <script src="Vendor/moment.min.js"></script>
+    <script src="Vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="Vendor/datepicker/bootstrap-datepicker.js"></script>
+    <script src="Vendor/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+    <script src="Vendor/fastclick/fastclick.js"></script>
+    <script src="Vendor/toastr.js"></script>
+
+    <script src="Vendor/dist/js/app.min.js"></script>
+    <script src="Vendor/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="Vendor/chartjs/Chart.min.js"></script>
+    <script src="Vendor/dist/js/demo.js"></script>
+
+
+
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-ui-router.js"></script>
+    <script src="Vendor/angular-local-storage.js"></script>
+    <script src="Vendor/loading-bar.js"></script>
+    <script src="Vendor/morris.js"></script>
+
+    <script src="SPA/rootModule.js"></script>
+    <script src="SPA/rootConfig.js"></script>
+    <script src="SPA/rootRun.js"></script>
+    <script src="SPA/urlService.js"></script>
+    <script src="SPA/rootCtrl.js"></script>
+    <script src="SPA/Modules/vendorModule.js"></script>
+    <script src="SPA/Modules/common.ui.js"></script>
+    <script src="SPA/Services/common.core.js"></script>
+    <script src="SPA/Login/loginModule.js"></script>
+    <script src="SPA/Modules/mainModule.js"></script>
+    <script src="SPA/Directives/directiveModule.js"></script>
+    <script src="SPA/Directives/comapre-password.js"></script>
+    <script src="SPA/Directives/header-directive.js"></script>
+    <script src="SPA/Directives/sidebar-directive.js"></script>
+    <script src="SPA/Login/loginController.js"></script>
+
+    <script src="SPA/Login/registerController.js"></script>
+    <script src="SPA/Services/notificationService.js"></script>
+    <script src="SPA/Services/authService.js"></script>
+    <script src="SPA/Services/apiService.js"></script>
+    <script src="SPA/Services/authInterceptorService.js"></script>
+    <script src="SPA/Dashboard/dashboardController.js"></script>
+</body>
+</html>

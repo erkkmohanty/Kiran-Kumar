@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script>
+        //module
+        var app=angular.module("myApp",[]);
+        app.controller("ctrl",function ($scope,$compile) {
+var containerDiv=document.getElementById("container");
+            var btnTemplate='<button type="button" ng-click="AddButton()">Click</button>';
+            var textTemplate='<input type="text"  ng-model="count">';
+            $scope.AddButton=function () {
+var compiled_template=$compile(btnTemplate)($scope);
+                var cmp_txt=$compile(textTemplate)($scope);
+            angular.element(containerDiv).append(compiled_template);
+                angular.element(containerDiv).append(cmp_txt);
+            }
+            $scope.changeText=function () {
+                $scope.count=1;
+            }
+
+        });
+    </script>
+</head>
+<body>
+<div ng-controller="ctrl" id="container">
+   count:: {{count}}
+<button type="button" ng-click="AddButton()">Click</button>
+    <input type="text" ng-model="count"> </div>
+</body>
+</html>

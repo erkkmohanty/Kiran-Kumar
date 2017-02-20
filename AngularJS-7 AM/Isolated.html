@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="myApp2">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS Custom Directive</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script>
+        //module
+        var app=angular.module("myApp2",[]);
+        app.controller("ctrl",function ($scope) {
+            $scope.Name="Kiran Kumar controller";
+            $scope.callMe=function () {
+              alert("call me called");
+            };
+        });
+
+        app.directive("myIdir",function () {
+            var dir={};
+            dir.restrict="EA";
+            dir.scope={data:"@datastring",//for passing string or we can say one way data binding,
+                sata:"@",
+                pata:"=",
+                mata:"=mataobject",
+                call:"&",
+                callmethod:"&cmd"
+            }
+            dir.template="<div><p>This is isloate scope @ {{data}}.<input type='text' ng-model='sata'></p><br/>" +
+                    "<p>This is isloate scope = {{pata}}.<input type='text' ng-model='mata'></p><br/>" +
+                    "<input type='button' ng-click='call()' name='Click Here'/>" +
+                    "<input type='button' ng-click='callmethod()' name='Click Here'/></div>";
+
+            dir.replace=true;
+            return dir;
+        });
+    </script>
+</head>
+<body>
+<div ng-controller="ctrl">
+    Parent:
+    <p>
+        <input type="text" ng-model="Name">
+    </p>
+    <h2>Isolate Scope @</h2>
+    <my-idir datastring="{{Name}}" sata="{{Name}}"></my-idir>
+
+    <h2>Isolate Scope =</h2>
+    <my-idir pata="Name" mataobject="Name"></my-idir>
+
+    <h2>Isolate Scope &</h2>
+    <my-idir call="callMe()" cmd="callMe()"></my-idir>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <script src="bower_components/angular/angular.js"></script>
+    <script>
+        //module
+        var app=angular.module("myApp",[]);
+        app.controller("ctrl",function ($scope) {
+
+        });
+    </script>
+</head>
+<body>
+<div ng-controller="ctrl" class="container">
+<form name="signUpForm" onsubmit="saveData(user)">
+
+<div class="form-group">
+<label class="col-md-3" for="username">Username</label>
+<div class="col-md-9">
+    <input type="text" name="username" ng-model="user.username" ng-required="true" ng-minlength="3" ng-maxlength="10">
+</div>
+</div>
+
+</form>
+</div>
+</body>
+</html>

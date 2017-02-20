@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS  Expressions</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script>
+        //module
+        var app=angular.module("myApp",[]);
+        app.controller("ctrl",function ($scope) {
+$scope.UnitPrice=12;
+            $scope.Quantity=4;
+//                $scope.$watch("UnitPrice",function (newVal,oldVal) {
+//                    $scope.Total=$scope.Quantity*newVal;
+//                });
+//                $scope.$watch("Quantity",function (newVal,oldVal) {
+//                    $scope.Total=$scope.UnitPrice*newVal;
+//                });
+
+            $scope.$watchGroup(["UnitPrice","Quantity"],function (newVal,oldVal) {
+                $scope.Total=newVal[0]*newVal[1];
+            })
+        });
+    </script>
+</head>
+<body>
+<div ng-controller="ctrl">
+<input type="number" ng-model="UnitPrice"> X<input type="number" ng-model="Quantity">={{UnitPrice*Quantity}}|{{Total}}
+    <p>
+        <span ng-bind="UnitPrice*Quantity"></span>|<span ng-bind="Total"></span>
+    </p>
+</div>
+</body>
+</html>

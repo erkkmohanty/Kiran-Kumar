@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS Digest and Apply</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script>
+        //module
+        var app=angular.module("myApp",[]);
+        app.controller("ctrl1",function ($scope,$rootScope) {
+            $rootScope.counter=0;
+
+            $scope.UpdateCounter=function () {
+                $rootScope.counter++;
+            };
+
+            var id=document.getElementById("btn");
+            //angular.element()===$()===jQuery()
+
+            angular.element(id).on("click",function () {
+                $rootScope.counter++;
+                console.log($rootScope.counter);
+                $scope.$apply();
+            });
+        });
+        app.controller("ctrl2",function ($scope,$rootScope) {
+
+        });
+        app.controller("childctrl",function ($scope,$rootScope) {
+
+        });
+    </script>
+</head>
+<body>
+<div ng-controller="ctrl1">
+    <h2>Parent:{{counter}}</h2>
+<button type="button" ng-click="UpdateCounter()">Update using Angular JS</button>
+
+    <button type="button" id="btn">Update using jQLite</button>
+    <div ng-controller="childctrl">
+        <h2>Grand child:{{counter}}</h2>
+    </div>
+</div>
+<div ng-controller="ctrl2">
+    <h2>Sibling:{{counter}}</h2>
+</div>
+</body>
+</html>
